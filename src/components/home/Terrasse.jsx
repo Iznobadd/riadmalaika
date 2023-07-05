@@ -9,8 +9,8 @@ import Salon6 from "../../assets/images/salon6.jpg";
 import { Zoom } from "react-awesome-reveal";
 function Terrasse() {
   return (
-    <div class="terrasse">
-      <div class="container">
+    <div className="terrasse">
+      <div className="container">
         <Zoom direction="top" duration={1500}>
           <h1>La Terrasse</h1>
         </Zoom>

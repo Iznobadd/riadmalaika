@@ -9,8 +9,8 @@ import Salon6 from "../../assets/images/salon6.jpg";
 import { Zoom } from "react-awesome-reveal";
 function Salon() {
   return (
-    <div class="salons">
-      <div class="container">
+    <div className="salons">
+      <div className="container">
         <Zoom direction="top" duration={1500}>
           <h1>Les Salons</h1>
         </Zoom>

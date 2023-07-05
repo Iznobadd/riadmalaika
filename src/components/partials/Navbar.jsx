@@ -3,7 +3,9 @@ import Logo from "../../assets/images/logo.png";
 import Booking from "../../assets/images/bookingcom.png";
 import { HiHome } from "react-icons/hi";
 import { FaBars } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
 function Navbar() {
+  const { pathname } = useLocation();
   const [scrolled, setScrolled] = React.useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +23,7 @@ function Navbar() {
   return (
     <header>
       <nav id="menu" className={`${scrolled ? "sticky" : ""}`}>
-        <label for="toggle">
+        <label htmlFor="toggle">
           <span id="btn_menu">
             <FaBars />
           </span>
@@ -29,34 +31,38 @@ function Navbar() {
         <input type="checkbox" id="toggle" />
         <ul className="menu_resp">
           <li className="logo_img">
-            <a href="index">
+            <Link to="/" title="Riad Malaika">
               <img src={Logo} alt="Logo du Riad Malaïka" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="index" title="Riad Malaika">
+            <Link
+              to="/"
+              title="Riad Malaika"
+              className={`${pathname === "/" ? "active-menu" : ""}`}
+            >
               <HiHome size={20} />
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="" href="table" title="Riad Malaika">
+            <Link to="/table" title="Riad Malaika">
               GASTRONOMIE
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="" href="chambres" title="Riad Malaika">
+            <Link to="/chambres" title="Riad Malaika">
               HÉBERGEMENT
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="" href="loisirs" title="Riad Malaika">
+            <Link to="/loisirs" title="Riad Malaika">
               EXPÉRIENCES
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="" href="contact" title="Riad Malaika">
+            <Link to="/contact" title="Riad Malaika">
               CONTACT
-            </a>
+            </Link>
           </li>
           <li className="booking_img">
             <a
