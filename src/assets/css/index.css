@@ -417,7 +417,7 @@ footer {
   left: 50px;
   top: 55%;
 }
-footer i {
+footer .fa {
   color: white;
   padding: 10px;
   border: 2px solid white;

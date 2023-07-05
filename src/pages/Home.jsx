@@ -5,6 +5,9 @@ import Table from "../components/home/Table";
 import ParallaxTitle from "../components/home/ParallaxTitle";
 import Restaurant from "../components/home/Restaurant";
 import Patio from "../components/home/Patio";
+import Salon from "../components/home/Salon";
+import Terrasse from "../components/home/Terrasse";
+import Offres from "../components/home/Offres";
 
 function Home() {
   return (
@@ -45,6 +48,9 @@ function Home() {
       </div>
       <Restaurant />
       <Patio />
+      <Salon />
+      <Terrasse />
+      <Offres />
     </div>
   );
 }

@@ -1,12 +1,26 @@
-import React from "react";
-import Logo from "../assets/images/logo.png";
-import Booking from "../assets/images/bookingcom.png";
+import React, { useEffect } from "react";
+import Logo from "../../assets/images/logo.png";
+import Booking from "../../assets/images/bookingcom.png";
 import { HiHome } from "react-icons/hi";
 import { FaBars } from "react-icons/fa";
 function Navbar() {
+  const [scrolled, setScrolled] = React.useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <header>
-      <nav id="menu">
+      <nav id="menu" className={`${scrolled ? "sticky" : ""}`}>
         <label for="toggle">
           <span id="btn_menu">
             <FaBars />
@@ -48,6 +62,7 @@ function Navbar() {
             <a
               href="https://www.booking.com/hotel/ma/malaika.fr.html"
               target="_blank"
+              rel="noreferrer"
             >
               <img src={Booking} alt="Lien Booking du Riad Malaïka" />
             </a>
