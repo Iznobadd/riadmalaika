@@ -1,0 +1,1381 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+
+  font-family: "Roboto";
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.modal-content a {
+  background-color: #c1a253;
+  cursor: pointer;
+  font-weight: bold;
+  width: 15%;
+  border: 2px solid #ffffff;
+  color: white;
+  padding: 15px 10px;
+  font-size: 14px !important;
+  display: block;
+  margin: auto;
+}
+.text-center {
+  text-align: center !important;
+}
+.italic {
+  font-style: italic;
+}
+.my-5 {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+.text-justify {
+  text-align: justify !important;
+}
+p {
+  text-align: justify;
+  font-size: 16px !important;
+  line-height: 25px;
+}
+
+h1,
+h2 {
+  font-family: "Allison", sans-serif;
+  font-weight: normal;
+  font-size: 80px;
+}
+
+/* ------------------ MENU ------------------ */
+#mobile-menu {
+  display: none;
+}
+
+nav {
+  margin-top: 20px;
+  width: 100%;
+  position: absolute;
+  z-index: 30;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 72px;
+  position: relative;
+  padding: 10px 0;
+}
+.logo_img img,
+.booking_img img {
+  width: 100px;
+}
+.logo_img {
+  position: absolute;
+}
+.logo_img {
+  left: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+.white {
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.sticky {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  transition: 1s;
+}
+
+/* ------------------ RESERVATION RIAD ------------------ */
+
+.container {
+  margin: 30px 10%;
+}
+
+.res-riad {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.riad-imgs img {
+  width: 492px;
+  height: 327px;
+}
+
+.relative-img {
+  position: relative;
+  z-index: 10;
+}
+
+.absolute-img {
+  margin-top: -54px;
+  margin-left: 86px;
+  z-index: 1;
+}
+
+.riad-description h1 {
+  margin-bottom: 100px;
+  margin-top: 0;
+}
+
+.riad-description h1::after {
+  display: block;
+  height: 3px;
+  width: 13%;
+  background-color: black;
+  content: "";
+  margin-top: 5px;
+}
+
+.riad-description p {
+  margin-bottom: 35px;
+  font-size: 20px;
+}
+
+.riad-description a {
+  padding: 15px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.riad-description a:hover {
+  background-color: #c1a253;
+  color: white;
+}
+
+/* ------------------ BANNER RIAD ------------------ */
+
+.riad-banner {
+  position: relative;
+  width: 100%;
+  height: 417px;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7)),
+    url("../images/riad-banner.jpg") fixed no-repeat;
+  background-size: cover;
+  background-position: 0 80%;
+}
+
+.riad-banner h2 {
+  position: absolute;
+  font-family: "Allison", sans-serif;
+  font-weight: normal;
+  font-size: 80px;
+  top: 0;
+  left: 50%;
+  color: white;
+  text-align: center;
+  transform: translate(-50%, 0);
+  width: 100%;
+}
+
+/* ------------------ RESTAURANT ------------------ */
+
+.restaurant {
+  background-color: #c1a253;
+  padding-bottom: 20px;
+  margin-bottom: 2px;
+}
+
+.restaurant h1,
+.restaurant h2,
+.patio h1,
+.patio h2,
+.salons h1,
+.salons h2,
+.terrasse h1,
+.terrasse h2 {
+  text-align: center;
+}
+#image-slider {
+  position: relative;
+}
+.gif {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  z-index: 20;
+  transform: translate(-50%, -50%);
+}
+
+#image-restaurant,
+#image-patio,
+#image-salons,
+#image-terrasse {
+  margin: auto;
+  max-height: 700px;
+}
+
+/* ------------------ PATIO ------------------ */
+
+.patio {
+  background-color: #232323;
+  padding-bottom: 20px;
+  margin-bottom: 2px;
+}
+
+.patio > * {
+  color: white;
+}
+
+.patio .container,
+.salons .container,
+.terrasse .container {
+  margin-top: 0;
+}
+.patio h1,
+.salons h1,
+.terrasse h1 {
+  margin-top: 0;
+}
+
+.patio h2,
+.salons h2,
+.terrasse h2,
+.restaurant h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+.modal-imgs {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 50px;
+  align-items: center;
+  margin: 50px 0;
+}
+.modal-imgs img {
+  width: 350px;
+}
+
+/* ------------------ SALONS ------------------ */
+
+.salons {
+  background-color: #d9d9d9;
+  padding-bottom: 20px;
+  margin-bottom: 2px;
+}
+
+/* ------------------ TERRASSE ------------------ */
+
+.terrasse {
+  background-color: white;
+  padding-bottom: 20px;
+  margin-bottom: 2px;
+}
+
+/* ------------------ BANNER OFFRES------------------ */
+
+.offres-speciales {
+  background-color: #eae9e5;
+  padding-bottom: 50px;
+}
+.offres-speciales .container {
+  margin-bottom: 0;
+}
+.offre-trait {
+  margin: 2px 0;
+  height: 3px;
+  background-color: #c1a253;
+  width: 100%;
+}
+
+.offre-banner {
+  width: 100%;
+  height: 100px;
+  background-color: #c1a253;
+  position: relative;
+}
+
+.offre-banner h1 {
+  width: 100%;
+  position: absolute;
+  font-family: "Roboto";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+}
+
+/* ------------------ PACK CARD------------------ */
+
+.pack-card {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.pack-title {
+  width: 272px;
+  background-color: white;
+  border: 1px solid black;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -75%);
+}
+
+.pack-title h1 {
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pack {
+  position: relative;
+  width: 46%;
+  margin-bottom: 50px;
+}
+
+.pack img {
+  width: 369px;
+  height: 206px;
+  display: block;
+  margin: auto;
+}
+
+.pack-description {
+  height: auto;
+  width: 369px;
+  min-height: 261px;
+  background-color: #c1a253;
+  margin: auto;
+}
+
+.pack p {
+  padding: 20px;
+  margin: 0;
+  line-height: 153%;
+}
+
+.intro-experiences {
+  border: 4px solid #c1a253;
+  padding: 20px;
+}
+
+.intro-table {
+  border: 4px solid #c1a253;
+  padding: 20px;
+  margin: 0;
+  color: white;
+}
+
+/* ------------------ FOOTER ------------------ */
+
+footer {
+  width: 100%;
+  background-color: #232323;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+}
+
+.logo-footer {
+  position: absolute;
+  right: 0;
+  top: 2%;
+}
+.trip-footer {
+  position: absolute;
+  width: 130px;
+  left: 50px;
+  top: 15%;
+}
+.booking-footer {
+  position: absolute;
+  width: 130px;
+  left: 50px;
+  top: 55%;
+}
+footer i {
+  color: white;
+  padding: 10px;
+  border: 2px solid white;
+  margin: 15px;
+  font-size: 30px;
+}
+.reseaux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer .reseaux-hr::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 68%;
+  background-color: white;
+  text-align: center;
+  margin: 0 50%;
+  transform: translateX(-50%);
+}
+
+footer .content::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 68%;
+  background-color: white;
+  text-align: center;
+  margin: 0 50%;
+  margin-bottom: 0;
+  transform: translateX(-50%);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+  font-family: "Roboto";
+}
+
+.footer-section {
+  width: 300px;
+  color: white;
+  text-align: justify;
+  font-size: 16px;
+  color: #c1a253;
+}
+.footer-services {
+  width: 100px;
+  z-index: 2;
+}
+.footer-services a:hover {
+  font-weight: bold;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 13px !important;
+  color: white;
+  text-align: justify;
+}
+
+footer p {
+  text-align: center;
+  color: #4b4b4b;
+  font-size: 13px !important;
+}
+
+footer .copyright {
+  background-color: #c1a253;
+}
+
+footer .copyright p {
+  color: black;
+  margin: 0;
+}
+
+footer .siret {
+  margin: 5px;
+}
+footer .siret a {
+  color: #4b4b4b;
+  z-index: 3;
+  position: relative;
+}
+footer .siret a:hover {
+  font-weight: bold;
+}
+
+#scrollUp {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 4px;
+}
+
+/* ------------------ CHAMBRES ------------------ */
+
+.chambres-banner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7)),
+    url("../images/hebergement-banner.jpg") fixed no-repeat;
+  background-size: cover;
+  background-position: 0 120%;
+}
+
+.l-chambres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+}
+.l-chambres section {
+  width: 50%;
+}
+.description-chambres {
+  border: 2px solid black;
+  padding: 0 20px;
+  width: 50%;
+  margin: 0 -50px;
+  z-index: 1;
+}
+
+.l-chambres .description-chambres {
+  background-color: #c1a253;
+}
+
+.l-chambres .desc-white {
+  background-color: #f5f5f5;
+}
+
+.description-chambres h2 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.description-chambres span a {
+  color: #c1a253;
+  cursor: pointer;
+}
+
+.l-chambres .description-chambres span a {
+  float: right;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.reverse-chambres .description-chambres span a {
+  color: #c1a253;
+}
+
+#modal-chambre1 .modal-content,
+#modal-chambre2 .modal-content,
+#modal-chambre3 .modal-content,
+#modal-chambre4 .modal-content,
+#modal-chambre5 .modal-content,
+#modal-chambre6 .modal-content {
+  background: rgba(0, 0, 0, 0.8);
+  transition: transform 0.4s, top 0.4s;
+  border: none;
+  color: white;
+}
+
+#pack1,
+#pack2,
+#pack3,
+#pack4 {
+  background: rgba(0, 0, 0, 0.8);
+  transition: transform 0.4s, top 0.4s;
+}
+#chambre1 h2,
+#chambre2 h2,
+#chambre3 h2,
+#chambre4 h2,
+#chambre5 h2,
+#chambre6 h2,
+#pack1 h2,
+#pack2 h2,
+#pack3 h2,
+#pack4 h2 {
+  color: white;
+}
+#chambre1 p,
+#chambre2 p,
+#chambre3 p,
+#chambre4 p,
+#chambre5 p,
+#chambre6 p,
+#pack1 p,
+#pack2 p,
+#pack3 p,
+#pack4 p {
+  color: white;
+}
+.open-popup {
+  visibility: visible !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) scale(1) !important;
+  z-index: 100 !important;
+}
+
+.pack a {
+  cursor: pointer;
+}
+.pack a:hover {
+  font-weight: bold;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#svg {
+  right: 20px;
+  top: 20px;
+  position: absolute;
+  cursor: pointer;
+}
+#svg svg {
+  width: 40px;
+}
+.last-popup {
+  color: #c1a253;
+  margin-bottom: 0;
+}
+.reserver-popup {
+  background: #c1a253;
+  padding: 10px 30px;
+  color: white;
+  float: right;
+  border: 2px solid white;
+}
+
+/* ------------------ RESERVATION CHAMBRES ------------------ */
+
+.reservation-chambres {
+  background: url("../images/reservation-hebergement.jpg") fixed no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding: 60px;
+  padding-top: 0;
+}
+.reservation-table {
+  background: url("../images/reservation-table.jpg") fixed no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding: 60px;
+  padding-top: 0;
+}
+
+.reservation-excursion {
+  background: url("../images/reservation-excursion.jpg") fixed no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding: 60px;
+  padding-top: 0;
+}
+
+.img-contact {
+  background: url("../images/the.jpg") fixed no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding: 60px;
+  padding-top: 0;
+}
+
+.reservation-chambres h1 {
+  text-align: center;
+  margin-top: 0;
+  color: black;
+}
+.container-signature {
+  background-color: #232323;
+  border: 2px solid white;
+}
+.reservation-table h1 {
+  text-align: center;
+  margin-top: 0;
+  color: white;
+}
+.reservation-table p {
+  color: white;
+}
+.reservation-excursion h1 {
+  text-align: center;
+  margin-top: 0;
+  color: black;
+}
+select option {
+  font-family: "Roboto" !important;
+}
+
+/* ------------------ TABLES ------------------ */
+
+.table-banner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7)),
+    url("../images/banner-table.jpeg") fixed no-repeat;
+  background-size: cover;
+  background-position: 0 120%;
+}
+
+.reservation-plat p {
+  width: 100%;
+  font-family: "Allison";
+  font-size: 64px !important;
+  margin: 40px 0;
+}
+.table-banner h2,
+.chambres-banner h2,
+.loisirs-banner h2,
+.contact-banner h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.table_welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+.table_carte {
+  width: 30%;
+}
+.table_carte img {
+  width: 100%;
+}
+.table_description {
+  width: 67%;
+  text-align: justify;
+}
+.table_description p span {
+  font-family: "Allison";
+  font-size: 40px;
+  line-height: 50px;
+}
+
+/* ------------------ TABLES CARTES ------------------ */
+
+.carte {
+  background-color: #c1a253;
+  padding: 20px;
+}
+.all_cartes {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.all_cartes img {
+  width: 100%;
+  margin-bottom: 50px;
+  transition: 0.7s;
+}
+.all_cartes img:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------ LOISIRS ------------------ */
+.loisirs-banner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7)),
+    url("../images/experiences-banner.jpeg") fixed no-repeat;
+  background-size: cover;
+  background-position: 0 120%;
+}
+.loisirs-description h1 {
+  font-size: 40px;
+  margin-top: 0;
+}
+.loisirs-imgs,
+.loisirs-description {
+  width: 50%;
+}
+.loisirs-imgs img {
+  width: 100%;
+}
+.link_contact {
+  text-align: right;
+}
+.link_contact a {
+  color: #c1a253;
+  font-style: italic;
+}
+
+.link_pack {
+  text-align: right;
+  padding-top: 0 !important;
+}
+.link_pack a {
+  font-style: italic;
+  font-size: 14px !important;
+  color: #232323;
+}
+/* ------------------ FORM GENERAL ------------------ */
+.over-gray {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+.contact-form h1 {
+  color: white;
+  text-align: center;
+}
+.contact-form p {
+  color: white;
+}
+.contact-form .subject-input,
+.contact-form .connu-input {
+  width: 49%;
+}
+select option {
+  color: black;
+}
+select {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: white;
+  padding: 15px 10px;
+  font-size: 14px !important;
+}
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  font-weight: bold;
+  opacity: 1;
+  color: white;
+}
+
+nav label,
+#toggle {
+  display: none;
+}
+
+.reservation-chambres form .over-gray,
+#contact .over-gray,
+.reservation-table .over-gray,
+.reservation-excursion form .over-gray {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.name-input,
+.email-input,
+.tel-input {
+  width: 32%;
+}
+.name-input input,
+.email-input input,
+.tel-input input,
+.arrivee-input input,
+.depart-input input,
+.chambres-input select,
+.subject-input input,
+.personnes-input select,
+.heure-input select,
+.connu-input select,
+.date-input input,
+.excursion-input select,
+.message-input textarea {
+  width: 100%;
+  max-width: 100%;
+}
+.home_resp {
+  display: none;
+}
+
+.submit {
+  text-align: right;
+  padding-top: 20px;
+}
+.submit-loisirs {
+  text-align: center;
+  padding-top: 20px;
+}
+.submit-table {
+  background-color: #c1a253;
+  font-weight: bold;
+  width: 15%;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+  cursor: pointer;
+  border: 2px solid black;
+  color: black;
+  font-size: 20px;
+}
+
+#submit {
+  background-color: #c1a253;
+  cursor: pointer;
+  font-weight: bold;
+  width: 15%;
+}
+/* ------------------ FORM CHAMBRES ------------------ */
+
+.reservation-chambres .arrivee-input,
+.reservation-chambres .depart-input,
+.reservation-chambres .chambres-input,
+.reservation-excursion .arrivee-input,
+.reservation-excursion .depart-input,
+.reservation-excursion .excursion-input {
+  width: 32%;
+}
+
+.reservation-chambres .subject-input,
+.reservation-chambres .connu-input,
+.reservation-excursion .subject-input,
+.reservation-excursion .connu-input {
+  width: 49%;
+}
+.message-input {
+  width: 100%;
+}
+.accordion {
+  padding: 20px;
+  border: 4px solid #c1a253;
+}
+
+/* ------------------ FORM TABLE ------------------ */
+form {
+  margin-bottom: 0;
+}
+.reservation-table .arrivee-input,
+.reservation-table .depart-input {
+  width: 49%;
+}
+.reservation-chambres .personnes-input {
+  width: 49%;
+}
+.reservation-table .personnes-input,
+.reservation-table .heure-input,
+.reservation-table .date-input {
+  width: 32%;
+}
+.reservation-table .container {
+  margin-top: 0;
+}
+.infos-cgu {
+  color: #c9c9c9;
+}
+#demande-plat {
+  color: black;
+}
+.infos-cgu p {
+  font-size: 10px !important;
+  line-height: 18px;
+}
+.reservation-signature {
+  background-color: black;
+  padding-bottom: 50px;
+}
+.reservation-entree {
+  background-color: #232323;
+  padding-bottom: 50px;
+}
+.reservation-signature .container,
+.reservation-entree .container,
+.reservation-plat .container,
+.reservation-desserts .container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.reservation-signature h1,
+.reservation-entree h1,
+.reservation-plat h1,
+.reservation-desserts h1 {
+  margin-top: 0;
+  color: white;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+input[type="submit"] {
+  font-size: 17px !important;
+}
+.form-entree {
+  border: 2px solid black !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.cgu-input label {
+  color: white;
+}
+.form-entree,
+.form-plat,
+.form-desserts {
+  background-color: #d9d9d9;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+}
+
+.form-signature {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.half-table {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.half-table label {
+  color: black;
+  padding-left: 5px;
+}
+.half-table input {
+  padding: 15px 5px;
+  width: 50px;
+}
+.demande-speciale {
+  width: 100%;
+}
+.demande-speciale label {
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+.demande-speciale textarea {
+  width: 100%;
+}
+
+.reservation-plat {
+  background-color: #d9d9d9;
+  padding-bottom: 50px;
+}
+.reservation-plat h1,
+.reservation-desserts h1 {
+  color: black;
+}
+.form-plat {
+  background-color: white;
+}
+
+.form-signature .demande-speciale label {
+  color: white;
+}
+.reservation-signature h1 {
+  text-align: center;
+  display: block;
+}
+.nbr-signature {
+  text-align: center;
+  padding: 25px;
+}
+.reservation-signature h2 {
+  color: white;
+  font-size: 50px;
+  margin: 0;
+  padding: 20px;
+  padding-bottom: 0;
+}
+.nbr-signature label {
+  color: white;
+  text-transform: uppercase;
+}
+.nbr-signature input {
+  width: 80px;
+}
+.form-entree input,
+.form-plat input,
+.form-desserts input {
+  border-color: black;
+  color: black;
+}
+.form-plat label,
+.form-desserts label {
+  color: black;
+}
+.form-signature .half-table label {
+  color: white;
+}
+.form-plat .demande-speciale label,
+.form-desserts .demande-speciale label {
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+.form-entree .demande-speciale textarea {
+  color: black;
+}
+.form-entree .demande-speciale textarea,
+.form-plat .demande-speciale textarea,
+.form-desserts .demande-speciale textarea {
+  border-color: black;
+}
+
+.reservation-desserts {
+  background-color: white;
+  padding-bottom: 50px;
+}
+.form-desserts {
+  background-color: #c1a253;
+}
+/* ------------------ CONTACT ------------------ */
+
+.contact-banner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7)),
+    url("../images/contact-banner.jpg") fixed no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.titre-contact {
+  text-align: center;
+}
+
+.p-index {
+  font-weight: bold;
+  text-align: justify;
+}
+
+.postit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+}
+#m-booked-weather-bl250-81452 {
+  margin-bottom: 20px;
+}
+.postit img,
+.postit a {
+  width: 100%;
+}
+.postit a img {
+  width: 100%;
+}
+.nous-contacter .overflow {
+  margin-top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.nous-contacter .container {
+  margin-bottom: 0;
+}
+.nous-contacter {
+  background: no-repeat url("../images/the.jpg");
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+.nous-contacter h1 {
+  text-align: center;
+  margin-top: 0;
+  color: white;
+}
+.nous-contacter input[type="checkbox"] {
+  width: inherit;
+  margin: 0;
+}
+.nous-contacter label {
+  color: white;
+}
+.nous-contacter #submit {
+  background-color: #c1a253;
+  font-weight: bold;
+  width: 20%;
+  float: inherit;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.nous-contacter p {
+  font-size: 15px;
+  color: #c9c9c9;
+  line-height: 25px;
+}
+.nous-contacter p:last-child {
+  margin-bottom: 0;
+  padding-bottom: 60px;
+}
+
+.booking img {
+  height: 44px;
+  position: inherit;
+  margin-right: 15px;
+}
+.tripadvisor img {
+  height: 70px;
+  position: inherit;
+  margin-right: 15px;
+}
+footer i {
+  font-size: 25px;
+}
+.iti {
+  width: 100%;
+}
+.active-menu {
+  color: #c1a253;
+  font-weight: bold;
+}
+.facebook,
+.instagram,
+.tripadvisor,
+.booking {
+  position: relative;
+  z-index: 3;
+}
+
+/* ------------------ FAQ ------------------ */
+.faq h2 {
+  text-align: left;
+  font-size: 70px;
+  margin-bottom: 0;
+}
+.accordion .accordion-item {
+  border-bottom: 1px solid black;
+}
+.accordion .accordion-item button[aria-expanded="true"] {
+  border-bottom: 1px solid #2c2c29;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: black;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #2c2c29;
+  font-weight: bold;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #2c2c29;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded="true"] {
+  color: #2c2c29;
+}
+.accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 40em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.hidden {
+  visibility: hidden;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+  color: black;
+}
+
+.error_form {
+  border: 2px solid red !important;
+}

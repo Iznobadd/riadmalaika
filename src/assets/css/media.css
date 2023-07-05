@@ -1,0 +1,368 @@
+@media screen and (max-width: 1280px) {
+  .riad-imgs img {
+    width: 392px;
+    height: 227px;
+  }
+  .riad-description h1 {
+    margin-bottom: 50px;
+    font-size: 60px;
+  }
+  .riad-description p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* ------------------ MENU ------------------ */
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  nav {
+    height: 53px;
+    margin-top: 0;
+    padding-top: 12px;
+  }
+  .trip-footer,
+  .booking-footer {
+    display: none;
+  }
+  .footer-content {
+    gap: 0;
+  }
+  nav .menu_resp {
+    display: none;
+    flex-direction: column;
+    height: 293px;
+    background: #232323;
+    margin: 0;
+    margin-top: 14px;
+  }
+  .menu_resp li {
+    padding: 20px;
+  }
+  nav .menu_resp a {
+    width: 50%;
+  }
+  nav .menu_resp a:hover {
+    color: #c1a253;
+  }
+  .logo_img,
+  .booking_img {
+    display: none;
+  }
+  .home_resp {
+    display: list-item;
+  }
+  nav label {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 27px;
+    color: white;
+    cursor: pointer;
+  }
+  #toggle:checked + .menu_resp {
+    display: flex;
+  }
+  #mobile-menu span {
+    position: fixed;
+    right: 0;
+    margin-right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .table_description p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .table_description p span {
+    line-height: 30px;
+    font-size: 25px;
+  }
+
+  /* ------------------ CHAMBRES ------------------ */
+  .l-chambres {
+    flex-wrap: wrap;
+  }
+  .description-chambres {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .l-chambres section {
+    width: 100%;
+  }
+  .reverse-chambres {
+    flex-direction: column-reverse;
+  }
+
+  #chambre1,
+  #chambre2,
+  #chambre3,
+  #chambre4,
+  #chambre5,
+  #chambre6 {
+    width: 100%;
+  }
+
+  #chambre1 h2,
+  #chambre2 h2,
+  #chambre3 h2,
+  #chambre4 h2,
+  #chambre5 h2,
+  #chambre6 h2 {
+    margin: 10px 0;
+    font-size: 35px;
+  }
+
+  #chambre1 p,
+  #chambre2 p,
+  #chambre3 p,
+  #chambre4 p,
+  #chambre5 p,
+  #chambre6 p {
+    font-size: 14px;
+  }
+
+  .reserver-popup {
+    float: inherit;
+    display: block;
+    width: 143px;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .loisirs-imgs,
+  .loisirs-description {
+    width: 100%;
+  }
+
+  .postit {
+    flex-wrap: wrap;
+  }
+  .postit img {
+    width: 49%;
+  }
+  /* ------------------ RESERVATION RIAD ------------------ */
+  .res-riad {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .riad-description h1 {
+    text-align: center;
+  }
+  .riad-description h1::after {
+    margin: 0 50%;
+    transform: translateX(-90%);
+  }
+  .riad-description a {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    display: block;
+  }
+
+  .riad-imgs:nth-of-type(2) {
+    order: -1;
+  }
+
+  /* ------------------ BANNER RIAD ------------------ */
+
+  .riad-banner {
+    height: 300px;
+  }
+  .riad-banner h2 {
+    font-size: 60px;
+  }
+
+  .all_cartes {
+    flex-wrap: wrap;
+  }
+  .all_cartes a {
+    width: calc(50% - 20px);
+  }
+  /* ------------------ FORMS ------------------ */
+  .name-input,
+  .email-input,
+  .tel-input,
+  .reservation-table .arrivee-input,
+  .reservation-table .depart-input,
+  .reservation-table .personnes-input,
+  .reservation-table .heure-input,
+  .reservation-chambres .arrivee-input,
+  .reservation-chambres .depart-input,
+  .reservation-chambres .chambres-input,
+  .reservation-chambres .subject-input,
+  .reservation-chambres .connu-input,
+  .reservation-excursion .arrivee-input,
+  .reservation-excursion .depart-input,
+  .reservation-excursion .excursion-input,
+  .reservation-excursion .subject-input,
+  .reservation-excursion .connu-input {
+    width: 47%;
+  }
+
+  .reservation-table .date-input {
+    width: 100%;
+  }
+
+  .half-table {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .half-table label,
+  .demande-speciale label {
+    text-align: center;
+  }
+  .pack {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .riad-imgs img {
+    width: 80%;
+    height: auto;
+  }
+  .img-contact {
+    padding: 30px 2%;
+  }
+
+  .contact-form .subject-input,
+  .contact-form .connu-input {
+    width: 100%;
+  }
+  .offre-banner h1 {
+    font-size: 30px;
+  }
+  .titre-contact {
+    font-size: 42px;
+  }
+  .postit {
+    gap: 20px;
+  }
+  .postit img {
+    width: 100%;
+  }
+  .pack,
+  .pack img,
+  .pack .pack-description {
+    max-width: 330px;
+  }
+  .pack {
+    margin-bottom: 50px;
+  }
+  .footer-section,
+  .footer-section p {
+    text-align: center;
+  }
+  .footer-section {
+    width: 80%;
+  }
+  .riad-description h1,
+  .restaurant h1,
+  .patio h1,
+  .salons h1,
+  .terrasse h1 {
+    font-size: 45px;
+  }
+  .riad-banner {
+    height: 225px;
+  }
+  .riad-banner h2 {
+    font-size: 42px;
+  }
+  p {
+    font-size: 16px !important;
+    line-height: 22px;
+  }
+  .patio h2,
+  .salons h2,
+  .terrasse h2 {
+    font-size: 27px;
+  }
+  #scrollUp img {
+    width: 80%;
+  }
+  .table_carte {
+    width: 100%;
+  }
+  .table_description {
+    width: 100%;
+  }
+  .all_cartes a {
+    width: 100%;
+  }
+  .reservation-chambres,
+  .reservation-excursion {
+    padding: 0;
+  }
+  .reservation-chambres .container,
+  .reservation-excursion .container {
+    margin: 30px 2%;
+  }
+  .name-input,
+  .email-input,
+  .tel-input,
+  .reservation-table .arrivee-input,
+  .reservation-table .depart-input,
+  .reservation-table .personnes-input,
+  .reservation-table .heure-input,
+  .reservation-chambres .arrivee-input,
+  .reservation-chambres .depart-input,
+  .reservation-chambres .chambres-input,
+  .reservation-chambres .subject-input,
+  .reservation-chambres .connu-input,
+  .reservation-excursion .arrivee-input,
+  .reservation-excursion .depart-input,
+  .reservation-excursion .excursion-input,
+  .reservation-excursion .subject-input,
+  .reservation-excursion .connu-input {
+    width: 100%;
+  }
+  #submit {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .reservation-table .container {
+    margin: 0;
+  }
+  .reservation-table {
+    padding: 50px 10px;
+  }
+  .reservation-table h1,
+  .reservation-entree h1,
+  .reservation-plat h1,
+  .reservation-desserts h1 {
+    font-size: 60px;
+  }
+  .half-table input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .submit-table {
+    width: 33%;
+    font-size: 17px;
+  }
+  .table-banner h2 {
+    font-size: 60px;
+  }
+  .half-table label,
+  .demande-speciale label {
+    text-align: center;
+    font-size: 13px;
+  }
+  #image-restaurant,
+  #image-patio,
+  #image-salons,
+  #image-terrasse {
+    margin: auto;
+    max-height: 200px;
+  }
+}
