@@ -6,14 +6,14 @@ import Salon3 from "../../assets/images/salon3.jpg";
 import Salon4 from "../../assets/images/salon4.jpg";
 import Salon5 from "../../assets/images/salon5.jpg";
 import Salon6 from "../../assets/images/salon6.jpg";
-
+import { Zoom } from "react-awesome-reveal";
 function Terrasse() {
   return (
     <div class="terrasse">
       <div class="container">
-        <h1 data-aos="zoom-in" data-aos-duration="1500">
-          La Terrasse
-        </h1>
+        <Zoom direction="top" duration={1500}>
+          <h1>La Terrasse</h1>
+        </Zoom>
         <section id="image-terrasse">
           <Splide
             options={{

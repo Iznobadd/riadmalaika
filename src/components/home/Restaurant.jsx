@@ -8,12 +8,14 @@ import Table5 from "../../assets/images/table5.jpg";
 import Table6 from "../../assets/images/table6.jpg";
 import Table7 from "../../assets/images/table7.jpg";
 import Table8 from "../../assets/images/table8.jpg";
-
+import { Zoom } from "react-awesome-reveal";
 function Restaurant() {
   return (
     <div className="restaurant">
       <div className="container">
-        <h1>Le Restaurant</h1>
+        <Zoom direction="top" duration={1500}>
+          <h1>Le Restaurant</h1>
+        </Zoom>
         <section id="image-restaurant">
           <Splide
             options={{

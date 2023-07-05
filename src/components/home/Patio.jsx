@@ -6,12 +6,14 @@ import Patio3 from "../../assets/images/patio3.jpg";
 import Patio4 from "../../assets/images/patio4.jpg";
 import Patio5 from "../../assets/images/patio5.jpg";
 import Patio6 from "../../assets/images/patio6.jpg";
-
+import { Zoom } from "react-awesome-reveal";
 function Patio() {
   return (
     <div className="patio">
       <div className="container">
-        <h1>Le Patio</h1>
+        <Zoom direction="top" duration={1500}>
+          <h1>Le Patio</h1>
+        </Zoom>
         <section id="image-patio">
           <Splide
             options={{
