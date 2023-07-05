@@ -228,6 +228,7 @@ nav a:hover {
 #image-terrasse {
   margin: auto;
   max-height: 700px;
+  max-width: 60vw;
 }
 
 /* ------------------ PATIO ------------------ */
