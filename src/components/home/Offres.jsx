@@ -3,7 +3,7 @@ import Culture from "../../assets/images/pack-culture.png";
 import BienEtre from "../../assets/images/pack-emotion.png";
 import Decouverte from "../../assets/images/pack-decouverte.png";
 import Gastronomie from "../../assets/images/pack-gastro.png";
-import { Fade, Flip, Roll } from "react-awesome-reveal";
+import { Fade, Flip } from "react-awesome-reveal";
 function Offres() {
   return (
     <div className="offres-speciales">

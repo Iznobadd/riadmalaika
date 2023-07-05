@@ -1,5 +1,5 @@
 import "@splidejs/react-splide/css";
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 import React from "react";
 import Slider1 from "../../assets/images/slider1.jpg";
 import Reception from "../../assets/images/reception.jpg";

@@ -538,6 +538,7 @@ footer .siret a:hover {
 }
 .l-chambres section {
   width: 50%;
+  max-width: 519px;
 }
 .description-chambres {
   border: 2px solid black;

@@ -8,8 +8,12 @@ import Patio from "../components/home/Patio";
 import Salon from "../components/home/Salon";
 import Terrasse from "../components/home/Terrasse";
 import Offres from "../components/home/Offres";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    document.title = "Accueil | Riad Malaika";
+  }, []);
   return (
     <div>
       <Slider />

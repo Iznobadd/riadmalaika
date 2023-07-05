@@ -45,22 +45,38 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/table" title="Riad Malaika">
+            <Link
+              to="/table"
+              title="Riad Malaika"
+              className={`${pathname === "/table" ? "active-menu" : ""}`}
+            >
               GASTRONOMIE
             </Link>
           </li>
           <li>
-            <Link to="/chambres" title="Riad Malaika">
+            <Link
+              to="/chambres"
+              title="Riad Malaika"
+              className={`${pathname === "/chambres" ? "active-menu" : ""}`}
+            >
               HÉBERGEMENT
             </Link>
           </li>
           <li>
-            <Link to="/loisirs" title="Riad Malaika">
+            <Link
+              to="/loisirs"
+              title="Riad Malaika"
+              className={`${pathname === "/loisirs" ? "active-menu" : ""}`}
+            >
               EXPÉRIENCES
             </Link>
           </li>
           <li>
-            <Link to="/contact" title="Riad Malaika">
+            <Link
+              to="/contact"
+              title="Riad Malaika"
+              className={`${pathname === "/contact" ? "active-menu" : ""}`}
+            >
               CONTACT
             </Link>
           </li>
