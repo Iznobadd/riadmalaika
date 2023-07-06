@@ -84,12 +84,7 @@ function ListChambres() {
       </div>
 
       <div className="l-chambres reverse-chambres">
-        <div
-          className="description-chambres desc-white"
-          data-aos="fade-right"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="1200"
-        >
+        <div className="description-chambres desc-white">
           <h2>Chambres Double Confort</h2>
           <p>
             Au 1er ou au 2eme étage du riad, nos chambres Confort sont équipées
@@ -104,94 +99,93 @@ function ListChambres() {
         </div>
 
         <section id="chambres2-slider">
-          <Splide
-            options={{
-              type: "fade",
-              rewind: true,
-              autoplay: true,
-              cover: true,
-              height: "346px",
-              width: "519px",
-              pauseOnHover: false,
-              pagination: false,
-              arrows: false,
-              speed: 1500,
-              drag: false,
-              lazyLoad: "nearby",
-            }}
-          >
-            <SplideSlide>
-              <img
-                src={Confort1}
-                data-splide-lazy={Confort1}
-                alt="chambres confort au Riad Malaïka"
-              />
-            </SplideSlide>
-            <SplideSlide>
-              <img
-                src={Confort2}
-                data-splide-lazy={Confort2}
-                alt="chambres confort au Riad Malaïka"
-              />
-            </SplideSlide>
-            <SplideSlide>
-              <img
-                src={Confort3}
-                data-splide-lazy={Confort3}
-                alt="chambres confort au Riad Malaïka"
-              />
-            </SplideSlide>
-          </Splide>
+          <Slide direction="left" duration={1500}>
+            <Splide
+              options={{
+                type: "fade",
+                rewind: true,
+                autoplay: true,
+                cover: true,
+                height: "346px",
+                width: "519px",
+                pauseOnHover: false,
+                pagination: false,
+                arrows: false,
+                speed: 1500,
+                drag: false,
+                lazyLoad: "nearby",
+              }}
+            >
+              <SplideSlide>
+                <img
+                  src={Confort1}
+                  data-splide-lazy={Confort1}
+                  alt="chambres confort au Riad Malaïka"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <img
+                  src={Confort2}
+                  data-splide-lazy={Confort2}
+                  alt="chambres confort au Riad Malaïka"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <img
+                  src={Confort3}
+                  data-splide-lazy={Confort3}
+                  alt="chambres confort au Riad Malaïka"
+                />
+              </SplideSlide>
+            </Splide>
+          </Slide>
         </section>
       </div>
 
       <div className="l-chambres">
         <section id="chambres3-slider">
-          <Splide
-            options={{
-              type: "fade",
-              rewind: true,
-              autoplay: true,
-              cover: true,
-              height: "346px",
-              width: "519px",
-              pauseOnHover: false,
-              pagination: false,
-              arrows: false,
-              speed: 1500,
-              drag: false,
-              lazyLoad: "nearby",
-            }}
-          >
-            <SplideSlide>
-              <img
-                src={Superieur1}
-                data-splide-lazy={Superieur1}
-                alt="chambres supérieurs au Riad Malaïka"
-              />
-            </SplideSlide>
-            <SplideSlide>
-              <img
-                src={Superieur2}
-                data-splide-lazy={Superieur2}
-                alt="chambres supérieurs au Riad Malaïka"
-              />
-            </SplideSlide>
-            <SplideSlide>
-              <img
-                src={Superieur3}
-                data-splide-lazy={Superieur3}
-                alt="chambres supérieurs au Riad Malaïka"
-              />
-            </SplideSlide>
-          </Splide>
+          <Slide direction="left" duration={1500}>
+            <Splide
+              options={{
+                type: "fade",
+                rewind: true,
+                autoplay: true,
+                cover: true,
+                height: "346px",
+                width: "519px",
+                pauseOnHover: false,
+                pagination: false,
+                arrows: false,
+                speed: 1500,
+                drag: false,
+                lazyLoad: "nearby",
+              }}
+            >
+              <SplideSlide>
+                <img
+                  src={Superieur1}
+                  data-splide-lazy={Superieur1}
+                  alt="chambres supérieurs au Riad Malaïka"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <img
+                  src={Superieur2}
+                  data-splide-lazy={Superieur2}
+                  alt="chambres supérieurs au Riad Malaïka"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <img
+                  src={Superieur3}
+                  data-splide-lazy={Superieur3}
+                  alt="chambres supérieurs au Riad Malaïka"
+                />
+              </SplideSlide>
+            </Splide>
+          </Slide>
         </section>
-        <div
-          className="description-chambres"
-          data-aos="fade-left"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="1200"
-        >
+        <div className="description-chambres">
           <h2>Chambres Double supérieures</h2>
           <p>
             Entourés d’objets chinés dans les souks de la région vous y
@@ -208,12 +202,7 @@ function ListChambres() {
       </div>
 
       <div className="l-chambres reverse-chambres">
-        <div
-          className="description-chambres desc-white"
-          data-aos="fade-right"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="1200"
-        >
+        <div className="description-chambres desc-white">
           <h2>Junior Suite</h2>
           <p>
             Passer du temps isolé du monde, prendre son petit-déjeuner, boire un
@@ -228,101 +217,93 @@ function ListChambres() {
         </div>
 
         <section id="chambres4-slider">
-          <Splide
-            options={{
-              type: "fade",
-              rewind: true,
-              autoplay: true,
-              cover: true,
-              height: "346px",
-              width: "519px",
-              pauseOnHover: false,
-              pagination: false,
-              arrows: false,
-              speed: 1500,
-              drag: false,
-              lazyLoad: "nearby",
-            }}
-          >
-            <SplideSlide>
-              <img
-                src={Junior1}
-                data-splide-lazy={Junior1}
-                alt="chambres Junior au Riad Malaïka"
-              />
-            </SplideSlide>
-            <SplideSlide>
-              <img
-                src={Junior2}
-                data-splide-lazy={Junior2}
-                alt="chambres Junior au Riad Malaïka"
-              />
-            </SplideSlide>
-            <SplideSlide>
-              <img
-                src={Junior3}
-                data-splide-lazy={Junior3}
-                alt="chambres Junior au Riad Malaïka"
-              />
-            </SplideSlide>
-          </Splide>
+          <Slide direction="left" duration={1500}>
+            <Splide
+              options={{
+                type: "fade",
+                rewind: true,
+                autoplay: true,
+                cover: true,
+                height: "346px",
+                width: "519px",
+                pauseOnHover: false,
+                pagination: false,
+                arrows: false,
+                speed: 1500,
+                drag: false,
+                lazyLoad: "nearby",
+              }}
+            >
+              <SplideSlide>
+                <img
+                  src={Junior1}
+                  data-splide-lazy={Junior1}
+                  alt="chambres Junior au Riad Malaïka"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <img
+                  src={Junior2}
+                  data-splide-lazy={Junior2}
+                  alt="chambres Junior au Riad Malaïka"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <img
+                  src={Junior3}
+                  data-splide-lazy={Junior3}
+                  alt="chambres Junior au Riad Malaïka"
+                />
+              </SplideSlide>
+            </Splide>
+          </Slide>
         </section>
       </div>
 
       <div className="l-chambres">
-        <section
-          id="chambres5-slider"
-          className="splide"
-          aria-label="Beautiful Images"
-          data-aos="fade-right"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="1200"
-        >
-          <Splide
-            options={{
-              type: "fade",
-              rewind: true,
-              autoplay: true,
-              cover: true,
-              height: "346px",
-              width: "519px",
-              pauseOnHover: false,
-              pagination: false,
-              arrows: false,
-              speed: 1500,
-              drag: false,
-              lazyLoad: "nearby",
-            }}
-          >
-            <SplideSlide>
-              <img
-                src={Twin1}
-                data-splide-lazy={Twin1}
-                alt="chambres Twin standard au Riad Malaïka"
-              />
-            </SplideSlide>
-            <SplideSlide>
-              <img
-                src={Twin2}
-                data-splide-lazy={Twin2}
-                alt="chambres Twin standard au Riad Malaïka"
-              />
-            </SplideSlide>
-            <SplideSlide>
-              <img
-                src={Twin3}
-                data-splide-lazy={Twin3}
-                alt="chambres Twin standard au Riad Malaïka"
-              />
-            </SplideSlide>
-          </Splide>
+        <section id="chambres5-slider">
+          <Slide direction="left" duration={1500}>
+            <Splide
+              options={{
+                type: "fade",
+                rewind: true,
+                autoplay: true,
+                cover: true,
+                height: "346px",
+                width: "519px",
+                pauseOnHover: false,
+                pagination: false,
+                arrows: false,
+                speed: 1500,
+                drag: false,
+                lazyLoad: "nearby",
+              }}
+            >
+              <SplideSlide>
+                <img
+                  src={Twin1}
+                  data-splide-lazy={Twin1}
+                  alt="chambres Twin standard au Riad Malaïka"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <img
+                  src={Twin2}
+                  data-splide-lazy={Twin2}
+                  alt="chambres Twin standard au Riad Malaïka"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <img
+                  src={Twin3}
+                  data-splide-lazy={Twin3}
+                  alt="chambres Twin standard au Riad Malaïka"
+                />
+              </SplideSlide>
+            </Splide>
+          </Slide>
         </section>
-        <div
-          className="description-chambres"
-          data-aos="fade-left"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="1200"
-        >
+        <div className="description-chambres">
           <h2>Chambre Twin Standard</h2>
           <p>
             Comme toutes les chambres du Riad Malaïka, la chambre Twin Standard
@@ -339,12 +320,7 @@ function ListChambres() {
       </div>
 
       <div className="l-chambres reverse-chambres">
-        <div
-          className="description-chambres desc-white"
-          data-aos="fade-right"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="1200"
-        >
+        <div className="description-chambres desc-white">
           <h2>Chambre Twin Supérieure</h2>
           <p>
             Une véritable invitation au voyage grâce au décor typiquement
@@ -360,44 +336,46 @@ function ListChambres() {
         </div>
 
         <section id="chambres6-slider">
-          <Splide
-            options={{
-              type: "fade",
-              rewind: true,
-              autoplay: true,
-              cover: true,
-              height: "346px",
-              width: "519px",
-              pauseOnHover: false,
-              pagination: false,
-              arrows: false,
-              speed: 1500,
-              drag: false,
-              lazyLoad: "nearby",
-            }}
-          >
-            <SplideSlide>
-              <img
-                src={TwinSup1}
-                data-splide-lazy={TwinSup1}
-                alt="chambres Twin supérieurs au Riad Malaïka"
-              />
-            </SplideSlide>
-            <SplideSlide>
-              <img
-                src={TwinSup2}
-                data-splide-lazy={TwinSup2}
-                alt="chambres Twin supérieurs au Riad Malaïka"
-              />
-            </SplideSlide>
-            <SplideSlide>
-              <img
-                src={TwinSup3}
-                data-splide-lazy={TwinSup3}
-                alt="chambres Twin supérieurs au Riad Malaïka"
-              />
-            </SplideSlide>
-          </Splide>
+          <Slide direction="left" duration={1500}>
+            <Splide
+              options={{
+                type: "fade",
+                rewind: true,
+                autoplay: true,
+                cover: true,
+                height: "346px",
+                width: "519px",
+                pauseOnHover: false,
+                pagination: false,
+                arrows: false,
+                speed: 1500,
+                drag: false,
+                lazyLoad: "nearby",
+              }}
+            >
+              <SplideSlide>
+                <img
+                  src={TwinSup1}
+                  data-splide-lazy={TwinSup1}
+                  alt="chambres Twin supérieurs au Riad Malaïka"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <img
+                  src={TwinSup2}
+                  data-splide-lazy={TwinSup2}
+                  alt="chambres Twin supérieurs au Riad Malaïka"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <img
+                  src={TwinSup3}
+                  data-splide-lazy={TwinSup3}
+                  alt="chambres Twin supérieurs au Riad Malaïka"
+                />
+              </SplideSlide>
+            </Splide>
+          </Slide>
         </section>
       </div>
     </div>
