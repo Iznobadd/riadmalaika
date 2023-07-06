@@ -15,7 +15,7 @@ a {
   text-decoration: none;
   color: black;
 }
-.modal-content a {
+.modal_reservation {
   background-color: #c1a253;
   cursor: pointer;
   font-weight: bold;
@@ -405,6 +405,12 @@ footer {
   right: 0;
   top: 2%;
 }
+.custom-modal {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 4px;
+  padding: 50px;
+  margin: 50px;
+}
 .trip-footer {
   position: absolute;
   width: 130px;
@@ -539,13 +545,14 @@ footer .siret a:hover {
 .l-chambres section {
   width: 50%;
   max-width: 519px;
+  z-index: -1;
 }
 .description-chambres {
   border: 2px solid black;
   padding: 0 20px;
   width: 50%;
   margin: 0 -50px;
-  z-index: 1;
+  z-index: 0;
 }
 
 .l-chambres .description-chambres {
@@ -652,12 +659,17 @@ footer .siret a:hover {
   border: 1px solid #888;
   width: 80%;
 }
+.modal-chambres {
+  color: white !important;
+  padding: 50px;
+}
 
 .close {
-  color: #aaa;
+  color: white;
   float: right;
-  font-size: 28px;
+  font-size: 50px;
   font-weight: bold;
+  margin-right: 50px;
 }
 
 .close:hover,

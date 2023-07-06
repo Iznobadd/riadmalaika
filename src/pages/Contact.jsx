@@ -1,11 +1,19 @@
 import React from "react";
+import PostIt from "../components/contact/PostIt";
+import Faq from "../components/contact/Faq";
+import { useEffect } from "react";
 
 function Contact() {
+  useEffect(() => {
+    document.title = "Nous contacter | Riad Malaika";
+  }, []);
   return (
     <>
-      <div class="contact-banner">
+      <div className="contact-banner">
         <h2>Contact</h2>
       </div>
+      <PostIt />
+      <Faq />
     </>
   );
 }

@@ -19,9 +19,29 @@ import TwinSup2 from "../../assets/images/twin-sup2.jpg";
 import TwinSup3 from "../../assets/images/twin-sup3.jpg";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { Slide } from "react-awesome-reveal";
+import ModalComponent from "./ModalComponent";
+import { useState } from "react";
 function ListChambres() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [buttonId, setButtonId] = useState("");
+
+  const openModal = (id, event) => {
+    event.preventDefault();
+    setButtonId(id);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
   return (
     <div className="container">
+      <ModalComponent
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        buttonId={buttonId}
+      />
       <div className="l-chambres">
         <section id="chambres1-slider">
           <Slide direction="left" duration={1500}>
@@ -75,7 +95,11 @@ function ListChambres() {
               dans une atmosphère sobre et dépaysante...
             </p>
             <span>
-              <a href="./" id="modal-chambre1-btn">
+              <a
+                href="./"
+                id="modal-chambre1-btn"
+                onClick={(event) => openModal("modal-chambre1-btn", event)}
+              >
                 Plus d'infos
               </a>
             </span>
@@ -92,7 +116,11 @@ function ListChambres() {
             donnent sur le patio et vous invitent à la détente...
           </p>
           <span>
-            <a href="./" id="modal-chambre2-btn">
+            <a
+              href="./"
+              id="modal-chambre2-btn"
+              onClick={(event) => openModal("modal-chambre2-btn", event)}
+            >
               Plus d'infos
             </a>
           </span>
@@ -194,7 +222,11 @@ function ListChambres() {
             un espace agréable pour décompresser...
           </p>
           <span>
-            <a href="./" id="modal-chambre3-btn">
+            <a
+              href="./"
+              id="modal-chambre3-btn"
+              onClick={(event) => openModal("modal-chambre3-btn", event)}
+            >
               Plus d'infos
             </a>
           </span>
@@ -210,7 +242,11 @@ function ListChambres() {
             terrasse...
           </p>
           <span>
-            <a href="./" id="modal-chambre4-btn">
+            <a
+              href="./"
+              id="modal-chambre4-btn"
+              onClick={(event) => openModal("modal-chambre4-btn", event)}
+            >
               Plus d'infos
             </a>
           </span>
@@ -312,7 +348,11 @@ function ListChambres() {
             au charme unique possède sa salle de bain privative...
           </p>
           <span>
-            <a href="./" id="modal-chambre5-btn">
+            <a
+              href="./"
+              id="modal-chambre5-btn"
+              onClick={(event) => openModal("modal-chambre5-btn", event)}
+            >
               Plus d'infos
             </a>
           </span>
@@ -329,7 +369,11 @@ function ListChambres() {
             d’objets locaux plein de charme...
           </p>
           <span>
-            <a href="./" id="modal-chambre6-btn">
+            <a
+              href="./"
+              id="modal-chambre6-btn"
+              onClick={(event) => openModal("modal-chambre6-btn", event)}
+            >
               Plus d'infos
             </a>
           </span>
