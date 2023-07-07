@@ -2,13 +2,14 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
-
+import emailjs from "emailjs-com";
 function ContactForm() {
   const {
     register,
     handleSubmit,
     formState: { errors },
     setError,
+    reset,
   } = useForm();
 
   const onSubmit = (data) => {
@@ -25,7 +26,26 @@ function ContactForm() {
       toast.error("Veuillez remplir les champs obligatoires");
       return;
     }
-    toast.success("Votre message a bien été envoyé");
+    sendEmail(data);
+  };
+
+  const sendEmail = (data) => {
+    emailjs
+      .send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_CONTACT_ID,
+        data,
+        process.env.REACT_APP_USER_ID
+      )
+      .then((result) => {
+        console.log(result.text);
+        toast.success("Votre message a bien été envoyé");
+        reset();
+      })
+      .catch((error) => {
+        console.log(error.text);
+        toast.error("Erreur lors de l'envoi du formulaire");
+      });
   };
 
   const validateData = (data) => {
