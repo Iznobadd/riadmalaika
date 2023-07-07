@@ -932,11 +932,14 @@ nav label,
 .tel-input {
   width: 32%;
 }
+.depart-input input,
+.arrivee-input input {
+  width: 200%;
+  max-width: 173%;
+}
 .name-input input,
 .email-input input,
 .tel-input input,
-.arrivee-input input,
-.depart-input input,
 .chambres-input select,
 .subject-input input,
 .personnes-input select,

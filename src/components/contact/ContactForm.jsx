@@ -39,7 +39,9 @@ function ContactForm() {
       )
       .then((result) => {
         console.log(result.text);
-        toast.success("Votre message a bien été envoyé");
+        toast.success(
+          "Votre demande a bien été pris en compte et nous allons revenir vers vous au plus vite."
+        );
         reset();
       })
       .catch((error) => {
@@ -58,7 +60,7 @@ function ContactForm() {
       "sujet",
       "connuMalaika",
       "message",
-      "cgu", // Ajout de la case à cocher (checkbox)
+      "cgu",
     ];
 
     requiredFields.forEach((field) => {
