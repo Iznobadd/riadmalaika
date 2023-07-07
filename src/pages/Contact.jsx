@@ -2,6 +2,7 @@ import React from "react";
 import PostIt from "../components/contact/PostIt";
 import Faq from "../components/contact/Faq";
 import { useEffect } from "react";
+import ContactForm from "../components/contact/ContactForm";
 
 function Contact() {
   useEffect(() => {
@@ -14,6 +15,7 @@ function Contact() {
       </div>
       <PostIt />
       <Faq />
+      <ContactForm />
     </>
   );
 }

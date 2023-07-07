@@ -510,7 +510,7 @@ footer .siret {
 }
 footer .siret a {
   color: #4b4b4b;
-  z-index: 3;
+  z-index: 0;
   position: relative;
 }
 footer .siret a:hover {
@@ -1288,7 +1288,7 @@ footer i {
 .tripadvisor,
 .booking {
   position: relative;
-  z-index: 3;
+  z-index: 0;
 }
 
 /* ------------------ FAQ ------------------ */
