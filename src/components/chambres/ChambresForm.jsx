@@ -1,15 +1,15 @@
 import React from "react";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import "react-datepicker/dist/react-datepicker.css";
 import emailjs from "emailjs-com";
 import DatePicker from "react-datepicker";
-import { useState } from "react";
+
 function ChambresForm() {
-  const [startDate, setStartDate] = useState(new Date());
   const {
     register,
+    control,
     handleSubmit,
     formState: { errors },
     setError,
@@ -63,6 +63,8 @@ function ChambresForm() {
       "chambre",
       "personnes",
       "connuMalaika",
+      "arrivee",
+      "depart",
     ];
 
     requiredFields.forEach((field) => {
@@ -72,6 +74,7 @@ function ChambresForm() {
     });
     return error;
   };
+
   return (
     <>
       <ToastContainer />
@@ -113,26 +116,36 @@ function ChambresForm() {
             />
           </div>
           <div className="arrivee-input">
-            <DatePicker
-              id="dateArriveeId"
-              placeholderText="DATE D'ARRIVÉE*"
+            <Controller
+              control={control}
               name="arrivee"
-              selected={startDate}
-              onChange={(date) => setStartDate(date)}
-              className={`${errors.arrivee ? "error_form" : ""}`}
-              {...register("arrivee")}
+              render={({ field }) => (
+                <DatePicker
+                  id="dateArriveeId"
+                  placeholderText="DATE D'ARRIVÉE*"
+                  selected={field.value}
+                  onChange={(date) => field.onChange(date)}
+                  className={`${errors.arrivee ? "error_form" : ""}`}
+                  dateFormat={"dd/MM/yyyy"}
+                />
+              )}
             />
           </div>
 
           <div className="depart-input">
-            <DatePicker
-              id="dateDepartId"
-              placeholderText="DATE DE DÉPART*"
+            <Controller
+              control={control}
               name="depart"
-              selected={startDate}
-              onChange={(date) => setStartDate(date)}
-              className={`${errors.depart ? "error_form" : ""}`}
-              {...register("depart")}
+              render={({ field }) => (
+                <DatePicker
+                  id="dateDepartId"
+                  placeholderText="DATE DE DÉPART*"
+                  selected={field.value}
+                  onChange={(date) => field.onChange(date)}
+                  className={`${errors.depart ? "error_form" : ""}`}
+                  dateFormat={"dd/MM/yyyy"}
+                />
+              )}
             />
           </div>
           <div className="chambres-input">
@@ -160,7 +173,6 @@ function ChambresForm() {
               {...register("personnes")}
             >
               <option value="">NOMBRE DE PERSONNES*</option>
-
               <option>1</option>
             </select>
           </div>
