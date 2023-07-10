@@ -5,43 +5,53 @@
       "options": [
         {
           "id": "eminces-maroc",
-          "label": "ÉMINCÉS TOMATES, OIGNONS, POIVRONS FAÇON MAROCAINE"
+          "label": "ÉMINCÉS TOMATES, OIGNONS, POIVRONS FAÇON MAROCAINE",
+          "signature": false
         },
         {
           "id": "soupe-harrira",
-          "label": "HARRIRA, SOUPE TRADITIONNELLE MAROCAINE DU RAMADAN"
+          "label": "HARRIRA, SOUPE TRADITIONNELLE MAROCAINE DU RAMADAN",
+          "signature": false
         },
         {
           "id": "zaalouk",
-          "label": "ZAALOUK D’AUBERGINES & TOMATES CONFITES"
+          "label": "ZAALOUK D’AUBERGINES & TOMATES CONFITES",
+          "signature": false
         },
         {
           "id": "falafels",
-          "label": "FALAFELS SAUCE TAHINA"
+          "label": "FALAFELS SAUCE TAHINA",
+          "signature": false
         },
         {
           "id": "millefeuille",
-          "label": "FEUILLES À FEUILLES DE POIVRONS & D'AUBERGINES"
+          "label": "FEUILLES À FEUILLES DE POIVRONS & D'AUBERGINES",
+          "signature": false
         },
         {
           "id": "tartare-tomate",
-          "label": "TARTARE DE TOMATES & DUO DE TAPENADES"
+          "label": "TARTARE DE TOMATES & DUO DE TAPENADES",
+          "signature": false
         },
         {
           "id": "mer-souiris",
-          "label": "FRUITS DE MER SOUIRIS EN SALADE"
+          "label": "FRUITS DE MER SOUIRIS EN SALADE",
+          "signature": false
         },
         {
           "id": "gambas-kounafa",
-          "label": "GAMBAS À L'ASIATIQUE EN CROUSTILLANT DE KOUNAFA"
+          "label": "GAMBAS À L'ASIATIQUE EN CROUSTILLANT DE KOUNAFA",
+          "signature": true
         },
         {
           "id": "soupe-poissons",
-          "label": "SOUPE DE POISSONS DE L'ATLANTIQUE"
+          "label": "SOUPE DE POISSONS DE L'ATLANTIQUE",
+          "signature": true
         },
         {
           "id": "pastilla",
-          "label": "PASTILLA AU FOIE GRAS"
+          "label": "PASTILLA AU FOIE GRAS",
+          "signature": true
         }
       ]
     },
@@ -50,95 +60,118 @@
       "options": [
         {
           "id": "pastilla-marche",
-          "label": "PASTILLA AUX LÉGUMES DU MARCHÉ"
+          "label": "PASTILLA AUX LÉGUMES DU MARCHÉ",
+          "signature": false
         },
         {
           "id": "parmentier",
-          "label": "PARMENTIER DE LÉGUMES DE SAISON"
+          "label": "PARMENTIER DE LÉGUMES DE SAISON",
+          "signature": false
         },
         {
           "id": "raviole-ricotta",
-          "label": "RAVIOLE RICOTTA - ÉPINARD PISTALS DE SAFRAN"
+          "label": "RAVIOLE RICOTTA - ÉPINARD PISTALS DE SAFRAN",
+          "signature": false
         },
         {
           "id": "seffa",
-          "label": "SEFFA MEDFOUNA"
+          "label": "SEFFA MEDFOUNA",
+          "signature": false
         },
         {
           "id": "agneau-epices",
-          "label": "AGNEAU RÔTI AUX ÉPICES"
+          "label": "AGNEAU RÔTI AUX ÉPICES",
+          "signature": false
         },
         {
           "id": "wok-boeuf",
-          "label": "WOK DE FILET DE BŒUF ÉMINCÉ & LÉGUMES SAUTÉS"
+          "label": "WOK DE FILET DE BŒUF ÉMINCÉ & LÉGUMES SAUTÉS",
+          "signature": false
         },
         {
           "id": "boeuf-tataki",
-          "label": "FILET DE BŒUF À L'ASIATIQUE FAÇON TATAKI"
+          "label": "FILET DE BŒUF À L'ASIATIQUE FAÇON TATAKI",
+          "signature": true
         },
         {
           "id": "pastilla-mer",
-          "label": "PASTILLA EN DAMIER AUX FRUITS DE MER"
+          "label": "PASTILLA EN DAMIER AUX FRUITS DE MER",
+          "signature": false
         },
         {
           "id": "raviole-araignee",
-          "label": "RAVIOLE A L’ARAIGNÉE DE MER"
+          "label": "RAVIOLE A L’ARAIGNÉE DE MER",
+          "signature": false
         },
         {
           "id": "lotte-tajine",
-          "label": "FILET DE LOTTE FAÇON TAJINE"
+          "label": "FILET DE LOTTE FAÇON TAJINE",
+          "signature": false
         },
         {
           "id": "lotte-romarin",
-          "label": "LOTTE BRAISÉE AU ROMARIN"
+          "label": "LOTTE BRAISÉE AU ROMARIN",
+          "signature": false
         },
         {
           "id": "lotte-bardee",
-          "label": "RÔTI DE LOTTE BARDÉE"
+          "label": "RÔTI DE LOTTE BARDÉE",
+          "signature": true
         },
         {
           "id": "terre-mer-gambas",
-          "label": "TERRE-MER DE GAMBAS & FOIE GRAS"
+          "label": "TERRE-MER DE GAMBAS & FOIE GRAS",
+          "signature": true
         },
         {
           "id": "couscous-agneau",
-          "label": "COUSCOUS A L’AGNEAU"
+          "label": "COUSCOUS A L’AGNEAU",
+          "signature": false
         },
         {
           "id": "couscous-poulet",
-          "label": "COUSCOUS AU POULET"
+          "label": "COUSCOUS AU POULET",
+          "signature": false
         },
         {
           "id": "couscous-lotte",
-          "label": "COUSCOUS A LA LOTTE"
+          "label": "COUSCOUS A LA LOTTE",
+          "signature": false
         },
         {
           "id": "couscous-legumes",
-          "label": "COUSCOUS AUX LÉGUMES"
+          "label": "COUSCOUS AUX LÉGUMES",
+          "signature": false
         },
         {
           "id": "tajine-poulet-oignons",
-          "label": "TAJINE POULET, OIGNONS CONFITS & RAISINS SECS"
+          "label": "TAJINE POULET, OIGNONS CONFITS & RAISINS SECS",
+          "signature": false
         },
         {
           "id": "tajine-agneau-oignons",
-          "label": "TAJINE AGNEAU, OIGNONS CONFITS & RAISINS SECS"
+          "label": "TAJINE AGNEAU, OIGNONS CONFITS & RAISINS SECS",
+          "signature": false
         },
         {
           "id": "tajine-agneau-amandes",
-          "label": "TAJINE POULET, POMMES DE TERRE, OLIVES & CITRON CONFIT"
+          "label": "TAJINE POULET, POMMES DE TERRE, OLIVES & CITRON CONFIT",
+          "signature": false
         },
         {
           "id": "tajine-legumes",
-          "label": "TAJINE AUX LÉGUMES"
+          "label": "TAJINE AUX LÉGUMES",
+          "signature": false
         },
         {
           "id": "tajine-sardine",
-          "label": "TAJINE SARDINES CHARMOULA"
+          "label": "TAJINE SARDINES CHARMOULA",
+          "signature": false
         },
         {
           "id": "tajine-mer",
-          "label": "TAJINE FRUITS DE MER"
+          "label": "TAJINE FRUITS DE MER",
+          "signature": false
         }
       ]
     },
@@ -147,47 +180,58 @@
       "options": [
         {
           "id": "duo-carotte",
-          "label": "DUO DE CAROTTES ORANGES À LA FLEUR D'ORANGER"
+          "label": "DUO DE CAROTTES ORANGES À LA FLEUR D'ORANGER",
+          "signature": false
         },
         {
           "id": "soupe-agrume",
-          "label": "SOUPE D'AGRUMES"
+          "label": "SOUPE D'AGRUMES",
+          "signature": false
         },
         {
           "id": "cannelle",
-          "label": "TRILOGIE CANNELL'ORANGE"
+          "label": "TRILOGIE CANNELL'ORANGE",
+          "signature": true
         },
         {
           "id": "fruits-marche",
-          "label": "DÉCLINAISON DE FRUITS DU MARCHÉ & CHANTILLY FRUITÉE"
+          "label": "DÉCLINAISON DE FRUITS DU MARCHÉ & CHANTILLY FRUITÉE",
+          "signature": false
         },
         {
           "id": "sfoglia",
-          "label": "SFOGLIA & POMMES D'AMOUR"
+          "label": "SFOGLIA & POMMES D'AMOUR",
+          "signature": false
         },
         {
           "id": "patisserie",
-          "label": "PATISSERIES MAROCAINES AU COULIS DU JOUR"
+          "label": "PATISSERIES MAROCAINES AU COULIS DU JOUR",
+          "signature": false
         },
         {
           "id": "pastilla-amande",
-          "label": "PASTILLA CROQUANTE AU PUR LAIT D'AMANDE"
+          "label": "PASTILLA CROQUANTE AU PUR LAIT D'AMANDE",
+          "signature": false
         },
         {
           "id": "malahbia",
-          "label": "MALAHBIA SOUS CLOCHE"
+          "label": "MALAHBIA SOUS CLOCHE",
+          "signature": true
         },
         {
           "id": "pana-cotta",
-          "label": "PANA COTTA AU CARAMEL ÉPICÉ & CRÊPE DENTELLE BEURRE SALÉ"
+          "label": "PANA COTTA AU CARAMEL ÉPICÉ & CRÊPE DENTELLE BEURRE SALÉ",
+          "signature": false
         },
         {
           "id": "tout-choco",
-          "label": "TOUT CHOCOLAT AUX 3 GANACHES"
+          "label": "TOUT CHOCOLAT AUX 3 GANACHES",
+          "signature": false
         },
         {
           "id": "sphere-chocolat",
-          "label": "SPHÈRE AU CHOCOLAT EN CHAUD & FROID"
+          "label": "SPHÈRE AU CHOCOLAT EN CHAUD & FROID",
+          "signature": true
         }
       ]
     }
