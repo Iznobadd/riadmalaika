@@ -933,7 +933,8 @@ nav label,
   width: 32%;
 }
 .depart-input input,
-.arrivee-input input {
+.arrivee-input input,
+.date-input input {
   width: 200%;
   max-width: 173%;
 }
@@ -945,7 +946,6 @@ nav label,
 .personnes-input select,
 .heure-input select,
 .connu-input select,
-.date-input input,
 .excursion-input select,
 .message-input textarea {
   width: 100%;
