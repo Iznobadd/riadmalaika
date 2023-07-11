@@ -59,6 +59,11 @@
       "name": "plat",
       "options": [
         {
+          "id": "couscous-imperial",
+          "label": "COUSCOUS IMPÉRIAL",
+          "signature": true
+        },
+        {
           "id": "pastilla-marche",
           "label": "PASTILLA AUX LÉGUMES DU MARCHÉ",
           "signature": false

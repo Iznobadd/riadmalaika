@@ -169,7 +169,63 @@ function TableForm() {
             (plats.length > 0 && desserts.length > 0)
           ) {
             // MENU SIGNATURE + CLASSIQUE
-            toast.success("Réservation effectuée avec succès");
+            const cartSignatureItems = () => {
+              // Créer un objet pour stocker les éléments par catégorie
+              const itemsByCategory = {};
+              const classicItemsByCategory = {};
+              // Regrouper les éléments par catégorie
+              selectedSignatureItems.forEach((item) => {
+                const { category, label, quantity } = item;
+                if (itemsByCategory[category]) {
+                  itemsByCategory[category].push({ label, quantity });
+                } else {
+                  itemsByCategory[category] = [{ label, quantity }];
+                }
+              });
+
+              selectedItems.forEach((item) => {
+                const { category, label, quantity } = item;
+                if (classicItemsByCategory[category]) {
+                  classicItemsByCategory[category].push({ label, quantity });
+                } else {
+                  classicItemsByCategory[category] = [{ label, quantity }];
+                }
+              });
+
+              // Générer la chaîne de caractères triée par catégorie avec du HTML
+              let str =
+                "<h2>Menus Signatures :</h2> <p>Nombre de menus signature : " +
+                nbrSignatureMenus +
+                "</p><ul>";
+              for (const category in itemsByCategory) {
+                category.toUpperCase();
+                str += `<li><strong>${category}:</strong></li>`;
+                itemsByCategory[category].forEach((item) => {
+                  str += `<li>${item.label} x ${item.quantity}</li>`;
+                });
+              }
+              str += "</ul> <h2>Menus Classiques : </h2><ul>";
+              for (const category in classicItemsByCategory) {
+                category.toUpperCase();
+                str += `<li><strong>${category}:</strong></li>`;
+                classicItemsByCategory[category].forEach((item) => {
+                  str += `<li>${item.label} x ${item.quantity}</li>`;
+                });
+              }
+
+              return str;
+            };
+            const formatDate = new Date(data.date).toLocaleDateString("fr-FR", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            });
+            const allData = {
+              ...data,
+              formatDate,
+              cartItems: cartSignatureItems(),
+            };
+            sendEmail(allData);
           } else {
             toast.error(
               "Veuillez choisir une entrée ou un dessert pour chaque menu classique"
@@ -208,8 +264,14 @@ function TableForm() {
 
             return str;
           };
+          const formatDate = new Date(data.date).toLocaleDateString("fr-FR", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          });
           const allData = {
             ...data,
+            formatDate,
             cartItems: cartSignatureItems(),
           };
           sendEmail(allData);
@@ -223,7 +285,45 @@ function TableForm() {
             (plats.length > 0 && desserts.length > 0)
           ) {
             // MENU CLASSIQUE
-            toast.success("Réservation effectuée avec succès");
+            const cartSignatureItems = () => {
+              // Créer un objet pour stocker les éléments par catégorie
+              const itemsByCategory = {};
+
+              // Regrouper les éléments par catégorie
+              selectedItems.forEach((item) => {
+                const { category, label, quantity } = item;
+                if (itemsByCategory[category]) {
+                  itemsByCategory[category].push({ label, quantity });
+                } else {
+                  itemsByCategory[category] = [{ label, quantity }];
+                }
+              });
+
+              // Générer la chaîne de caractères triée par catégorie avec du HTML
+              let str =
+                "<h2>Menus Signatures : Aucun</h2> <h2>Menus Classiques : </h2><ul>";
+              for (const category in itemsByCategory) {
+                category.toUpperCase();
+                str += `<li><strong>${category}:</strong></li>`;
+                itemsByCategory[category].forEach((item) => {
+                  str += `<li>${item.label} x ${item.quantity}</li>`;
+                });
+              }
+              str += "</ul>";
+
+              return str;
+            };
+            const formatDate = new Date(data.date).toLocaleDateString("fr-FR", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            });
+            const allData = {
+              ...data,
+              formatDate,
+              cartItems: cartSignatureItems(),
+            };
+            sendEmail(allData);
           } else {
             toast.error(
               "Veuillez choisir une entrée ou un dessert pour chaque menu classique"
@@ -261,7 +361,14 @@ function TableForm() {
   const validateData = (data) => {
     const error = {};
 
-    const requiredFields = ["nom"];
+    const requiredFields = [
+      "nom",
+      "email",
+      "tel",
+      "date",
+      "heure",
+      "personnes",
+    ];
 
     requiredFields.forEach((field) => {
       if (!data[field]) {
@@ -346,15 +453,18 @@ function TableForm() {
                 className={`${errors.personnes ? "error_form" : ""}`}
               >
                 <option value="">NOMBRE DE PERSONNES*</option>
-
-                <option value="1">1</option>
+                {Array.from({ length: 30 }, (_, index) => (
+                  <option value={index + 1} key={index + 1}>
+                    {index + 1}
+                  </option>
+                ))}
               </select>
             </div>
 
             <div className="date-input">
               <Controller
                 control={control}
-                name="arrivee"
+                name="date"
                 className={`${errors.date ? "error_form" : ""}`}
                 render={({ field }) => (
                   <DatePicker
@@ -364,6 +474,8 @@ function TableForm() {
                     onChange={(date) => field.onChange(date)}
                     className={`${errors.date ? "error_form" : ""}`}
                     dateFormat={"dd/MM/yyyy"}
+                    minDate={new Date()}
+                    locale="fr"
                   />
                 )}
               />
@@ -404,7 +516,11 @@ function TableForm() {
 
             {categories.map((category) => (
               <>
-                <h2>{category.name}</h2>
+                <h2>
+                  {category.name.charAt(0).toUpperCase() +
+                    category.name.slice(1)}
+                  {category.name.toLowerCase().endsWith("s") ? "" : "s"}
+                </h2>
                 <div className="form-signature">
                   {category.options.map((option) => (
                     <>
@@ -436,24 +552,45 @@ function TableForm() {
       {categories.map((category) => (
         <div className={`reservation-${category.name}`} key={category.name}>
           <div className="container">
-            <h1>{category.name}</h1>
+            {category.name === "entree" && (
+              <>
+                <div style={{ height: "20px" }}></div>
+                <p
+                  className="intro-table text-center"
+                  style={{ paddingTop: "20px" }}
+                >
+                  <b>
+                    Merci de bien vouloir choisir par personne :<br />
+                    Entrée + plat + dessert ou Entrée + plat ou Plat + dessert
+                  </b>
+                </p>
+              </>
+            )}
+            <h1>
+              {category.name.charAt(0).toUpperCase() + category.name.slice(1)}
+              {category.name.toLowerCase().endsWith("s") ? "" : "s"}
+            </h1>
             <div className={`form-${category.name}`}>
               {category.options.map((option) => (
                 <>
-                  {option.id === "couscous-agneau" && <p>Couscous</p>}
-                  {option.id === "tajine-poulet-oignons" && <p>Tajines</p>}
-                  <div className="half-table" key={option.id}>
-                    <input
-                      type="number"
-                      name={option.id}
-                      min="0"
-                      defaultValue={0}
-                      onChange={(e) =>
-                        handleQuantityChange(e, option, category.name)
-                      }
-                    />
-                    <label htmlFor={option.id}>{option.label}</label>
-                  </div>
+                  {option.id !== "couscous-imperial" && (
+                    <>
+                      {option.id === "couscous-agneau" && <p>Couscous</p>}
+                      {option.id === "tajine-poulet-oignons" && <p>Tajines</p>}
+                      <div className="half-table" key={option.id}>
+                        <input
+                          type="number"
+                          name={option.id}
+                          min="0"
+                          defaultValue={0}
+                          onChange={(e) =>
+                            handleQuantityChange(e, option, category.name)
+                          }
+                        />
+                        <label htmlFor={option.id}>{option.label}</label>
+                      </div>
+                    </>
+                  )}
                 </>
               ))}
             </div>
