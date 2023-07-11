@@ -92,11 +92,14 @@ function TableForm() {
   };
 
   const onSubmit = (data) => {
+    const selectedDate = data.date;
+    if (selectedDate.getDay() === 0) {
+      toast.error("Le restaurant est fermé le dimanche");
+      return;
+    }
     const errors = validateData(data);
     console.log(errors);
     if (Object.keys(errors).length) {
-      console.log(errors);
-
       Object.keys(errors).forEach((field) => {
         setError(field, {
           type: "manual",
@@ -204,13 +207,15 @@ function TableForm() {
                   str += `<li>${item.label} x ${item.quantity}</li>`;
                 });
               }
-              str += "</ul> <h2>Menus Classiques : </h2><ul>";
+              str += ` </ul><p><strong>Demande spéciale :</strong> ${data["demande-signature"]}</p><h2>Menus Classiques : : </h2>`;
               for (const category in classicItemsByCategory) {
                 category.toUpperCase();
-                str += `<li><strong>${category}:</strong></li>`;
+                str += `<h4><strong>${category}:</strong></h4><ul>`;
                 classicItemsByCategory[category].forEach((item) => {
                   str += `<li>${item.label} x ${item.quantity}</li>`;
                 });
+                const demandeSpeciale = data[`demande-${category}`] || "";
+                str += `</ul> <p>Demande spéciale : ${demandeSpeciale}</p>`;
               }
 
               return str;
@@ -252,15 +257,17 @@ function TableForm() {
             let str =
               "<h2>Menus Signatures :</h2> <p>Nombre de menus signature : " +
               nbrSignatureMenus +
-              "</p><ul>";
+              "</p>";
             for (const category in itemsByCategory) {
               category.toUpperCase();
-              str += `<li><strong>${category}:</strong></li>`;
+              str += `<h4><strong>${category}:</strong></h4><ul>`;
               itemsByCategory[category].forEach((item) => {
                 str += `<li>${item.label} x ${item.quantity}</li>`;
               });
+              str += `</ul>`;
             }
-            str += "</ul> <h2>Menus Classiques : Aucun</h2>";
+
+            str += ` <p><strong>Demande spéciale :</strong> ${data["demande-signature"]}</p><h2>Menus Classiques : Aucun</h2>`;
 
             return str;
           };
@@ -279,7 +286,6 @@ function TableForm() {
       } else {
         // MENU CLASSIQUE SEUL
         if (entrees.length > 0 || plats.length > 0 || desserts.length > 0) {
-          // IF MENU CLASSIQUE EN PLUS DE SIGNATURE
           if (
             (entrees.length > 0 && plats.length) ||
             (plats.length > 0 && desserts.length > 0)
@@ -288,7 +294,6 @@ function TableForm() {
             const cartSignatureItems = () => {
               // Créer un objet pour stocker les éléments par catégorie
               const itemsByCategory = {};
-
               // Regrouper les éléments par catégorie
               selectedItems.forEach((item) => {
                 const { category, label, quantity } = item;
@@ -301,13 +306,15 @@ function TableForm() {
 
               // Générer la chaîne de caractères triée par catégorie avec du HTML
               let str =
-                "<h2>Menus Signatures : Aucun</h2> <h2>Menus Classiques : </h2><ul>";
+                "<h2>Menus Signatures : Aucun</h2> <h2>Menus Classiques : </h2>";
               for (const category in itemsByCategory) {
                 category.toUpperCase();
-                str += `<li><strong>${category}:</strong></li>`;
+                str += `<h4><strong>${category}:</strong></h4><ul>`;
                 itemsByCategory[category].forEach((item) => {
                   str += `<li>${item.label} x ${item.quantity}</li>`;
                 });
+                const demandeSpeciale = data[`demande-${category}`] || "";
+                str += `</ul> <p>Demande spéciale : ${demandeSpeciale}</p>`;
               }
               str += "</ul>";
 
@@ -546,6 +553,18 @@ function TableForm() {
                 </div>
               </>
             ))}
+            <div className="form-signature">
+              <div className="demande-speciale">
+                <label htmlFor="demande-signature">DEMANDE SPÉCIALE</label>
+                <textarea
+                  name="demande-signature"
+                  id="demande-signature"
+                  cols="10"
+                  rows="3"
+                  {...register("demande-signature")}
+                ></textarea>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -560,8 +579,10 @@ function TableForm() {
                   style={{ paddingTop: "20px" }}
                 >
                   <b>
-                    Merci de bien vouloir choisir par personne :<br />
-                    Entrée + plat + dessert ou Entrée + plat ou Plat + dessert
+                    Si vous préferez diner à la carte, merci de bien vouloir
+                    choisir par personne :<br />
+                    <u>Entrée + plat + dessert</u> | <u>Entrée + plat</u> |{" "}
+                    <u>Plat + dessert</u>
                   </b>
                 </p>
               </>
@@ -593,6 +614,18 @@ function TableForm() {
                   )}
                 </>
               ))}
+              <div className="demande-speciale">
+                <label htmlFor={`demande-${category.name}`}>
+                  DEMANDE SPÉCIALE
+                </label>
+                <textarea
+                  name={`demande-${category.name}`}
+                  id={`demande-${category.name}`}
+                  cols="10"
+                  rows="3"
+                  {...register(`demande-${category.name}`)}
+                ></textarea>
+              </div>
             </div>
           </div>
         </div>

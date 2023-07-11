@@ -52,6 +52,11 @@
           "id": "pastilla",
           "label": "PASTILLA AU FOIE GRAS",
           "signature": true
+        },
+        {
+          "id": "tartare-saumon",
+          "label": "TARTARE DE SAUMON FUMÉ & AVOCAT EN MILLEFEUILLE",
+          "signature": false
         }
       ]
     },
@@ -127,6 +132,16 @@
           "id": "terre-mer-gambas",
           "label": "TERRE-MER DE GAMBAS & FOIE GRAS",
           "signature": true
+        },
+        {
+          "id": "wok-legumes",
+          "label": "WOK DE LÉGUMES",
+          "signature": false
+        },
+        {
+          "id": "tournedos",
+          "label": "FILET DE BOEUF EN TOURNEDOS & FIGUE AU FOIE GRAS MI-CUIT",
+          "signature": false
         },
         {
           "id": "couscous-agneau",
@@ -237,6 +252,16 @@
           "id": "sphere-chocolat",
           "label": "SPHÈRE AU CHOCOLAT EN CHAUD & FROID",
           "signature": true
+        },
+        {
+          "id": "moka",
+          "label": "MOKA MILLEFEUILLE",
+          "signature": false
+        },
+        {
+          "id": "tarte-citron",
+          "label": "COMME UNE TARTE AU CITRON",
+          "signature": false
         }
       ]
     }

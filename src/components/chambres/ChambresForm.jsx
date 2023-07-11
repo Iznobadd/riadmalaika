@@ -173,7 +173,11 @@ function ChambresForm() {
               {...register("personnes")}
             >
               <option value="">NOMBRE DE PERSONNES*</option>
-              <option>1</option>
+              {Array.from({ length: 6 }, (_, index) => (
+                <option value={index + 1} key={index + 1}>
+                  {index + 1}
+                </option>
+              ))}
             </select>
           </div>
 
