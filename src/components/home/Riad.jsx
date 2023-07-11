@@ -2,6 +2,7 @@ import React from "react";
 import Riad2 from "../../assets/images/riad2.jpg";
 import Riad1 from "../../assets/images/riad1.jpg";
 import { Fade } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 function Riad() {
   return (
     <div className="res-riad">
@@ -38,7 +39,7 @@ function Riad() {
             propose un hébergement de qualité au centre de l’ancienne Mogador.
           </p>
 
-          <a href="chambres.php">RÉSERVER UNE CHAMBRE</a>
+          <Link to="/chambres">RÉSERVER UNE CHAMBRE</Link>
         </Fade>
       </div>
     </div>

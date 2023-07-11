@@ -2,6 +2,7 @@ import React from "react";
 import Table1 from "../../assets/images/latable1.jpg";
 import Table2 from "../../assets/images/latable2.jpg";
 import { Fade } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 function Table() {
   return (
     <div className="res-riad">
@@ -20,7 +21,7 @@ function Table() {
             vos papilles.
           </p>
 
-          <a href="table.php">RÉSERVER UNE TABLE</a>
+          <Link to="/table">RÉSERVER UNE TABLE</Link>
         </Fade>
       </div>
 

@@ -1213,6 +1213,10 @@ input[type="submit"] {
 #m-booked-weather-bl250-81452 {
   margin-bottom: 20px;
 }
+.weather {
+  width: 40%;
+  margin: auto;
+}
 .postit img,
 .postit a {
   width: 100%;

@@ -6,7 +6,7 @@ import TripAdvisor2 from "../../assets/images/tripadvisor2.png";
 import Booking from "../../assets/images/booking.png";
 import BookingCom from "../../assets/images/bookingcom.png";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer>
@@ -21,7 +21,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <FaFacebook className="fa" size={30} />
+              <FaFacebook className="fa" size={60} />
             </a>
           </div>
           <div className="instagram">
@@ -30,7 +30,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <FaInstagram className="fa" size={30} />
+              <FaInstagram className="fa" size={60} />
             </a>
           </div>
           <div className="tripadvisor">
@@ -80,15 +80,15 @@ function Footer() {
           <div className="footer-services footer-section">
             <h3>SERVICES</h3>
             <p>
-              <a href="index">Accueil</a>
+              <Link to="/">Accueil</Link>
               <br />
-              <a href="table">Gastronomie</a>
+              <Link to="/table">Gastronomie</Link>
               <br />
-              <a href="chambres">Hébergements</a>
+              <Link to="/chambres">Hébergements</Link>
               <br />
-              <a href="loisirs">Expériences</a>
+              <Link to="/loisirs">Expériences</Link>
               <br />
-              <a href="contact">Contact</a>
+              <Link to="/contact">Contact</Link>
               <br />
             </p>
           </div>
@@ -110,7 +110,7 @@ function Footer() {
       </div>
       <p className="siret">
         Siret 45554712289631 |{" "}
-        <a href="mentions-legales.php">Mentions Légales</a>
+        <Link to="/mentions-legales">Mentions Légales</Link>
       </p>
       <div className="copyright">
         <p>
