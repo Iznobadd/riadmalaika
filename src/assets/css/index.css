@@ -168,13 +168,37 @@ nav a:hover {
 }
 
 /* ------------------ BANNER RIAD ------------------ */
-
+.equipe-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.equipe-contact img {
+  width: 135%;
+}
+.equipe-contact p {
+  font-family: "Allison";
+  font-size: 35px !important;
+  line-height: 47px;
+}
 .riad-banner {
   position: relative;
   width: 100%;
   height: 417px;
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7)),
     url("../images/riad-banner.jpg") fixed no-repeat;
+  background-size: cover;
+  background-position: 0 80%;
+}
+.offres-banner {
+  position: relative;
+  background: url("../images/offres-banner.jpg") fixed no-repeat;
+  background-size: cover;
+  background-position: 0 80%;
+}
+.contact-equipe {
+  position: relative;
+  background: url("../images/contact-equipe.jpg") fixed no-repeat;
   background-size: cover;
   background-position: 0 80%;
 }
@@ -264,9 +288,10 @@ nav a:hover {
 .modal-imgs {
   display: flex;
   justify-content: space-evenly;
-  column-gap: 50px;
+  gap: 50px;
   align-items: center;
   margin: 50px 0;
+  flex-wrap: wrap;
 }
 .modal-imgs img {
   width: 350px;
@@ -293,6 +318,10 @@ nav a:hover {
 .offres-speciales {
   background-color: #eae9e5;
   padding-bottom: 50px;
+  border-top: 1px solid black;
+}
+.offres-speciales h2 {
+  margin-top: 30px;
 }
 .offres-speciales .container {
   margin-bottom: 0;
@@ -324,6 +353,29 @@ nav a:hover {
   text-align: center;
 }
 
+.imgs-signature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+}
+.imgs-signatures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 40px;
+  width: 100%;
+}
+.imgs-signature img {
+  width: 100%;
+  height: 250px;
+}
+.imgs-signatures img {
+  width: 100%;
+  height: 250px;
+}
 /* ------------------ PACK CARD------------------ */
 
 .pack-card {
@@ -1191,8 +1243,6 @@ input[type="submit"] {
   height: 50vh;
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7)),
     url("../images/contact-banner.jpg") fixed no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
 }
 
 .titre-contact {

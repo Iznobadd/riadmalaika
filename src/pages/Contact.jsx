@@ -4,6 +4,7 @@ import Faq from "../components/contact/Faq";
 import { useEffect } from "react";
 import ContactForm from "../components/contact/ContactForm";
 import Weather from "../components/contact/Weather";
+import Equipe from "../components/contact/Equipe";
 
 function Contact() {
   useEffect(() => {
@@ -15,8 +16,9 @@ function Contact() {
         <h2>Contact</h2>
       </div>
       <PostIt />
-      <Faq />
 
+      <Faq />
+      <Equipe />
       <Weather />
       <ContactForm />
     </>

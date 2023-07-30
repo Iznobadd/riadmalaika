@@ -3,21 +3,22 @@ import Culture from "../../assets/images/pack-culture.png";
 import BienEtre from "../../assets/images/pack-emotion.png";
 import Decouverte from "../../assets/images/pack-decouverte.png";
 import Gastronomie from "../../assets/images/pack-gastro.png";
-import { Fade, Flip } from "react-awesome-reveal";
+import { Zoom, Flip, Bounce } from "react-awesome-reveal";
 function Offres() {
   return (
-    <div className="offres-speciales">
-      <Fade direction="down" duration={800}>
-        <div className="offre-trait"></div>
-        <div className="offre-banner">
-          <h1>NOS OFFRES SPÉCIALES</h1>
-        </div>
-        <div className="offre-trait"></div>
-      </Fade>
+    <div className="offres-speciales offres-banner">
+      {/* <div className="offre-trait"></div>
+      <div className="offre-banner">
+        <h1>NOS OFFRES SPÉCIALES</h1>
+      </div>
+      <div className="offre-trait"></div> */}
+      <Zoom direction="top" duration={1500}>
+        <h2 className="text-center">Nos offres spéciales</h2>
+      </Zoom>
       <div className="container">
         <div className="pack-card" id="all_packs">
           <div className="culture pack">
-            <Flip direction="vertical" duration={1500}>
+            <Bounce direction="vertical" duration={1500}>
               <div>
                 <div className="pack-title">
                   <h1>
@@ -33,8 +34,8 @@ function Offres() {
                     accompagnée d’un guide officiel, vous fera découvrir
                     certains secrets de l’ancienne Mogador, si chère aux
                     principales cultures artistiques et religieuses. Son
-                    classNameement au patrimoine mondial de l’UNESCO n’est pas
-                    le fruit du hasard...
+                    classement au patrimoine mondial de l’UNESCO n’est pas le
+                    fruit du hasard...
                     <br />
                     <span className="link_pack">
                       <a href="./">Plus d'infos</a>
@@ -42,11 +43,11 @@ function Offres() {
                   </p>
                 </div>
               </div>
-            </Flip>
+            </Bounce>
           </div>
 
           <div className="bien-etre pack">
-            <Flip direction="vertical" duration={1500}>
+            <Bounce direction="vertical" duration={1500}>
               <div>
                 <div className="pack-title">
                   <h1>
@@ -68,10 +69,10 @@ function Offres() {
                   </p>
                 </div>
               </div>
-            </Flip>
+            </Bounce>
           </div>
           <div className="decouverte pack">
-            <Flip direction="vertical" duration={1500}>
+            <Bounce direction="vertical" duration={1500}>
               <div>
                 <div className="pack-title">
                   <h1>PACK ÉMOTION DÉCOUVERTE</h1>
@@ -90,10 +91,10 @@ function Offres() {
                   </p>
                 </div>
               </div>
-            </Flip>
+            </Bounce>
           </div>
           <div className="gastronomie pack">
-            <Flip direction="vertical" duration={1500}>
+            <Bounce direction="vertical" duration={1500}>
               <div>
                 <div className="pack-title">
                   <h1>PACK ÉMOTION GASTRONOMIE</h1>
@@ -113,7 +114,7 @@ function Offres() {
                   </p>
                 </div>
               </div>
-            </Flip>
+            </Bounce>
           </div>
         </div>
       </div>

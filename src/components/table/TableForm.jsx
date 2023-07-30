@@ -6,6 +6,9 @@ import "react-toastify/dist/ReactToastify.min.css";
 import "react-datepicker/dist/react-datepicker.css";
 import emailjs from "emailjs-com";
 import DatePicker from "react-datepicker";
+import img1Signature from "../../assets/images/signature1.jpg";
+import img2Signature from "../../assets/images/signature2.jpg";
+import img3Signature from "../../assets/images/signature3.jpg";
 function TableForm() {
   const {
     register,
@@ -565,6 +568,12 @@ function TableForm() {
                 ></textarea>
               </div>
             </div>
+            <div className="imgs-signature">
+              <img src={img1Signature} alt="signature" />
+              <img src={img2Signature} alt="signature" />
+              <img src={img3Signature} alt="signature" />
+              <img src={img3Signature} alt="signature" />
+            </div>
           </div>
         </div>
       </div>
@@ -625,6 +634,12 @@ function TableForm() {
                   rows="3"
                   {...register(`demande-${category.name}`)}
                 ></textarea>
+              </div>
+              <div className="imgs-signatures">
+                <img src={img1Signature} alt="signature" />
+                <img src={img2Signature} alt="signature" />
+                <img src={img3Signature} alt="signature" />
+                <img src={img3Signature} alt="signature" />
               </div>
             </div>
           </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import Signature from "../../assets/images/carte_signature.png";
-import Entree from "../../assets/images/carte_entree.png";
-import Plat from "../../assets/images/carte_plat.png";
-import Dessert from "../../assets/images/carte_dessert.png";
+import Entree from "../../assets/images/carte_entree.jpg";
+import Plat from "../../assets/images/carte_plat.jpg";
+import Dessert from "../../assets/images/carte_dessert.jpg";
 import { Flip } from "react-awesome-reveal";
 function Menu() {
   return (
