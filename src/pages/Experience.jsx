@@ -5,11 +5,12 @@ import Dromadaire from "../assets/images/dromadaire.gif";
 import KiteSurf from "../assets/images/kitesurf.gif";
 import Quad from "../assets/images/quad.gif";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 function Experience() {
   useEffect(() => {
     document.title = "Expériences | Riad Malaika";
   }, []);
+  const contactRef = useRef(null);
   return (
     <>
       <div className="loisirs-banner">
@@ -55,7 +56,12 @@ function Experience() {
                 découverte d’une région encore assez sauvage.
               </p>
               <p className="link_contact">
-                <Link to="/contact#contact">En savoir plus...</Link>
+                <Link
+                  to="/contact#contact"
+                  onClick={() => contactRef.current.scrollIntoView()}
+                >
+                  En savoir plus...
+                </Link>
               </p>
             </Slide>
           </div>
@@ -77,7 +83,12 @@ function Experience() {
                 vierge.
               </p>
               <p className="link_contact">
-                <Link to="/contact#contact">En savoir plus...</Link>
+                <Link
+                  to="/contact#contact"
+                  onClick={() => contactRef.current.scrollIntoView()}
+                >
+                  En savoir plus...
+                </Link>
               </p>
             </Slide>
           </div>
@@ -122,7 +133,12 @@ function Experience() {
                 leurs tricks; un réel plaisir en soi.
               </p>
               <p className="link_contact">
-                <Link to="/contact#contact">En savoir plus...</Link>
+                <Link
+                  to="/contact#contact"
+                  onClick={() => contactRef.current.scrollIntoView()}
+                >
+                  En savoir plus...
+                </Link>
               </p>
             </Slide>
           </div>
@@ -149,7 +165,12 @@ function Experience() {
                 en famille, combiner nature et technique en toute sécurité.
               </p>
               <p className="link_contact">
-                <Link to="/contact#contact">En savoir plus...</Link>
+                <Link
+                  to="/contact#contact"
+                  onClick={() => contactRef.current.scrollIntoView()}
+                >
+                  En savoir plus...
+                </Link>
               </p>
             </Slide>
           </div>

@@ -938,7 +938,16 @@ select option {
 }
 .contact-form .subject-input,
 .contact-form .connu-input {
-  width: 49%;
+  grid-column: span 3;
+}
+.contact-form .name-input,
+.contact-form .email-input,
+.contact-form .tel-input {
+  grid-column: span 2;
+  width: inherit;
+}
+.contact-form .message-input {
+  grid-column: 1 / -1;
 }
 select option {
   color: black;
@@ -969,32 +978,31 @@ nav label,
   display: none;
 }
 
-.reservation-chambres form .over-gray,
 #contact .over-gray,
-.reservation-table .over-gray,
-.reservation-excursion form .over-gray {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.reservation-chambres form .over-gray,
+.reservation-table .over-gray {
+  display: grid;
   gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, auto) 1fr auto;
 }
 
 .name-input,
 .email-input,
 .tel-input {
-  width: 32%;
+  grid-column: span 2;
 }
 .depart-input input,
 .arrivee-input input,
 .date-input input {
-  width: 200%;
-  max-width: 173%;
+  width: 100%;
 }
 .name-input input,
 .email-input input,
 .tel-input input,
 .chambres-input select,
 .subject-input input,
+.subject-input select,
 .personnes-input select,
 .heure-input select,
 .connu-input select,
@@ -1038,21 +1046,12 @@ nav label,
 
 .reservation-chambres .arrivee-input,
 .reservation-chambres .depart-input,
-.reservation-chambres .chambres-input,
-.reservation-excursion .arrivee-input,
-.reservation-excursion .depart-input,
-.reservation-excursion .excursion-input {
-  width: 32%;
+.reservation-chambres .chambres-input {
+  grid-column: span 2;
 }
 
-.reservation-chambres .subject-input,
-.reservation-chambres .connu-input,
-.reservation-excursion .subject-input,
-.reservation-excursion .connu-input {
-  width: 49%;
-}
 .message-input {
-  width: 100%;
+  grid-column: span 6;
 }
 .accordion {
   padding: 20px;
@@ -1067,13 +1066,17 @@ form {
 .reservation-table .depart-input {
   width: 49%;
 }
-.reservation-chambres .personnes-input {
-  width: 49%;
+.reservation-chambres .personnes-input,
+.reservation-chambres .connu-input {
+  grid-column: span 3;
 }
 .reservation-table .personnes-input,
 .reservation-table .heure-input,
 .reservation-table .date-input {
-  width: 32%;
+  grid-column: span 2;
+}
+.react-datepicker-wrapper {
+  width: 100%;
 }
 .reservation-table .container {
   margin-top: 0;
@@ -1120,6 +1123,12 @@ input[type="submit"] {
 }
 .w-100 {
   width: 100% !important;
+}
+.cgu-input {
+  grid-column: span 6;
+}
+.submit-loisirs {
+  grid-column: span 6;
 }
 .cgu-input label {
   color: white;

@@ -123,12 +123,17 @@ function ContactForm() {
               </div>
 
               <div className="subject-input">
-                <input
-                  type="text"
-                  placeholder="SUJET*"
-                  className={`${errors["sujet"] ? "error_form" : ""}`}
-                  {...register("sujet")}
-                />
+                <select
+                  {...register("connuMalaika")}
+                  className={`${errors["connuMalaika"] ? "error_form" : ""}`}
+                >
+                  <option value="">SUJET*</option>
+                  <option value="cheval">Cheval</option>
+                  <option value="dromadaire">Dromadaire</option>
+                  <option value="surf">Surf Kitesruf</option>
+                  <option value="quad">Quad</option>
+                  <option value="autre">Autre</option>
+                </select>
               </div>
 
               <div className="connu-input">

@@ -120,11 +120,6 @@ function Footer() {
           </p>
         </div>
       </footer>
-      <div id="scrollUp">
-        <a href="#top" onclick="scrollToTop();return false">
-          <img src="images/top-arrow.png" />
-        </a>
-      </div>
     </>
   );
 }
