@@ -467,7 +467,7 @@ footer {
   position: absolute;
   width: 130px;
   left: 50px;
-  top: 15%;
+  top: 10%;
 }
 .booking-footer {
   position: absolute;
@@ -872,17 +872,17 @@ select option {
   background-color: #c1a253;
   padding: 20px;
 }
-.all_cartes {
+#menu-gallery {
   display: flex;
   justify-content: space-around;
   gap: 20px;
 }
-.all_cartes img {
+#menu-gallery img {
   width: 100%;
   margin-bottom: 50px;
   transition: 0.7s;
 }
-.all_cartes img:hover {
+#menu-gallery img:hover {
   transform: scale(1.05);
 }
 
