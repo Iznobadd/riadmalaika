@@ -18,6 +18,7 @@ function Weather() {
         lang="fr"
         locationLabel="Essaouira"
         unitsLabels={{ temperature: "°C", windSpeed: "Km/h" }}
+        showForecast={false}
       />
     </div>
   );

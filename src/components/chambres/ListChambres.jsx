@@ -57,6 +57,7 @@ function ListChambres() {
                 pagination: false,
                 arrows: false,
                 speed: 1500,
+                interval: 2000,
                 drag: false,
                 lazyLoad: "nearby",
               }}
@@ -140,6 +141,7 @@ function ListChambres() {
                 pagination: false,
                 arrows: false,
                 speed: 1500,
+                interval: 2000,
                 drag: false,
                 lazyLoad: "nearby",
               }}
@@ -185,6 +187,7 @@ function ListChambres() {
                 pagination: false,
                 arrows: false,
                 speed: 1500,
+                interval: 2000,
                 drag: false,
                 lazyLoad: "nearby",
               }}
@@ -266,6 +269,7 @@ function ListChambres() {
                 pagination: false,
                 arrows: false,
                 speed: 1500,
+                interval: 2000,
                 drag: false,
                 lazyLoad: "nearby",
               }}
@@ -311,6 +315,7 @@ function ListChambres() {
                 pagination: false,
                 arrows: false,
                 speed: 1500,
+                interval: 2000,
                 drag: false,
                 lazyLoad: "nearby",
               }}
@@ -393,6 +398,7 @@ function ListChambres() {
                 pagination: false,
                 arrows: false,
                 speed: 1500,
+                interval: 2000,
                 drag: false,
                 lazyLoad: "nearby",
               }}
