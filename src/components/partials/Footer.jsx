@@ -7,7 +7,36 @@ import Booking from "../../assets/images/booking.jpg";
 import BookingCom from "../../assets/images/bookingcom.png";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import scrollImg from "../../assets/images/top-arrow.png";
+import { useState, useEffect } from "react";
 function Footer() {
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+        // Add scroll event listener
+        window.addEventListener("scroll", handleScroll);
+
+        // Remove the scroll event listener when the component unmounts
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
+      const scrollToTop = () => {
+        const scrollToTopLoop = () => {
+          if (window.scrollY > 0) {
+            window.scrollTo(0, window.scrollY - 20);
+            requestAnimationFrame(scrollToTopLoop);
+          }
+        };
+        requestAnimationFrame(scrollToTopLoop);
+      };
   return (
     <>
       <footer>
@@ -120,6 +149,12 @@ function Footer() {
           </p>
         </div>
       </footer>
+      {showScrollButton && (
+              <div id="scrollUp" onClick={scrollToTop}>
+              <img src={scrollImg} />
+            </div>
+      )}
+
     </>
   );
 }

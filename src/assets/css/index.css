@@ -570,7 +570,6 @@ footer .siret a:hover {
 }
 
 #scrollUp {
-  display: none;
   position: fixed;
   bottom: 25px;
   right: 4px;
