@@ -17,7 +17,6 @@ function Contact() {
       </div>
       <PostIt />
 
-      <Faq />
       <Equipe />
       <Weather />
       <ContactForm />

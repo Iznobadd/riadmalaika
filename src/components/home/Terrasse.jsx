@@ -1,11 +1,11 @@
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import Salon1 from "../../assets/images/salon1.jpg";
-import Salon2 from "../../assets/images/salon2.jpg";
-import Salon3 from "../../assets/images/salon3.jpg";
-import Salon4 from "../../assets/images/salon4.jpg";
-import Salon5 from "../../assets/images/salon5.jpg";
-import Salon6 from "../../assets/images/salon6.jpg";
+import Terrasse1 from "../../assets/images/terrasse1.jpg";
+import Terrasse2 from "../../assets/images/terrasse2.jpg";
+import Terrasse3 from "../../assets/images/terrasse3.jpg";
+import Terrasse4 from "../../assets/images/terrasse4.jpg";
+import Terrasse5 from "../../assets/images/terrasse5.jpg";
+import Terrasse6 from "../../assets/images/terrasse6.jpg";
 import { Zoom } from "react-awesome-reveal";
 function Terrasse() {
   return (
@@ -37,22 +37,22 @@ function Terrasse() {
             }}
           >
             <SplideSlide>
-              <img src={Salon1} alt="" data-splide-lazy={Salon1} />
+              <img src={Terrasse1} alt="" data-splide-lazy={Terrasse1} />
             </SplideSlide>
             <SplideSlide>
-              <img src={Salon2} alt="" data-splide-lazy={Salon2} />
+              <img src={Terrasse2} alt="" data-splide-lazy={Terrasse2} />
             </SplideSlide>
             <SplideSlide>
-              <img src={Salon3} alt="" data-splide-lazy={Salon3} />
+              <img src={Terrasse3} alt="" data-splide-lazy={Terrasse3} />
             </SplideSlide>
             <SplideSlide>
-              <img src={Salon4} alt="" data-splide-lazy={Salon4} />
+              <img src={Terrasse4} alt="" data-splide-lazy={Terrasse4} />
             </SplideSlide>
             <SplideSlide>
-              <img src={Salon5} alt="" data-splide-lazy={Salon5} />
+              <img src={Terrasse5} alt="" data-splide-lazy={Terrasse5} />
             </SplideSlide>
             <SplideSlide>
-              <img src={Salon6} alt="" data-splide-lazy={Salon6} />
+              <img src={Terrasse6} alt="" data-splide-lazy={Terrasse6} />
             </SplideSlide>
           </Splide>
         </section>

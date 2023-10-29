@@ -4,6 +4,7 @@ import BienEtre from "../../assets/images/pack-emotion.png";
 import Decouverte from "../../assets/images/pack-decouverte.png";
 import Gastronomie from "../../assets/images/pack-gastro.png";
 import { Zoom, Flip, Bounce } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 function Offres() {
   return (
     <div className="offres-speciales offres-banner">
@@ -38,7 +39,7 @@ function Offres() {
                     fruit du hasard...
                     <br />
                     <span className="link_pack">
-                      <a href="./">Plus d'infos</a>
+                      <Link to="contact">Plus d'infos</Link>
                     </span>
                   </p>
                 </div>
@@ -64,7 +65,7 @@ function Offres() {
                     d’huile d’argan…
                     <br />
                     <span className="link_pack">
-                      <a href="./">Plus d'infos</a>
+                      <Link to="contact">Plus d'infos</Link>
                     </span>
                   </p>
                 </div>
@@ -86,7 +87,7 @@ function Offres() {
                     l’authenticité des paysages de notre si chère Essaouira…
                     <br />
                     <span className="link_pack">
-                      <a href="./">Plus d'infos</a>
+                      <Link to="contact">Plus d'infos</Link>
                     </span>
                   </p>
                 </div>
@@ -109,7 +110,7 @@ function Offres() {
                     que vous aurez choisi après une visite des marchés Souiris.
                     <br />
                     <span className="link_pack">
-                      <a href="./">Plus d'infos</a>
+                      <Link to="contact">Plus d'infos</Link>
                     </span>
                   </p>
                 </div>

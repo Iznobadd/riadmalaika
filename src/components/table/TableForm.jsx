@@ -9,6 +9,18 @@ import DatePicker from "react-datepicker";
 import img1Signature from "../../assets/images/signature1.jpg";
 import img2Signature from "../../assets/images/signature2.jpg";
 import img3Signature from "../../assets/images/signature3.jpg";
+import img1Entree from "../../assets/images/entree1.jpg";
+import img2Entree from "../../assets/images/entree2.jpg";
+import img3Entree from "../../assets/images/entree3.jpg";
+import img4Entree from "../../assets/images/entree4.jpg";
+import img1Plat from "../../assets/images/plat1.jpg";
+import img2Plat from "../../assets/images/plat2.jpg";
+import img3Plat from "../../assets/images/plat3.jpg";
+import img4Plat from "../../assets/images/plat4.jpg";
+import img1Dessert from "../../assets/images/dessert1.jpg";
+import img2Dessert from "../../assets/images/dessert2.jpg";
+import img3Dessert from "../../assets/images/dessert3.jpg";
+import img4Dessert from "../../assets/images/dessert4.jpg";
 function TableForm() {
   const {
     register,
@@ -636,10 +648,30 @@ function TableForm() {
                 ></textarea>
               </div>
               <div className="imgs-signatures">
-                <img src={img1Signature} alt="signature" />
-                <img src={img2Signature} alt="signature" />
-                <img src={img3Signature} alt="signature" />
-                <img src={img3Signature} alt="signature" />
+                {category.name === "entree" && (
+                  <>
+                    <img src={img1Entree} alt="Entree Riad Malaïka" />
+                    <img src={img2Entree} alt="Entree Riad Malaïka" />
+                    <img src={img3Entree} alt="Entree Riad Malaïka" />
+                    <img src={img4Entree} alt="Entree Riad Malaïka" />
+                  </>
+                )}
+                {category.name === "plat" && (
+                  <>
+                    <img src={img1Plat} alt="Plat Riad Malaïka" />
+                    <img src={img2Plat} alt="Plat Riad Malaïka" />
+                    <img src={img3Plat} alt="Plat Riad Malaïka" />
+                    <img src={img4Plat} alt="Plat Riad Malaïka" />
+                  </>
+                )}
+                {category.name === "desserts" && (
+                  <>
+                    <img src={img1Dessert} alt="signature" />
+                    <img src={img2Dessert} alt="signature" />
+                    <img src={img3Dessert} alt="signature" />
+                    <img src={img4Dessert} alt="signature" />
+                  </>
+                )}
               </div>
             </div>
           </div>

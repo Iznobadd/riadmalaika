@@ -174,7 +174,7 @@ nav a:hover {
   gap: 20px;
 }
 .equipe-contact img {
-  width: 135%;
+  max-width: 50%;
 }
 .equipe-contact p {
   font-family: "Allison";
@@ -1278,12 +1278,16 @@ input[type="submit"] {
   top: 124px;
   right: 0;
 }
-.postit img,
-.postit a {
-  width: 100%;
+.postit img {
+  width: 33%;
 }
 .postit a img {
   width: 100%;
+  display: block;
+}
+.postit a {
+  width: 33%;
+  display: block;
 }
 .nous-contacter .overflow {
   margin-top: 0;
