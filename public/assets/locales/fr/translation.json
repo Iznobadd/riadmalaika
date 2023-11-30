@@ -82,5 +82,45 @@
       "gastro_title": "GASTRONOMIE",
       "gastro_desc": "Notre table élégante & raffinée vous attend pour des diners romantiques où vous découvrirez les valeurs traditionnelles de la cuisine Marocaine, et notre équipe en cuisine vous guidera, si vous le souhaitez, pour la préparation d’un plat que vous aurez choisi après une visite des marchés Souiris."
     }
+  },
+  "table": {
+    "banner": {
+      "title": "Gastronomie",
+      "p1": "Le MALAÏKA Riad & Table d’Hôtes vous propose de découvrir les véritables saveurs et parfums de la cuisine marocaine qui se veut authentique et familiale, ainsi que la fusion de plusieurs cultures culinaires internationales qui vous surprendra de par sa présentation mise en scène dans votre assiette.",
+      "p2": "L’équipe du MALAÏKA Riad & Table d’Hôtes vous invite à découvrir la véritable cuisine traditionnelle marocaine, celle qui se transmet de mère en fille, mais également une cuisine Terre-Mer internationale & inventive, sous la houlette de sa cheffe Mina qui n’a de cesse de se renouveler.",
+      "p3": "Élégante et raffinée, La Table est dressée dans nos salons chaque soir pour un nombre limité de convives qui a l’occasion de découvrir des saveurs originales accompagnées de vins marocains sélectionnés, où, vaisselle fine, argenterie, fleurs et chandeliers se côtoient pour leur plus grand plaisir olfactif, gustatif et visuel.",
+      "p4": "Si les Arts Culinaires sont particulièrement développés dans la tradition marocaine on ne peut en découvrir que bien peu d’aspects dans les restaurants marocains touristiques."
+    }
+  },
+  "hebergement": {},
+  "exp": {
+    "title": "Experiences",
+    "infos": "En savoir plus...",
+    "intro": "Le MALAÎKA Riad & Table d’Hôtes propose un large choix d’activités de loisirs et d’activités pour découvrir la ville et la région pendant votre séjour. N’hésitez pas de nous contacter pour organiser vos loisirs.",
+    "equitation": {
+      "title": "Equitation : randonnées à cheval autour d’Essaouira",
+      "p1": "Monter à cheval sur la plage et galoper à perte de vue sur le sable restent un rêve souvent impossible et pourtant, nous pouvons vous proposer des excursions au départ de la grande plage via le Cap Sim, d'une ou plusieurs heures, et même avec petit-déjeuner ou un pique-nique inclus.",
+      "p2": "Pour les plus jeunes, les moins jeunes et pour tous les niveaux, les chevaux Arabes, seront à votre disposition pour votre plus grand plaisir.",
+      "p3": "Un mode très doux pour allier aventure, nature, sport et découverte d’une région encore assez sauvage."
+    },
+    "rando": {
+      "title": "Randonnée à dos de dromadaire à Essaouira",
+      "p1": "Les balades à dos de dromadaire ont lieu à la plage parmi les dunes et à travers la forêt environnante, accompagnées par des professionnels marocains qui vous guideront en toute sécurité.",
+      "p2": "D’une demi-heure à une journée entière, vous pourrez vivre une expérience aussi amusante pour les adultes que pour les enfants, tout en découvrant, souvent avec humour, une terre encore vierge."
+    },
+    "surf": {
+      "title": "Essaouira: Un paradis pour le surf, le windsurf et le kitesurf.",
+      "p1": "En fonction des vents dominants, vous pourrez pratiquer votre sport favori si vous êtes un «pro», mais sinon, pourquoi ne pas tenter une initiation accompagné d’un moniteur agréé, profiter de quelques cours, et repartir en meilleure forme mentale & physique.",
+      "p2": "Dédié aux vents et aux passionnés de sport de glisse, le spot de surf & kitesurf est idéalement situé sur la plage, face à l'île de Mogador, où vous pourrez tout autant pratiquer qu'admirer leurs tricks; un réel plaisir en soi."
+    },
+    "quad": {
+      "title": "Randonnées et excursions en quad avec le Riad Malaika",
+      "p1": "Découvrir une large bande de l’arrière-pays en quad est une véritable aventure qui vous laissera un souvenir fantastique et des émotions inoubliables.",
+      "p2": "Entre mer et sable, dunes et forêt, les pistes, en fonction de la marée, offrent des panoramas variés, tous totalement sauvages et rafraîchissants, à la différence de ce que vous avez l’habitude de vivre.",
+      "p3": "D’une demi-heure à une journée entière, accompagné d’un guide spécialisé, vous pourrez soit seul, soit à deux, entre amis ou en famille, combiner nature et technique en toute sécurité."
+    }
+  },
+  "contact": {
+    "h1": "L'équipe Malaika vous remercie de votre visite"
   }
 }

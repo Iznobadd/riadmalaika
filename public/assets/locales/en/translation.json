@@ -82,5 +82,45 @@
       "gastro_title": "GASTRONOMY",
       "gastro_desc": "Our elegant & refined table awaits you for romantic dinners where you will discover the traditional values of Moroccan cuisine, and our kitchen team will guide you, if you wish, in the preparation of a dish that you will have chosen after a visit to the Souiris markets."
     }
+  },
+  "table": {
+    "banner": {
+      "title": "Gastronomy",
+      "p1": "MALAÏKA Riad & Host Table invites you to discover the true flavors and aromas of authentic Moroccan cuisine, a fusion of international culinary cultures that will surprise you with its presentation on your plate.",
+      "p2": "The MALAÏKA Riad & Host Table team invites you to discover authentic traditional Moroccan cuisine, handed down from mother to daughter, as well as inventive international land-sea cuisine, under the leadership of chef Mina, who never ceases to innovate.",
+      "p3": "Elegant and refined, The Table is set up in our lounges each evening for a limited number of guests who have the opportunity to discover original flavors accompanied by selected Moroccan wines, where fine tableware, silverware, flowers and candelabras come together for their greatest olfactory, gustatory and visual pleasure.",
+      "p4": "While the culinary arts are particularly well developed in the Moroccan tradition, very few aspects of them can be discovered in Moroccan tourist restaurants."
+    }
+  },
+  "hebergement": {},
+  "exp": {
+    "title": "Experiences",
+    "infos": "More info...",
+    "intro": "MALAÎKA Riad & Host Table offers a wide choice of leisure activities and activities to discover the city and the region during your stay. Don't hesitate to contact us to organize your leisure activities.",
+    "equitation": {
+      "title": "Horse-riding: horseback rides around Essaouira",
+      "p1": "Riding a horse on the beach and galloping as far as the eye can see on the sand is often an impossible dream, yet we can offer you excursions from the main beach via Cap Sim, lasting one or more hours, and even including breakfast or a picnic.",
+      "p2": "For young and old, and for all levels, Arabian horses will be at your disposal for your greatest pleasure.",
+      "p3": "A very gentle way to combine adventure, nature, sport and discovery of a region that's still quite wild."
+    },
+    "rando": {
+      "title": "Camel trekking in Essaouira",
+      "p1": "Dromedary rides take place at the beach among the dunes and through the surrounding forest, accompanied by Moroccan professionals who will guide you in complete safety.",
+      "p2": "From half an hour to a full day, you can enjoy an experience that's just as much fun for adults as it is for children, while discovering, often with a sense of humor, a land still untouched by man."
+    },
+    "surf": {
+      "title": "Essaouira: A paradise for surfers, windsurfers and kitesurfers.",
+      "p1": "Depending on the prevailing winds, you'll be able to practice your favorite sport if you're a \"pro\", but if not, why not try an initiation accompanied by a certified instructor, enjoy a few lessons, and leave in better shape mentally & physically.",
+      "p2": "Dedicated to windsurfers and board sports enthusiasts, the surf & kitesurf spot is ideally located on the beach, facing the island of Mogador, where you can practice as well as admire their tricks; a real pleasure in itself."
+    },
+    "quad": {
+      "title": "Quad biking and excursions with Riad Malaika",
+      "p1": "Discovering a wide strip of the hinterland on a quad bike is a real adventure that will leave you with fantastic memories and unforgettable emotions.",
+      "p2": "Between sea and sand, dunes and forest, the trails, depending on the tide, offer varied panoramas, all totally wild and refreshingly different from what you're used to.",
+      "p3": "From half an hour to a full day, accompanied by a specialized guide, you can combine nature and technique in complete safety, either alone or in pairs, with friends or family."
+    }
+  },
+  "contact": {
+    "h1": "The Malaika team thanks you for your visit"
   }
 }

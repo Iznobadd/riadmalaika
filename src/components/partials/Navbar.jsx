@@ -106,7 +106,7 @@ function Navbar() {
               <img src={Booking} alt="Lien Booking du Riad Malaïka" />
             </a>
           </li>
-          <li>
+          <li className="aaa">
             <div className="language">
               {languages.map(({ code, name, country_code }) => (
                 <div

@@ -167,6 +167,13 @@ nav a:hover {
   color: white;
 }
 
+.language {
+  display: flex;
+}
+.language span {
+  cursor: pointer;
+}
+
 /* ------------------ BANNER RIAD ------------------ */
 .equipe-contact {
   display: flex;

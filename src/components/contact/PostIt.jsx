@@ -3,14 +3,14 @@ import { Flip, Zoom } from "react-awesome-reveal";
 import PostIt1 from "../../assets/images/postit1.png";
 import PostIt2 from "../../assets/images/postit2.gif";
 import PostIt3 from "../../assets/images/postit3.png";
-import equipe from "../../assets/images/contact-equipe.png";
+import { useTranslation } from "react-i18next";
+
 function PostIt() {
+  const { t } = useTranslation();
   return (
     <div className="container">
       <Zoom duration={1500}>
-        <h1 className="titre-contact">
-          L'équipe Malaika vous remercie de votre visite
-        </h1>
+        <h1 className="titre-contact">{t("contact.h1")}</h1>
       </Zoom>
       <Flip direction="vertical" duration={2000}>
         <div className="postit">

@@ -6,7 +6,9 @@ import KiteSurf from "../assets/images/kitesurf.gif";
 import Quad from "../assets/images/quad.gif";
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 function Experience() {
+  const { t } = useTranslation();
   useEffect(() => {
     document.title = "Expériences | Riad Malaika";
   }, []);
@@ -14,16 +16,11 @@ function Experience() {
   return (
     <>
       <div className="loisirs-banner">
-        <h2>Expériences</h2>
+        <h2>{t("exp.title")}</h2>
       </div>
       <div className="container">
         <p className="intro-experiences">
-          <b>
-            Le MALAÎKA Riad & Table d’Hôtes propose un large choix d’activités
-            de loisirs et d’activités pour découvrir la ville et la région
-            pendant votre séjour. N’hésitez pas de nous contacter pour organiser
-            vos loisirs.
-          </b>
+          <b>{t("exp.intro")}</b>
         </p>
         <div className="res-riad">
           <div className="loisirs-imgs">
@@ -38,29 +35,16 @@ function Experience() {
 
           <div className="loisirs-description">
             <Slide direction="right" duration={1500}>
-              <h1>Equitation : randonnées à cheval autour d’Essaouira</h1>
-              <p>
-                Monter à cheval sur la plage et galoper à perte de vue sur le
-                sable restent un rêve souvent impossible et pourtant, nous
-                pouvons vous proposer des excursions au départ de la grande
-                plage via le Cap Sim, d'une ou plusieurs heures, et même avec
-                petit-déjeuner ou un pique-nique inclus.
-              </p>
-              <p>
-                Pour les plus jeunes, les moins jeunes et pour tous les niveaux,
-                les chevaux Arabes, seront à votre disposition pour votre plus
-                grand plaisir.
-              </p>
-              <p>
-                Un mode très doux pour allier aventure, nature, sport et
-                découverte d’une région encore assez sauvage.
-              </p>
+              <h1>{t("exp.equitation.title")}</h1>
+              <p>{t("exp.equitation.p1")}</p>
+              <p>{t("exp.equitation.p2")}</p>
+              <p>{t("exp.equitation.p3")}</p>
               <p className="link_contact">
                 <Link
                   to="/contact#contact"
                   onClick={() => contactRef.current.scrollIntoView()}
                 >
-                  En savoir plus...
+                  {t("exp.infos")}
                 </Link>
               </p>
             </Slide>
@@ -70,24 +54,15 @@ function Experience() {
         <div className="res-riad reverse">
           <div className="loisirs-description">
             <Slide direction="left" duration={1500}>
-              <h1>Randonnée à dos de dromadaire à Essaouira</h1>
-              <p>
-                Les balades à dos de dromadaire ont lieu à la plage parmi les
-                dunes et à travers la forêt environnante, accompagnées par des
-                professionnels marocains qui vous guideront en toute sécurité.
-              </p>
-              <p>
-                D’une demi-heure à une journée entière, vous pourrez vivre une
-                expérience aussi amusante pour les adultes que pour les enfants,
-                tout en découvrant, souvent avec humour, une terre encore
-                vierge.
-              </p>
+              <h1>{t("exp.rando.title")}</h1>
+              <p>{t("exp.rando.p1")}</p>
+              <p>{t("exp.rando.p2")}</p>
               <p className="link_contact">
                 <Link
                   to="/contact#contact"
                   onClick={() => contactRef.current.scrollIntoView()}
                 >
-                  En savoir plus...
+                  {t("exp.infos")}
                 </Link>
               </p>
             </Slide>
@@ -117,27 +92,18 @@ function Experience() {
 
           <div className="loisirs-description">
             <Slide direction="right" duration={1500}>
-              <h1>
-                Essaouira: Un paradis pour le surf, le windsurf et le kitesurf.
-              </h1>
+              <h1>{t("exp.surf.title")}</h1>
               <p>
-                En fonction des vents dominants, vous pourrez pratiquer votre
-                sport favori si vous êtes un «pro», mais sinon, pourquoi ne pas
-                tenter une initiation accompagné d’un moniteur agréé, profiter
-                de quelques cours, et repartir en meilleure forme mentale &
-                physique.
+                {t("exp.surf.p1")}
                 <br />
-                Dédié aux vents et aux passionnés de sport de glisse, le spot de
-                surf & kitesurf est idéalement situé sur la plage, face à l'île
-                de Mogador, où vous pourrez tout autant pratiquer qu'admirer
-                leurs tricks; un réel plaisir en soi.
+                {t("exp.surf.p2")}
               </p>
               <p className="link_contact">
                 <Link
                   to="/contact#contact"
                   onClick={() => contactRef.current.scrollIntoView()}
                 >
-                  En savoir plus...
+                  {t("exp.infos")}
                 </Link>
               </p>
             </Slide>
@@ -147,29 +113,16 @@ function Experience() {
         <div className="res-riad reverse">
           <div className="loisirs-description">
             <Slide direction="left" duration={1500}>
-              <h1>Randonnées et excursions en quad avec le Riad Malaika</h1>
-              <p>
-                Découvrir une large bande de l’arrière-pays en quad est une
-                véritable aventure qui vous laissera un souvenir fantastique et
-                des émotions inoubliables.
-              </p>
-              <p>
-                Entre mer et sable, dunes et forêt, les pistes, en fonction de
-                la marée, offrent des panoramas variés, tous totalement sauvages
-                et rafraîchissants, à la différence de ce que vous avez
-                l’habitude de vivre.
-              </p>
-              <p>
-                D’une demi-heure à une journée entière, accompagné d’un guide
-                spécialisé, vous pourrez soit seul, soit à deux, entre amis ou
-                en famille, combiner nature et technique en toute sécurité.
-              </p>
+              <h1>{t("exp.quad.title")}</h1>
+              <p>{t("exp.quad.p1")}</p>
+              <p>{t("exp.quad.p2")}</p>
+              <p>{t("exp.quad.p3")}</p>
               <p className="link_contact">
                 <Link
                   to="/contact#contact"
                   onClick={() => contactRef.current.scrollIntoView()}
                 >
-                  En savoir plus...
+                  {t("exp.infos")}
                 </Link>
               </p>
             </Slide>

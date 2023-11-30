@@ -1,18 +1,16 @@
 import React from "react";
 import equipe from "../../assets/images/contact-equipe.png";
+import { useTranslation } from "react-i18next";
 function Equipe() {
+  const { t } = useTranslation();
   return (
     <div className="container">
       <div className="equipe-contact">
         <img src={equipe} alt="" />
         <p>
-          Le Riad Malaïka, “Les Anges” en arabe, est animé par un couple de
-          Français d'Aix en Provence, entouré d’un personnel Marocain attentif ,
-          ils offrent à leurs hôtes un service hôtelier efficace et discret.
+          {t("footer.riad_p1")}
           <br />
-          Passionnés et envoûtés par la magie naturelle d’Essaouira, dont ils
-          connaissent les charmes secrets, Sylvie, Halim et l’équipe du riad
-          Malaïka sauront vous faire partager leur “Monde à Part”.
+          {t("footer.riad_p2")}
         </p>
       </div>
     </div>
