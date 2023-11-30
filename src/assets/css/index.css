@@ -176,6 +176,9 @@ nav a:hover {
 .equipe-contact img {
   max-width: 50%;
 }
+nav li a {
+  text-transform: uppercase;
+}
 .equipe-contact p {
   font-family: "Allison";
   font-size: 35px !important;

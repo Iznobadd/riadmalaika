@@ -4,7 +4,23 @@ import Booking from "../../assets/images/bookingcom.png";
 import { HiHome } from "react-icons/hi";
 import { FaBars } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
+import i18n from "i18next";
+import { useTranslation } from "react-i18next";
+
 function Navbar() {
+  const languages = [
+    {
+      code: "fr",
+      name: "Français",
+      country_code: "fr",
+    },
+    {
+      code: "en",
+      name: "English",
+      country_code: "gb",
+    },
+  ];
+  const { t } = useTranslation();
   const { pathname } = useLocation();
   const [scrolled, setScrolled] = React.useState(false);
   useEffect(() => {
@@ -20,6 +36,7 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <header>
       <nav id="menu" className={`${scrolled ? "sticky" : ""}`}>
@@ -50,7 +67,7 @@ function Navbar() {
               title="Riad Malaika"
               className={`${pathname === "/table" ? "active-menu" : ""}`}
             >
-              GASTRONOMIE
+              {t("navbar.gastro")}
             </Link>
           </li>
           <li>
@@ -59,7 +76,7 @@ function Navbar() {
               title="Riad Malaika"
               className={`${pathname === "/chambres" ? "active-menu" : ""}`}
             >
-              HÉBERGEMENT
+              {t("navbar.hebergement")}
             </Link>
           </li>
           <li>
@@ -68,7 +85,7 @@ function Navbar() {
               title="Riad Malaika"
               className={`${pathname === "/loisirs" ? "active-menu" : ""}`}
             >
-              EXPÉRIENCES
+              {t("navbar.exp")}
             </Link>
           </li>
           <li>
@@ -77,7 +94,7 @@ function Navbar() {
               title="Riad Malaika"
               className={`${pathname === "/contact" ? "active-menu" : ""}`}
             >
-              CONTACT
+              {t("navbar.contact")}
             </Link>
           </li>
           <li className="booking_img">
@@ -88,6 +105,20 @@ function Navbar() {
             >
               <img src={Booking} alt="Lien Booking du Riad Malaïka" />
             </a>
+          </li>
+          <li>
+            <div className="language">
+              {languages.map(({ code, name, country_code }) => (
+                <div
+                  key={country_code}
+                  onClick={() => {
+                    i18n.changeLanguage(code);
+                  }}
+                >
+                  <span className={`fi fi-${country_code}`}></span>
+                </div>
+              ))}
+            </div>
           </li>
         </ul>
       </nav>

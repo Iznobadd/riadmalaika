@@ -3,25 +3,18 @@ import Table1 from "../../assets/images/latable1.jpg";
 import Table2 from "../../assets/images/latable2.jpg";
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 function Table() {
+  const { t } = useTranslation();
   return (
     <div className="res-riad">
       <div className="riad-description">
         <Fade direction="top" duration={1500}>
-          <h1>Malaïka La Table</h1>
-          <p>
-            La TABLE D’HÔTES s’installe élégamment pour vous chaque soir dans
-            les salons du MALAÏKA Essaouira pour vous faire découvrir le mariage
-            de la traditionnelle cuisine familiale marocaine associée à
-            l’inventivité d’une cheffe passionnée.
-          </p>
-          <p>
-            N’hésitez pas de réserver et de venir découvrir nos saveurs d’orient
-            et de celles d'une cuisine internationale qui saura faire voyager
-            vos papilles.
-          </p>
+          <h1>{t("home.table.table_h1")}</h1>
+          <p>{t("home.table.table_p1")}</p>
+          <p>{t("home.table.table_p2")}</p>
 
-          <Link to="/table">RÉSERVER UNE TABLE</Link>
+          <Link to="/table">{t("home.table.table_button")}</Link>
         </Fade>
       </div>
 

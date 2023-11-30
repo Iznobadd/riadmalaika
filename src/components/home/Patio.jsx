@@ -7,12 +7,14 @@ import Patio4 from "../../assets/images/patio4.jpg";
 import Patio5 from "../../assets/images/patio5.jpg";
 import Patio6 from "../../assets/images/patio6.jpg";
 import { Zoom } from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
 function Patio() {
+  const { t } = useTranslation();
   return (
     <div className="patio">
       <div className="container">
         <Zoom direction="top" duration={1500}>
-          <h1>Le Patio</h1>
+          <h1>{t("home.patio.h1")}</h1>
         </Zoom>
         <section id="image-patio">
           <Splide
@@ -56,33 +58,14 @@ function Patio() {
             </SplideSlide>
           </Splide>
         </section>
-        <h2>Le patio est le cœur d’un Riad mais aussi son âme</h2>
+        <h2>{t("home.patio.alt")}</h2>
 
+        <p>{t("home.patio.p1")}</p>
+        <p>{t("home.patio.p2")}</p>
+        <p>{t("home.patio.p3")}</p>
+        <p>{t("home.patio.p4")}</p>
         <p>
-          Le patio est certainement l’élément le plus caractéristique d’un riad
-          traditionnel marocain, il s’agit d’une cour intérieure à ciel ouvert
-          autour de laquelle sont réparties les pièces de la maison.
-        </p>
-        <p>
-          Au riad Malaika, le patio est non seulement le centre de la bâtisse
-          mais aussi son cœur, bien plus qu’un puits de lumière c’est un
-          vériPatio espace de vie dans et autour duquel tout s’organise.
-        </p>
-        <p>
-          Au centre de celui-ci, la fontaine centrale entourée des quatre
-          piliers en pierres comme la tradition le requiert, coule en
-          permanence* et crée une ambiance très apaisante qui attire à certaines
-          heures de la journée des oiseaux assoiffés et curieux.
-        </p>
-        <p>
-          C’est un lieu où l’on aime passer et repasser pour aller selon son
-          humeur dans l’un des trois salons.
-        </p>
-        <p>
-          <i>
-            * en circuit fermé, afin d’éviter le gaspillage de l’eau qui est une
-            ressource vitale essentielle.
-          </i>
+          <i>{t("home.patio.p5")}</i>
         </p>
       </div>
     </div>

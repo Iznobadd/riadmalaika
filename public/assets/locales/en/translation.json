@@ -1,0 +1,86 @@
+{
+  "navbar": {
+    "accueil": "Home",
+    "gastro": "Gastronomy",
+    "hebergement": "Hosting",
+    "exp": "Experiences",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "© 2024 Copyright | VB Digital Nomad all rights reserved",
+    "riad_p1": "Riad Malaïka, \"Les Anges\" in Arabic, is run by a French couple from Aix-en-Provence, surrounded by attentive Moroccan staff, who offer their guests efficient, discreet hotel service.",
+    "riad_p2": "Enthralled by the natural magic of Essaouira and its secret charms, Sylvie, Halim and the riad Malaïka team will share their \"World Apart\" with you.",
+    "contact_pays": "KINGDOM OF MOROCCO",
+    "mentions": "Terms of use"
+  },
+  "home": {
+    "malaika": {
+      "riad_h1": "Malaïka The Riad",
+      "riad_p1": "The RIAD MALAÏKA Essaouira offers a contemporary atmosphere while retaining the charm of an old Moroccan house, and welcomes international guests looking for a more intimate Oriental experience.",
+      "riad_p2": "Combining comfort and conviviality, this discreetly luxurious guest house, built in the 18th century and fully restored in 2022, offers quality accommodation in the center of old Mogador.",
+      "riad_button": "RESERVE A ROOM"
+    },
+    "table": {
+      "table_h1": "Malaïka The Table",
+      "table_p1": "The HOST TABLE elegantly sets up for you every evening in the lounges of the MALAÏKA Essaouira to let you discover the marriage of traditional Moroccan home cooking with the inventiveness of a passionate chef.",
+      "table_p2": "Don't hesitate to make a reservation and come discover our oriental flavors and those of an international cuisine that will make your taste buds travel.",
+      "table_button": "RESERVE A TABLE"
+    },
+    "parallax": {
+      "title1": "Malaïka Riad & Authentic host table,",
+      "title2": "for your Souiri stay"
+    },
+    "pres": {
+      "pres1": "Open the door of riad Malaika and discover a unique and welcoming guest house.",
+      "pres2": "The oriental ambience of each room, bright and airy, enriched with antique furniture, carpets and Moroccan antiques, invites you to enjoy a change of scenery. Enjoy the sunshine from the terrace, the warmth of a roaring fire, the murmur of the fountains or the song of the birds.",
+      "pres3": "Discover a space where the omnipresent wifi will enable you to stay in touch with your loved ones and share your \"Moroccan\" impressions. You'll also discover a staff at the service of its guests.",
+      "pres4": "Everything is done to make your stay a unique experience, but also to help you discover Morocco in a different way: Berber massages with argan oil, traditional hammams, scrubs with black soap or even walks in the surrounding area accompanied by an excursion guide. Once back at the riad, enjoy a moment of relaxation over traditional mint tea served in one of the lounges or on the terrace, as well as the \"Beldi\" breakfast, different every day."
+    },
+    "restaurant": {
+      "h1": "The Restaurant",
+      "alt": "Gastronomy is an art that transcends the language barrier",
+      "p1": "The MALAÏKA Riad & Host Table team invites you to discover authentic traditional Moroccan cuisine, handed down from mother to daughter, as well as international and inventive land-sea cuisine, under the leadership of passionate chef Mina.",
+      "p2": "Elegant and refined, The Table is set up in our lounges each evening for a limited number of guests who have the opportunity to discover original flavors accompanied by selected Moroccan wines, where fine tableware, silverware, flowers and candelabras come together for their greatest olfactory, gustatory and visual pleasure.",
+      "p3": "While the culinary arts are particularly well developed in Moroccan tradition, few aspects of them can be discovered in Moroccan tourist restaurants. That's why Riad Malaïka offers you the chance to discover the true flavors and aromas of Moroccan cuisine, which is authentic and family-style, as well as the fusion of several international culinary cultures that will surprise you with its presentation on your plate."
+    },
+    "patio": {
+      "h1": "The Patio",
+      "alt": "The patio is the heart and soul of a Riad",
+      "p1": "The patio is certainly the most characteristic feature of a traditional Moroccan riad, an open-air courtyard around which the rooms of the house are arranged.",
+      "p2": "At Riad Malaika, the patio is not only the center of the building, but also its heart. Much more than a skylight, it's a veritable living space in and around which everything is organized.",
+      "p3": "The central fountain, surrounded by four traditional stone pillars, flows continuously*, creating a soothing atmosphere that attracts thirsty and curious birds at certain times of the day.",
+      "p4": "It's a place where people like to drop in and out of, depending on their mood, to one of the three lounges.",
+      "p5": "* in a closed circuit, to avoid wasting water, a vital resource."
+    },
+    "salon": {
+      "h1": "Lounges",
+      "alt": "The tradition of Moroccan hospitality",
+      "p1": "Morocco is a country where hospitality and the art of entertaining are at the heart of everything we do. Oriental lounges, whether for summer or winter, have always been a home's true reception rooms.",
+      "p2": "It's the place to have tea, chat, eat and sometimes even sleep... in a word, it's the place to receive guests and share the intimacy of home.",
+      "p3": "In the purest Moroccan tradition, Riad Malaika has three lounges, located on the ground floor and opening onto the patio, which they surround. They are available to guests throughout the day.",
+      "p4": "Three lounges, three different atmospheres, to offer an oriental dynamic in a very uncluttered setting.",
+      "p5": "From breakfast to nightfall, where you can read, have a drink with friends or family, listen to music and let the fireplace warm you up, our lounges are an invitation to relax."
+    },
+    "terrasse": {
+      "h1": "The Terrace",
+      "alt": "Between heaven and earth, in the shade or in the sun, but above all out of sight.",
+      "p1": "At Riad Malaika, there's a place apart, a space where everyone can enjoy a unique moment, cut off from the world: the roof terrace.",
+      "p2": "Here you can escape the hustle and bustle of the medina to read, surf the web, daydream or sunbathe on a deckchair, and for those who prefer, part of the terrace is sheltered from the sun and wind...",
+      "p3": "In the morning, having breakfast under a blue sky caressed by the rising sun, admiring the incessant ballet of gulls, is a real pleasure, while in the moonlight, surrounded by lights, you can enjoy the murmur of the waves mixed with that of the tadelakt fountain.",
+      "p4": "The ubiquitous wifi lets you stay in touch with friends and family and share your \"Moroccan\" impressions..."
+    },
+    "offres": {
+      "h1": "Our special offers",
+      "infos": "More info..",
+      "title": "EMOTION PACK",
+      "culture_title": "CULTURE",
+      "culture_desc": "Knowing more about the history of a city, or a country, means knowing more about yourself, and a visit to the Medina accompanied by an official guide will reveal some of the secrets of ancient Mogador, so dear to the main artistic and religious cultures. Its UNESCO World Heritage status is no accident...",
+      "bien_title": "WELLNESS",
+      "bien_desc": "Indulge in the pleasures of the hammam, Berber massages, body & face treatments in an atmosphere scented with orange blossom, rose water and argan oil...",
+      "decouverte_title": "DISCOVERY",
+      "decouverte_desc": "Whether on the golf course, on the beach or in the forest, on a quad, a horse, a dromedary, a surfboard or a kiteboard, you'll discover the authenticity of the landscapes of our beloved Essaouira in a fun and sporting way...",
+      "gastro_title": "GASTRONOMY",
+      "gastro_desc": "Our elegant & refined table awaits you for romantic dinners where you will discover the traditional values of Moroccan cuisine, and our kitchen team will guide you, if you wish, in the preparation of a dish that you will have chosen after a visit to the Souiris markets."
+    }
+  }
+}

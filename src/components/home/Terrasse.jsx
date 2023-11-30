@@ -7,12 +7,14 @@ import Terrasse4 from "../../assets/images/terrasse4.jpg";
 import Terrasse5 from "../../assets/images/terrasse5.jpg";
 import Terrasse6 from "../../assets/images/terrasse6.jpg";
 import { Zoom } from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
 function Terrasse() {
+  const { t } = useTranslation();
   return (
     <div className="terrasse">
       <div className="container">
         <Zoom direction="top" duration={1500}>
-          <h1>La Terrasse</h1>
+          <h1>{t("home.terrasse.h1")}</h1>
         </Zoom>
         <section id="image-terrasse">
           <Splide
@@ -56,31 +58,11 @@ function Terrasse() {
             </SplideSlide>
           </Splide>
         </section>
-        <h2>
-          Entre ciel et terre, à l’ombre ou au soleil, mais surtout à l’abri des
-          regards.
-        </h2>
-        <p>
-          Il existe au Riad Malaika un endroit à part, un espace où coupé du
-          monde chacun pourra profiter d’un moment unique : le toit terrasse.
-        </p>
-        <p>
-          Sur celle-ci il est possible de s’isoler de l’agitation de la médina
-          pour lire, surfer sur internet, rêver ou bronzer allongés sur un
-          transat, et pour ceux qui préfèrent, une partie de la terrasse est
-          abritée du soleil et du vent…
-        </p>
-        <p>
-          Le matin, prendre son petit déjeuner sous le ciel bleu caressé par le
-          soleil levant, en admirant l'incessant ballet des goélands est un réel
-          plaisir, tandis qu’au clair de lune, entouré de lumières, vous pourrez
-          apprécier le murmure des vagues mêlé à celui de la fontaine en
-          tadelakt.
-        </p>
-        <p>
-          Le wifi omniprésent vous permettra de rester en contacts avec vos
-          proches et partager ainsi vos impressions «marocaines»…
-        </p>
+        <h2>{t("home.terrasse.alt")}</h2>
+        <p>{t("home.terrasse.p1")}</p>
+        <p>{t("home.terrasse.p2")}</p>
+        <p>{t("home.terrasse.p3")}</p>
+        <p>{t("home.terrasse.p4")}</p>
       </div>
     </div>
   );

@@ -9,7 +9,10 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import scrollImg from "../../assets/images/top-arrow.png";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+
 function Footer() {
+  const { t } = useTranslation();
   const [showScrollButton, setShowScrollButton] = useState(false);
 
   useEffect(() => {
@@ -20,23 +23,23 @@ function Footer() {
         setShowScrollButton(false);
       }
     };
-        // Add scroll event listener
-        window.addEventListener("scroll", handleScroll);
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
 
-        // Remove the scroll event listener when the component unmounts
-        return () => {
-          window.removeEventListener("scroll", handleScroll);
-        };
-      }, []);
-      const scrollToTop = () => {
-        const scrollToTopLoop = () => {
-          if (window.scrollY > 0) {
-            window.scrollTo(0, window.scrollY - 20);
-            requestAnimationFrame(scrollToTopLoop);
-          }
-        };
+    // Remove the scroll event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const scrollToTop = () => {
+    const scrollToTopLoop = () => {
+      if (window.scrollY > 0) {
+        window.scrollTo(0, window.scrollY - 20);
         requestAnimationFrame(scrollToTopLoop);
-      };
+      }
+    };
+    requestAnimationFrame(scrollToTopLoop);
+  };
   return (
     <>
       <footer>
@@ -97,28 +100,23 @@ function Footer() {
             <div className="footer-riad footer-section">
               <h3>RIAD MALAÏKA</h3>
               <p>
-                Le Riad Malaïka, “Les Anges” en arabe, est animé par un couple
-                de Français d'Aix en Provence, entouré d’un personnel Marocain
-                attentif , ils offrent à leurs hôtes un service hôtelier
-                efficace et discret.
+                {t("footer.riad_p1")}
                 <br />
-                Passionnés et envoûtés par la magie naturelle d’Essaouira, dont
-                ils connaissent les charmes secrets, Sylvie, Halim et l’équipe
-                du riad Malaïka sauront vous faire partager leur “Monde à Part”.
+                {t("footer.riad_p2")}
               </p>
-            </div>
+            </div>{" "}
             <div className="footer-services footer-section">
               <h3>SERVICES</h3>
               <p>
-                <Link to="/">Accueil</Link>
+                <Link to="/">{t("navbar.accueil")}</Link>
                 <br />
-                <Link to="/table">Gastronomie</Link>
+                <Link to="/table">{t("navbar.gastro")}</Link>
                 <br />
-                <Link to="/chambres">Hébergements</Link>
+                <Link to="/chambres">{t("navbar.hebergement")}</Link>
                 <br />
-                <Link to="/loisirs">Expériences</Link>
+                <Link to="/loisirs">{t("navbar.exp")}</Link>
                 <br />
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact">{t("navbar.contact")}</Link>
                 <br />
               </p>
             </div>
@@ -128,7 +126,7 @@ function Footer() {
                 Riad Malaïka <br />
                 Derb Zayan n°17 <br />
                 44100 ESSAOUIRA <br />
-                ROYAUME DU MAROC
+                {t("footer.contact_pays")}
               </p>
               <p>
                 +212 (0)524 784 908 Malaïka Fixe <br />
@@ -140,21 +138,17 @@ function Footer() {
         </div>
         <p className="siret">
           Siret 45554712289631 |{" "}
-          <Link to="/mentions-legales">Mentions Légales</Link>
+          <Link to="/mentions-legales">{t("footer.mentions")}</Link>
         </p>
         <div className="copyright">
-          <p>
-            © 2022 Copyright | <strong>VB Digital Nomad</strong> tous droits
-            réservés
-          </p>
+          <p>{t("footer.copyright")}</p>
         </div>
       </footer>
       {showScrollButton && (
-              <div id="scrollUp" onClick={scrollToTop}>
-              <img src={scrollImg} />
-            </div>
+        <div id="scrollUp" onClick={scrollToTop}>
+          <img src={scrollImg} />
+        </div>
       )}
-
     </>
   );
 }

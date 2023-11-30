@@ -1,0 +1,86 @@
+{
+  "navbar": {
+    "accueil": "Accueil",
+    "gastro": "Gastronomie",
+    "hebergement": "Hébergement",
+    "exp": "Expériences",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "© 2024 Copyright | VB Digital Nomad tous droits réservés",
+    "riad_p1": "Le Riad Malaïka, “Les Anges” en arabe, est animé par un couple de Français d'Aix en Provence, entouré d’un personnel Marocain attentif , ils offrent à leurs hôtes un service hôtelier efficace et discret.",
+    "riad_p2": "Passionnés et envoûtés par la magie naturelle d’Essaouira, dont ils connaissent les charmes secrets, Sylvie, Halim et l’équipe du riad Malaïka sauront vous faire partager leur “Monde à Part”.",
+    "contact_pays": "ROYAUME DU MAROC",
+    "mentions": "Mentions légales"
+  },
+  "home": {
+    "malaika": {
+      "riad_h1": "Malaïka Le Riad",
+      "riad_p1": "Le RIAD MALAÏKA Essaouira offre une atmosphère contemporaine tout en conservant le charme d’une ancienne maison marocaine et accueille une clientèle internationale désireuse de vivre une expérience orientale plus intime.",
+      "riad_p2": "Alliant confort et convivialité, cette maison d’hôtes au luxe discret bâtie au 18e siècle, et entièrement restauré en 2022 vous propose un hébergement de qualité au centre de l’ancienne Mogador.",
+      "riad_button": "RÉSERVER UNE CHAMBRE"
+    },
+    "table": {
+      "table_h1": "Malaïka La Table",
+      "table_p1": "La TABLE D’HÔTES s’installe élégamment pour vous chaque soir dans les salons du MALAÏKA Essaouira pour vous faire découvrir le mariage de la traditionnelle cuisine familiale marocaine associée à l’inventivité d’une cheffe passionnée.",
+      "table_p2": "N’hésitez pas de réserver et de venir découvrir nos saveurs d’orient et de celles d'une cuisine internationale qui saura faire voyager vos papilles.",
+      "table_button": "RÉSERVER UNE TABLE"
+    },
+    "parallax": {
+      "title1": "Malaïka Riad & Table d'hôtes authentiques,",
+      "title2": "pour votre séjour Souiri"
+    },
+    "pres": {
+      "pres1": "Poussez la porte du riad Malaika et découvrez une maison d’hôtes singulière et accueillante.",
+      "pres2": "L’ambiance orientale de chaque chambre, claire, aérée, enrichie de meubles anciens, de tapis et d’objets chinés au Maroc, invite au dépaysement. Ainsi, vous pourrez profitez du soleil de la terrasse, de la douceur d’un feu de cheminée en vous laissant bercer par le murmure des fontaines ou par le chant des oiseaux.",
+      "pres3": "Découvrez un espace où le wifi omniprésent vous permettra de rester en contact avec vos proches et de partager ainsi vos impressions «marocaines». Découvrez également un personnel au service de ses invités.",
+      "pres4": "Tout est fait pour vous faire vivre un moment unique mais aussi pour vous faire découvrir le maroc autrement : massages berbères à l’huile d’argan, hammams traditionnels , gommages au savon noir ou encore balades dans les environs accompagnés d’un guide d’excursions. Une fois de retour au riad profitez d’un moment de détente autour du traditionnel thé à la menthe servi dans l’un des salons ou sur la terrasse, tout comme le petit-déjeuner “Beldi” différent chaque jour."
+    },
+    "restaurant": {
+      "h1": "Le Restaurant",
+      "alt": "La gastronomie est un art qui dépasse la barrière du langage",
+      "p1": "L’équipe du MALAÏKA Riad & Table d’Hôtes vous invite à découvrir la véritable cuisine traditionnelle marocaine, celle qui se transmet de mère en fille, mais également une cuisine Terre-Mer internationale & inventive, sous la houlette de sa cheffe Mina, passionnée et qui n’a de cesse de se renouveler.",
+      "p2": "Élégante et raffinée, La Table est dressée dans nos salons chaque soir pour un nombre limité de convives qui a l’occasion de découvrir des saveurs originales accompagnées de vins marocains sélectionnés, où, vaisselle fine, argenterie, fleurs et chandeliers se côtoient pour leur plus grand plaisir olfactif, gustatif et visuel.",
+      "p3": "Si les Arts Culinaires sont particulièrement développés dans la tradition marocaine on ne peut en découvrir que bien peu d’aspects dans les restaurants marocains touristiques, pour cela, le Riad Malaïka vous propose de découvrir les véritables saveurs et parfums de la cuisine marocaine qui se veut authentique et familiale, ainsi que la fusion de plusieurs cultures culinaires internationales qui vous surprendra de par sa présentation mise en scène dans votre assiette."
+    },
+    "patio": {
+      "h1": "Le Patio",
+      "alt": "Le patio est le cœur d’un Riad mais aussi son âme",
+      "p1": "Le patio est certainement l’élément le plus caractéristique d’un riad traditionnel marocain, il s’agit d’une cour intérieure à ciel ouvert autour de laquelle sont réparties les pièces de la maison.",
+      "p2": "Au riad Malaika, le patio est non seulement le centre de la bâtisse mais aussi son cœur, bien plus qu’un puits de lumière c’est un vériPatio espace de vie dans et autour duquel tout s’organise.",
+      "p3": "Au centre de celui-ci, la fontaine centrale entourée des quatre piliers en pierres comme la tradition le requiert, coule en permanence* et crée une ambiance très apaisante qui attire à certaines heures de la journée des oiseaux assoiffés et curieux.",
+      "p4": "C’est un lieu où l’on aime passer et repasser pour aller selon son humeur dans l’un des trois salons.",
+      "p5": "* en circuit fermé, afin d’éviter le gaspillage de l’eau qui est une ressource vitale essentielle."
+    },
+    "salon": {
+      "h1": "Les Salons",
+      "alt": "La tradition de l’hospitalité marocaine",
+      "p1": "Le maroc est un pays où l’hospitalité et l’art de recevoir sont au cœur de toutes les attentions, depuis toujours les salons orientaux, d’été ou d’hiver, sont les véritables pièces à recevoir d’une maison.",
+      "p2": "On y prend le thé, on y discute, on y mange, on y dort même parfois… en un mot se sont les pièces où l’on reçoit ses invités et où l’on partage l’intimité de la maison.",
+      "p3": "Dans la plus pure tradition marocaine, le riad Malaika dispose de trois salons, situés au rez de chaussée et ouverts sur le patio dont ils font le tour. Ils sont à la disposition des hôtes de la maison tout au long de la journée.",
+      "p4": "Trois salons, trois ambiances différentes afin de pouvoir offrir une dynamique orientale tout en restant dans un cadre très épuré.",
+      "p5": "Du petit déjeuner à la nuit tombée pour lire, boire un verre entre amis ou en famille, écouter de la musique et vous laisser réchauffer par la cheminée, nos salons sont une invitation au farniente."
+    },
+    "terrasse": {
+      "h1": "La Terrasse",
+      "alt": "Entre ciel et terre, à l’ombre ou au soleil, mais surtout à l’abri des regards.",
+      "p1": "Il existe au Riad Malaika un endroit à part, un espace où coupé du monde chacun pourra profiter d’un moment unique : le toit terrasse.",
+      "p2": "Sur celle-ci il est possible de s’isoler de l’agitation de la médina pour lire, surfer sur internet, rêver ou bronzer allongés sur un transat, et pour ceux qui préfèrent, une partie de la terrasse est abritée du soleil et du vent…",
+      "p3": "Le matin, prendre son petit déjeuner sous le ciel bleu caressé par le soleil levant, en admirant l'incessant ballet des goélands est un réel plaisir, tandis qu’au clair de lune, entouré de lumières, vous pourrez apprécier le murmure des vagues mêlé à celui de la fontaine en tadelakt.",
+      "p4": "Le wifi omniprésent vous permettra de rester en contacts avec vos proches et partager ainsi vos impressions «marocaines»…"
+    },
+    "offres": {
+      "h1": "Nos offres spéciales",
+      "infos": "Plus d'infos...",
+      "title": "PACK ÉMOTION",
+      "culture_title": "CULTURE",
+      "culture_desc": "Mieux connaître l’histoire d’une ville, d’un pays, permet de mieux se connaître soi-même, et la visite de la Médina accompagnée d’un guide officiel, vous fera découvrir certains secrets de l’ancienne Mogador, si chère aux principales cultures artistiques et religieuses. Son classement au patrimoine mondial de l’UNESCO n’est pas le fruit du hasard...",
+      "bien_title": "BIEN-ÊTRE",
+      "bien_desc": "Laissez vous aller à gouter le plaisir du hammam, des massages berbères, des soins du corps & visage dans une ambiance aux senteurs de fleurs d’orangers, d’eau de rose et d’huile d’argan…",
+      "decouverte_title": "DÉCOUVERTE",
+      "decouverte_desc": "Que ce soit au Golf, sur la plage ou dans la forêt, sur un quad, un cheval, un dromadaire, une planche de surf ou de kite surf, vous découvrirez de façon ludique et sportive l’authenticité des paysages de notre si chère Essaouira…",
+      "gastro_title": "GASTRONOMIE",
+      "gastro_desc": "Notre table élégante & raffinée vous attend pour des diners romantiques où vous découvrirez les valeurs traditionnelles de la cuisine Marocaine, et notre équipe en cuisine vous guidera, si vous le souhaitez, pour la préparation d’un plat que vous aurez choisi après une visite des marchés Souiris."
+    }
+  }
+}

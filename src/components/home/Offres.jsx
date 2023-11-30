@@ -5,7 +5,9 @@ import Decouverte from "../../assets/images/pack-decouverte.png";
 import Gastronomie from "../../assets/images/pack-gastro.png";
 import { Zoom, Flip, Bounce } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 function Offres() {
+  const { t } = useTranslation();
   return (
     <div className="offres-speciales offres-banner">
       {/* <div className="offre-trait"></div>
@@ -14,7 +16,7 @@ function Offres() {
       </div>
       <div className="offre-trait"></div> */}
       <Zoom direction="top" duration={1500}>
-        <h2 className="text-center">Nos offres spéciales</h2>
+        <h2 className="text-center">{t("home.offres.h1")}</h2>
       </Zoom>
       <div className="container">
         <div className="pack-card" id="all_packs">
@@ -23,23 +25,18 @@ function Offres() {
               <div>
                 <div className="pack-title">
                   <h1>
-                    PACK ÉMOTION <br />
-                    CULTURE
+                    {t("home.offres.title")}
+                    <br />
+                    {t("home.offres.culture_title")}
                   </h1>
                 </div>
                 <img src={Culture} alt="Pack emotion culture" />
                 <div className="pack-description">
                   <p>
-                    Mieux connaître l’histoire d’une ville, d’un pays, permet de
-                    mieux se connaître soi-même, et la visite de la Médina
-                    accompagnée d’un guide officiel, vous fera découvrir
-                    certains secrets de l’ancienne Mogador, si chère aux
-                    principales cultures artistiques et religieuses. Son
-                    classement au patrimoine mondial de l’UNESCO n’est pas le
-                    fruit du hasard...
+                    {t("home.offres.culture_desc")}
                     <br />
                     <span className="link_pack">
-                      <Link to="contact">Plus d'infos</Link>
+                      <Link to="contact">{t("home.offres.infos")}</Link>
                     </span>
                   </p>
                 </div>
@@ -52,20 +49,18 @@ function Offres() {
               <div>
                 <div className="pack-title">
                   <h1>
-                    PACK ÉMOTION <br />
-                    BIEN-ÊTRE
+                    {t("home.offres.title")}
+                    <br />
+                    {t("home.offres.bien_title")}
                   </h1>
                 </div>
                 <img src={BienEtre} alt="Pack emotion bien etre" />
                 <div className="pack-description">
                   <p>
-                    Laissez vous aller à gouter le plaisir du hammam, des
-                    massages berbères, des soins du corps & visage dans une
-                    ambiance aux senteurs de fleurs d’orangers, d’eau de rose et
-                    d’huile d’argan…
+                    {t("home.offres.bien_desc")}
                     <br />
                     <span className="link_pack">
-                      <Link to="contact">Plus d'infos</Link>
+                      <Link to="contact">{t("home.offres.infos")}</Link>
                     </span>
                   </p>
                 </div>
@@ -76,18 +71,17 @@ function Offres() {
             <Bounce direction="vertical" duration={1500}>
               <div>
                 <div className="pack-title">
-                  <h1>PACK ÉMOTION DÉCOUVERTE</h1>
+                  <h1>
+                    {t("home.offres.title")} {t("home.offres.decouverte_title")}
+                  </h1>
                 </div>
                 <img src={Decouverte} alt="Pack emotion decouverte" />
                 <div className="pack-description">
                   <p>
-                    Que ce soit au Golf, sur la plage ou dans la forêt, sur un
-                    quad, un cheval, un dromadaire, une planche de surf ou de
-                    kite surf, vous découvrirez de façon ludique et sportive
-                    l’authenticité des paysages de notre si chère Essaouira…
+                    {t("home.offres.decouverte_desc")}
                     <br />
                     <span className="link_pack">
-                      <Link to="contact">Plus d'infos</Link>
+                      <Link to="contact">{t("home.offres.infos")}</Link>
                     </span>
                   </p>
                 </div>
@@ -98,19 +92,17 @@ function Offres() {
             <Bounce direction="vertical" duration={1500}>
               <div>
                 <div className="pack-title">
-                  <h1>PACK ÉMOTION GASTRONOMIE</h1>
+                  <h1>
+                    {t("home.offres.title")} {t("home.offres.gastro_title")}
+                  </h1>
                 </div>
                 <img src={Gastronomie} alt="Pack emotion gastronomie" />
                 <div className="pack-description">
                   <p>
-                    Notre table élégante & raffinée vous attend pour des diners
-                    romantiques où vous découvrirez les valeurs traditionnelles
-                    de la cuisine Marocaine, et notre équipe en cuisine vous
-                    guidera, si vous le souhaitez, pour la préparation d’un plat
-                    que vous aurez choisi après une visite des marchés Souiris.
+                    {t("home.offres.gastro_desc")}
                     <br />
                     <span className="link_pack">
-                      <Link to="contact">Plus d'infos</Link>
+                      <Link to="contact">{t("home.offres.infos")}</Link>
                     </span>
                   </p>
                 </div>
