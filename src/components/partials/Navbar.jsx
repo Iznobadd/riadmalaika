@@ -106,21 +106,19 @@ function Navbar() {
               <img src={Booking} alt="Lien Booking du Riad Malaïka" />
             </a>
           </li>
-          <li className="aaa">
-            <div className="language">
-              {languages.map(({ code, name, country_code }) => (
-                <div
-                  key={country_code}
-                  onClick={() => {
-                    i18n.changeLanguage(code);
-                  }}
-                >
-                  <span className={`fi fi-${country_code}`}></span>
-                </div>
-              ))}
-            </div>
-          </li>
         </ul>
+        <div className="language">
+          {languages.map(({ code, name, country_code }) => (
+            <div
+              key={country_code}
+              onClick={() => {
+                i18n.changeLanguage(code);
+              }}
+            >
+              <span className={`fi fi-${country_code}`}></span>
+            </div>
+          ))}
+        </div>
       </nav>
     </header>
   );
