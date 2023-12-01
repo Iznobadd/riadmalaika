@@ -11,7 +11,12 @@
     font-size: 18px;
   }
 }
-
+@media screen and (max-width: 1390px) {
+  .trip-footer,
+  .booking-footer {
+    display: none;
+  }
+}
 @media screen and (max-width: 992px) {
   /* ------------------ MENU ------------------ */
   .reverse {
@@ -22,10 +27,7 @@
     margin-top: 0;
     padding-top: 12px;
   }
-  .trip-footer,
-  .booking-footer {
-    display: none;
-  }
+
   .footer-content {
     gap: 0;
   }
@@ -378,6 +380,9 @@
   #image-terrasse {
     margin: auto;
     max-height: 200px;
+  }
+  #menu {
+    max-width: 100vw;
   }
   #menu-gallery {
     flex-wrap: wrap;

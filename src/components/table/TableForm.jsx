@@ -580,11 +580,11 @@ function TableForm() {
                 ></textarea>
               </div>
             </div>
-            <div className="imgs-signature">
-              <img src={img1Signature} alt="signature" />
-              <img src={img2Signature} alt="signature" />
-              <img src={img3Signature} alt="signature" />
-              <img src={img3Signature} alt="signature" />
+            <div className="imgs-signatures">
+              <img src={img1Entree} alt="signature" />
+              <img src={img2Entree} alt="signature" />
+              <img src={img1Plat} alt="signature" />
+              <img src={img1Dessert} alt="signature" />
             </div>
           </div>
         </div>
