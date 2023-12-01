@@ -253,7 +253,7 @@
   .pack,
   .pack img,
   .pack .pack-description {
-    max-width: 330px;
+    max-width: 300px;
   }
   .pack {
     margin-bottom: 50px;
@@ -310,7 +310,11 @@
   .name-input,
   .email-input,
   .tel-input,
-  .reservation-table .arrivee-input,
+  .message-input,
+  .personnes-input,
+  .contact-form .name-input,
+  .contact-form .email-input,
+  .contact-form .tel-input,
   .reservation-table .depart-input,
   .reservation-table .personnes-input,
   .reservation-table .heure-input,
@@ -325,6 +329,16 @@
   .reservation-excursion .subject-input,
   .reservation-excursion .connu-input {
     width: 100%;
+  }
+  .reservation-table .over-gray,
+  .reservation-chambres form .over-gray,
+  #contact .over-gray {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .language {
+    gap: 20px;
+    right: 25px;
   }
   #submit {
     width: 40%;
@@ -364,5 +378,24 @@
   #image-terrasse {
     margin: auto;
     max-height: 200px;
+  }
+  #menu-gallery {
+    flex-wrap: wrap;
+  }
+  .imgs-signatures {
+    flex-wrap: wrap;
+  }
+  .submit {
+    text-align: center;
+  }
+  .weather {
+    display: none;
+  }
+  .equipe-contact {
+    flex-wrap: wrap;
+  }
+  .equipe-contact img {
+    width: 100%;
+    max-width: 100%;
   }
 }
