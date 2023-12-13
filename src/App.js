@@ -31,7 +31,6 @@ function App() {
         <Route path="/loisirs" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/mentions-legales" element={<Mentions />} />
-        <Route path="/qrcode" element={<QRCode />} />
       </Routes>
       <Footer />
     </div>
