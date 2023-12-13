@@ -8,6 +8,7 @@ import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import { useEffect, useLayoutEffect } from "react";
 import Mentions from "./pages/Mentions";
+import QRCode from "./pages/QRCode";
 
 function App() {
   const location = useLocation();
@@ -30,6 +31,7 @@ function App() {
         <Route path="/loisirs" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/mentions-legales" element={<Mentions />} />
+        <Route path="/qrcode" element={<QRCode />} />
       </Routes>
       <Footer />
     </div>
