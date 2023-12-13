@@ -15,6 +15,7 @@ function QRCode() {
 
         // Enregistrement du fichier PDF
         saveAs(blob, "menu_riad_malaika.pdf");
+        window.open(URL.createObjectURL(blob));
       } catch (error) {
         console.error("Erreur lors du téléchargement du PDF : ", error);
       }
