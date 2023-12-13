@@ -8,7 +8,6 @@ import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import { useEffect, useLayoutEffect } from "react";
 import Mentions from "./pages/Mentions";
-import QRCode from "./pages/QRCode";
 
 function App() {
   const location = useLocation();
