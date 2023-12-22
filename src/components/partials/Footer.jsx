@@ -68,7 +68,7 @@ function Footer() {
             </div>
             <div className="tripadvisor">
               <a
-                href="https://www.tripadvisor.fr/Restaurant_Review-g298349-d7359331-Reviews-Malaika_Riad_Table_D_Hotes-Essaouira_Marrakech_Safi.html"
+                href="https://www.tripadvisor.fr/Hotel_Review-g298349-d1582606-Reviews-Riad_Malaika-Essaouira_Marrakech_Safi.html"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -77,7 +77,7 @@ function Footer() {
             </div>
             <div className="tripadvisor">
               <a
-                href="https://www.tripadvisor.fr/Hotel_Review-g298349-d1582606-Reviews-Riad_Malaika-Essaouira_Marrakech_Safi.html"
+                href="https://www.tripadvisor.fr/Restaurant_Review-g298349-d7359331-Reviews-Malaika_Riad_Table_D_Hotes-Essaouira_Marrakech_Safi.html"
                 target="_blank"
                 rel="noreferrer"
               >

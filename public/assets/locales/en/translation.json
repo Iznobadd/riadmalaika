@@ -92,7 +92,62 @@
       "p4": "While the culinary arts are particularly well developed in the Moroccan tradition, very few aspects of them can be discovered in Moroccan tourist restaurants."
     }
   },
-  "hebergement": {},
+  "hebergement": {
+    "standard": {
+      "title": "The Standard bedrooms",
+      "description": "Our \"Standard\" double or twin rooms overlook the medina, and their typically Moroccan decor will immediately immerse you in a sober and exotic atmosphere...",
+      "subtitle": "The Standard bedrooms offer each and every one a unique decoration.",
+      "p1": "Our “Standard”, double or twin bedrooms enjoy a view on the Medina, while their typical Moroccan setting instantly plunges you into a sober and exotic atmosphere. Cast iron, thuya wood, copper and multicoloured carpets compose the décor and are a part of the furnishings created on site by the Souiris craftsmen..",
+      "p2": "Each one of the “Standard” bedrooms places at your disposition the comfort of a private bathroom complete with walls finished with traditional Tadelakt waxed coating in natural desert colours. They are equipped with a window, a shower and toilettes. For your comfort, we change the bath towels daily.",
+      "p3": "Our welcoming products : soap, shower gel, and shampoo composed of all natural ingredients are  prepared in Marrakech especially for us by Nectarome.",
+      "p4": "Reserve your room at Malaïka Riad now at the best price without charge via our secure reservation system by clicking here."
+    },
+    "confort": {
+      "title": "The Comfort bedrooms",
+      "description": "Located on the 1st or 2nd floor of the riad, our Comfort rooms feature a queen-size double bed and bright decor. Quietly overlooking the patio, they invite you to relax...",
+      "subtitle": "The bedrooms Comfort beckon you to a change of scenery.",
+      "p1": "Situated on the 1st or 2nd floor or the riad, our Comfort bedrooms are equipped with a double queen-size bed and a sunny decor. Calm, they face the patio and are highly conducive to relaxation.",
+      "p2": "“Haiks” on the windows, lamps in copper and Iraqi multicoloured glass, bring back the Moroccan charm which was found in the old bourgeois homes of another time.",
+      "p3": "The traditional bathrooms in coloured zelliges transport you back in time all the while bringing you a level of comfort at the standards found in today’s hotels. For your well-being, we change the bathroom linen every morning. and we provide you with delicious natural complimentary products with ambergris essences produced in the Ouriqua valley especially for the Malaïka Riad.",
+      "p4": "Reserve your room at Malaïka Riad now at the best price without charge via our secure reservation system by clicking here."
+    },
+    "superieure": {
+      "title": "The bedrooms Superior",
+      "description": "Surrounded by objects found in the souks of the region, you'll find a comfort that's conducive to daydreaming. The sleeping area features a comfortable queen-size double bed, and the lounge area offers a pleasant place to unwind...",
+      "subtitle": "The bedrooms Superior are all decorated with different themes.",
+      "p1": "Surrounded by objects discovered in the souks and bazaars of the region, you will find a sort of comfort conducive to daydreaming. The sleeping  area equipped with a comfortable double queen-size bed, and the living room corner offers a pleasant place to decompress.",
+      "p2": "The furniture in thuya mosaic, in fragrant cedar or in cast iron has been acquired in the antiques markets between Essaouira and Marrakech. Our Superior bedrooms in double or twin formats, are situated on the 1st and 2nd floors, their windows looking down on either the Medina or on the patio of the riad.",
+      "p3": "Their oriental bathrooms combining “tadelakt” and “zelliges” finish will enable you to discover the traditional materials which were used in the original Moroccan hammams of old. Each private bathroom offers shower and toilettes. In order to provide you a quality stay, we change the bathroom linen every morning, and we have our complimentary welcoming products featuring essential oils prepared by Nectarome Marrakech in the Ouriqua valley.",
+      "p4": "Reserve your room at Malaïka Riad now at the best price without charge via our secure reservation system by clicking here."
+    },
+    "junior": {
+      "title": "Junior Suite",
+      "description": "Spending time isolated from the world, having breakfast, a drink or reading in the sun is a highlight of this Terrace Suite...",
+      "subtitle": "The Terrace Junior Suite for a very unique stay.",
+      "p1": "Pass some time isolated from the world, have your breakfast, sip a drink, or just read in the sun – this is the trump card for this Suite on the terrace.",
+      "p2": "At your disposition, a double bedroom equipped with a double queen-size bed, a luminous and spacious living room with a cozy fireplace, a mini-bar sans alcohol and a Nespresso machine.  Paintings, furniture and various objects tell part of the story of this continent…",
+      "p3": "The bathrooms, in traditional Tadelakt, offers you a bathtub along with the traditional accessories used in the hammams of the old days.",
+      "p4": "In order to optimise your well-being, the bathroom linen is changed every day, and the toilettes are independent of the bathroom. The complimentary “Malaïka” welcoming products with oriental fragrances that we have produced in the Ouriqua valley are at your disposal throughout your stay.",
+      "p5": "",
+      "p6": ""
+    },
+    "twin_standard": {
+      "title": "The Standard Twin room",
+      "description": "Like all the rooms at Riad Malaïka, the Twin Standard room is soberly decorated with Moroccan furniture and objects. Bright and pleasant, this uniquely charming room has its own private bathroom...",
+      "subtitle": "The Twin Standard room is situated on the second floor overlooking the Medina.",
+      "p1": "Like all the rooms at the Malaïka Riad, the Twin Standard room is characterized by sober decoration where furniture and other objects coming from Morocco have found their place.",
+      "p2": "Luminous and pleasant, this room of singular charm possesses its own private bathroom.",
+      "p3": "The bathroom linen is changed daily in order to assure you a sense of well-being, along with all of our welcoming products with natural ambergris essence which we offer you."
+    },
+    "twin_sup": {
+      "title": "The Superior Twin room",
+      "description": "A real invitation to travel, thanks to the typically Moroccan decor of this room with two comfortable separate beds, a fireplace, a traditional bathroom and charming local objects...",
+      "subtitle": "The Superior Twin room on the first floor with a view on the patio, offers you comfort and intimacy.",
+      "p1": "A veritable invitation to voyage thanks to the typical Moroccan décor, this room is equipped with two separate and comfortable beds, a fireplace, a traditional bathroom and local objects full of charm.",
+      "p2": "For your well-being, we change the bathroom linen daily and we provide you with delicious natural welcoming products with ambergris essences produced in the Ouriqua valley especially for the Malaïka Riad.",
+      "p3": ""
+    }
+  },
   "exp": {
     "title": "Experiences",
     "infos": "More info...",

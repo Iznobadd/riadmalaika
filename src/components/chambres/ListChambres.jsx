@@ -21,7 +21,9 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { Slide } from "react-awesome-reveal";
 import ModalComponent from "./ModalComponent";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 function ListChambres() {
+  const { t } = useTranslation();
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [buttonId, setButtonId] = useState("");
 
@@ -89,19 +91,15 @@ function ListChambres() {
 
         <div className="description-chambres">
           <div>
-            <h2>Chambre Double Standard</h2>
-            <p>
-              Nos chambres « Standard », double ou twin ont une vue sur la
-              médina, leur décor typiquement marocain, vous plongera aussitôt
-              dans une atmosphère sobre et dépaysante...
-            </p>
+            <h2>{t("hebergement.standard.title")}</h2>
+            <p>{t("hebergement.standard.description")}</p>
             <span>
               <a
                 href="./"
                 id="modal-chambre1-btn"
                 onClick={(event) => openModal("modal-chambre1-btn", event)}
               >
-                Plus d'infos
+                {t("home.offres.infos")}
               </a>
             </span>
           </div>
@@ -110,19 +108,15 @@ function ListChambres() {
 
       <div className="l-chambres reverse-chambres">
         <div className="description-chambres desc-white">
-          <h2>Chambres Double Confort</h2>
-          <p>
-            Au 1er ou au 2eme étage du riad, nos chambres Confort sont équipées
-            d’un lit double queen-size et d’un décor lumineux. Au calme, elles
-            donnent sur le patio et vous invitent à la détente...
-          </p>
+          <h2>{t("hebergement.confort.title")}</h2>
+          <p>{t("hebergement.confort.description")}</p>
           <span>
             <a
               href="./"
               id="modal-chambre2-btn"
               onClick={(event) => openModal("modal-chambre2-btn", event)}
             >
-              Plus d'infos
+              {t("home.offres.infos")}
             </a>
           </span>
         </div>
@@ -217,20 +211,15 @@ function ListChambres() {
           </Slide>
         </section>
         <div className="description-chambres">
-          <h2>Chambres Double supérieures</h2>
-          <p>
-            Entourés d’objets chinés dans les souks de la région vous y
-            trouverez un confort propice à la rêverie. L’espace sommeil équipé
-            d’un lit double queen-size confortable et le coin salon vous offrent
-            un espace agréable pour décompresser...
-          </p>
+          <h2>{t("hebergement.superieure.title")}</h2>
+          <p>{t("hebergement.superieure.description")}</p>
           <span>
             <a
               href="./"
               id="modal-chambre3-btn"
               onClick={(event) => openModal("modal-chambre3-btn", event)}
             >
-              Plus d'infos
+              {t("home.offres.infos")}
             </a>
           </span>
         </div>
@@ -238,19 +227,15 @@ function ListChambres() {
 
       <div className="l-chambres reverse-chambres">
         <div className="description-chambres desc-white">
-          <h2>Junior Suite</h2>
-          <p>
-            Passer du temps isolé du monde, prendre son petit-déjeuner, boire un
-            verre ou lire au soleil est un atout de cette Suite sur la
-            terrasse...
-          </p>
+          <h2>{t("hebergement.junior.title")}</h2>
+          <p>{t("hebergement.junior.description")}</p>
           <span>
             <a
               href="./"
               id="modal-chambre4-btn"
               onClick={(event) => openModal("modal-chambre4-btn", event)}
             >
-              Plus d'infos
+              {t("home.offres.infos")}
             </a>
           </span>
         </div>
@@ -345,20 +330,15 @@ function ListChambres() {
           </Slide>
         </section>
         <div className="description-chambres">
-          <h2>Chambre Twin Standard</h2>
-          <p>
-            Comme toutes les chambres du Riad Malaïka, la chambre Twin Standard
-            bénéficie d’une décoration sobre où les meubles et objets venus du
-            Maroc ont su trouver leur place. Lumineuse et agréable cette chambre
-            au charme unique possède sa salle de bain privative...
-          </p>
+          <h2>{t("hebergement.twin_standard.title")}</h2>
+          <p>{t("hebergement.twin_standard.description")}</p>
           <span>
             <a
               href="./"
               id="modal-chambre5-btn"
               onClick={(event) => openModal("modal-chambre5-btn", event)}
             >
-              Plus d'infos
+              {t("home.offres.infos")}
             </a>
           </span>
         </div>
@@ -366,20 +346,15 @@ function ListChambres() {
 
       <div className="l-chambres reverse-chambres">
         <div className="description-chambres desc-white">
-          <h2>Chambre Twin Supérieure</h2>
-          <p>
-            Une véritable invitation au voyage grâce au décor typiquement
-            marocain de cette chambre équipée de deux lits séparées
-            confortables, d’une cheminée, d’une salle d’eau traditionnelle et
-            d’objets locaux plein de charme...
-          </p>
+          <h2>{t("hebergement.twin_sup.title")}</h2>
+          <p>{t("hebergement.twin_sup.description")}</p>
           <span>
             <a
               href="./"
               id="modal-chambre6-btn"
               onClick={(event) => openModal("modal-chambre6-btn", event)}
             >
-              Plus d'infos
+              {t("home.offres.infos")}
             </a>
           </span>
         </div>

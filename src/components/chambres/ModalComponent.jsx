@@ -35,7 +35,9 @@ import TwinSup2 from "../../assets/images/twin-sup2.jpg";
 import TwinSup3 from "../../assets/images/twin-sup3.jpg";
 import TwinSup4 from "../../assets/images/twin-sup4.jpg";
 import TwinSup5 from "../../assets/images/twin-sup5.jpg";
+import { useTranslation } from "react-i18next";
 function ModalComponent({ isOpen, onRequestClose, buttonId }) {
+  const { t } = useTranslation();
   return (
     <Modal
       isOpen={isOpen}
@@ -64,36 +66,16 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <span class="close" onClick={onRequestClose}>
                 &times;
               </span>
-              <h2 className="text-center my-5">Chambres double standard</h2>
+              <h2 className="text-center my-5">
+                {t("hebergement.standard.title")}
+              </h2>
               <p className="intro-experiences text-center">
-                <b>
-                  Les chambres Standard proposent une décoration inédite pour
-                  chacune.
-                </b>
+                <b>{t("hebergement.standard.subtitle")}</b>
               </p>
-              <p>
-                Nos chambres « Standard », double ou twin ont une vue sur la
-                médina, leur décor typiquement marocain, vous plongera aussitôt
-                dans une atmosphère sobre et dépaysante. Fer forgé, bois de
-                thuya, cuivre et tapis multicolores composent le décor et font
-                partie du mobilier fabriqué sur place par les artisans Souiris.
-              </p>
-              <p>
-                Chacune des chambres « Standard » offre le confort d’une salle
-                de bains privative aux murs de Tadelakt, enduit ciré
-                traditionnel aux couleurs naturelles. Elles sont équipées d’une
-                fenêtre, d’une douche et de toilettes. Pour votre confort nous
-                changeons les serviettes de bain chaque jour.
-              </p>
-              <p>
-                Nos produits d’accueil : savon, gel douche et shampoing composés
-                à base de produits naturels sont élaborés à Marrakech
-                spécialement pour nous par Nectarome.
-              </p>
-              <p className="italic">
-                De 62€ à 76€ avec ou sans petits déjeuners (hors taxes de séjour
-                de 2€50 par personne et par nuit)
-              </p>
+              <p>{t("hebergement.standard.p1")}</p>
+              <p>{t("hebergement.standard.p2")}</p>
+              <p>{t("hebergement.standard.p3")}</p>
+              <p className="italic">{t("hebergement.standard.p4")}</p>
               <div className="modal-imgs">
                 <img src={Standard1} alt="" />
                 <img src={Standard2} alt="" />
@@ -114,33 +96,15 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <span class="close" onClick={onRequestClose}>
                 &times;
               </span>
-              <h2 class="text-center my-5">Chambres confort</h2>
+              <h2 class="text-center my-5">{t("hebergement.confort.title")}</h2>
               <p class="intro-experiences text-center">
-                <b>Les chambres Confort vous invitent au dépaysement</b>
+                <b>{t("hebergement.confort.subtitle")}</b>
               </p>
-              <p>
-                Au 1er ou au 2eme étage du riad, nos chambres Confort sont
-                équipées d’un lit double queen-size et d’un décor lumineux. Au
-                calme, elles donnent sur le patio et vous invitent à la détente.{" "}
-              </p>
-              <p>
-                «Haiks» aux fenêtres, lustres en cuivre et verre Iraki
-                multicolore ravivent le charme Marocain qu’on trouvait dans les
-                maisons bourgeoises autrefois.{" "}
-              </p>
-              <p>
-                Les salles d’eau traditionnelles en zelliges colorées vous font
-                voyager dans le temps tout en vous apportant le niveau de
-                confort des standards de l’hotellerie d’aujourd’hui. Pour votre
-                bien-être le linge de toilette est changé chaque matin. Nos
-                savons, gel douche et shampoing à base d’huiles essentielles
-                sont élaborés à Marrakech pour le Malaïka.{" "}
-              </p>
+              <p>{t("hebergement.confort.p1")}</p>
+              <p>{t("hebergement.confort.p2")}</p>
+              <p>{t("hebergement.confort.p3")}</p>
 
-              <p class="italic">
-                De 73€ à 87€ avec ou sans petits déjeuners (hors taxes de séjour
-                de 2€50 par personne et par nuit)
-              </p>
+              <p class="italic">{t("hebergement.confort.p4")}</p>
               <div class="modal-imgs">
                 <img src={Confort1} alt="" />
                 <img src={Confort2} alt="" />
@@ -161,41 +125,17 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <span class="close" onClick={onRequestClose}>
                 &times;
               </span>
-              <h2 class="text-center my-5">Chambres supérieures</h2>
+              <h2 class="text-center my-5">
+                {t("hebergement.superieure.title")}
+              </h2>
               <p class="intro-experiences text-center">
-                <b>
-                  Les chambres Supérieures sont toutes décorées sur des
-                  thématiques différentes.
-                </b>
+                <b>{t("hebergement.superieure.subtitle")}</b>
               </p>
-              <p>
-                Entourés d’objets chinés dans les souks de la région vous y
-                trouverez un confort propice à la rêverie. L’espace sommeil
-                équipé d’un lit double queen-size confortable et le coin salon
-                vous offrent un espace agréable pour décompresser.{" "}
-              </p>
-              <p>
-                Le mobilier en marqueterie de thuya, en cèdre parfumé ou en fer
-                forgé a été chiné ça et là entre Essaouira et Marrakech. Nos
-                chambres Supérieures en format chambre double ou chambre twin,
-                se situent au 1er et au 2éme étage, leurs fenêtres donnent sur
-                la médina ou sur le patio du riad.
-              </p>
-              <p>
-                Les salles d’eau orientales mêlant le tadelakt et les zelliges
-                vous ferons découvrir les matières traditionnelles utilisées
-                dans les hamams marocains depuis la nuit des temps. Chaque salle
-                de bain privée offre douche et toilettes. Afin de vous offrir un
-                séjour de qualité, nous changeons les serviettes de toilettes
-                chaque matin et nous faisons fabriquer nos produits d’accueil à
-                base d’huile essentielle par Nectarome Marrakech dans la vallée
-                de l’Ourika.
-              </p>
+              <p>{t("hebergement.superieure.p1")}</p>
+              <p>{t("hebergement.superieure.p2")}</p>
+              <p>{t("hebergement.superieure.p3")}</p>
 
-              <p class="italic">
-                De 84€ à 98€ avec ou sans petits déjeuners (hors taxes de séjour
-                de 2€50 par personne et par nuit)
-              </p>
+              <p class="italic">{t("hebergement.superieure.p4")}</p>
               <div class="modal-imgs">
                 <img src={Superieur1} alt="" />
                 <img src={Superieur2} alt="" />
@@ -216,45 +156,17 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <span class="close" onClick={onRequestClose}>
                 &times;
               </span>
-              <h2 class="text-center my-5">Junior suite</h2>
+              <h2 class="text-center my-5">{t("hebergement.junior.title")}</h2>
               <p class="intro-experiences text-center">
-                <b>La Junior Suite Terrasse pour un séjour unique</b>
+                <b>{t("hebergement.junior.subtitle")}</b>
               </p>
-              <p>
-                Passer du temps isolé du monde, prendre son petit-déjeuner,
-                boire un verre ou lire au soleil est un atout de cette Suite sur
-                la terrasse.
-              </p>
-              <p>
-                A votre disposition, une chambre double équipée d’un lit double
-                queen-size, un salon lumineux et spacieux avec cheminée où il
-                fait bon cocooner, un mini-bar sans alcool et une machine
-                Nespresso. Tableaux, meubles et objets, y racontent une partie
-                de l’histoire de ce continent…
-              </p>
-              <p>
-                La salle de bains, en Tadelakt traditionnel, vous offre une
-                baignoire et les accessoires traditionnels utilisés autrefois
-                dans les hamams. Pour optimiser votre bien-être, les serviettes
-                de toilettes sont changées chaque jour, et les toilettes sont
-                indépendantes de la salle d’eau. Les produits d’accueil aux
-                fragrances orientales «Malaïka» que nous faisons fabriquer dans
-                la vallée de l’Ourika sont à disposition tout au long de votre
-                séjour.
-              </p>
+              <p>{t("hebergement.junior.p1")}</p>
+              <p>{t("hebergement.junior.p2")}</p>
+              <p>{t("hebergement.junior.p3")}</p>
 
-              <p>
-                Le Salon étant équipé d'un lit simple, cette Junior-Suite permet
-                d'accueillir jusqu'à 3 personnes.
-              </p>
-              <p class="italic">
-                Double de 106€ à 120€ avec ou sans petits déjeuners (hors taxes
-                de séjour de 2€50 par personne et par nuit)
-              </p>
-              <p class="italic">
-                Triple de 130€ à 150€ avec ou sans petits déjeuners (hors taxes
-                de séjour de 2€50 par personne et par nuit)
-              </p>
+              <p>{t("hebergement.junior.p4")}</p>
+              <p class="italic">{t("hebergement.junior.p5")}</p>
+              <p class="italic">{t("hebergement.junior.p6")}</p>
               <div class="modal-imgs">
                 <img src={Junior1} alt="" />
                 <img src={Junior2} alt="" />
@@ -275,30 +187,16 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <span class="close" onClick={onRequestClose}>
                 &times;
               </span>
-              <h2 class="text-center my-5">Chambres twin standard</h2>
+              <h2 class="text-center my-5">
+                {t("hebergement.twin_standard.title")}
+              </h2>
               <p class="intro-experiences text-center">
-                <b>
-                  La Chambre Twin Standard se situe au deuxième étage avec une
-                  vue sur la médina.
-                </b>
+                <b>{t("hebergement.twin_standard.subtitle")}</b>
               </p>
-              <p>
-                Comme toutes les chambres du Riad Malaïka, la chambre Twin
-                Standard bénéficie d’une décoration sobre où les meubles et
-                objets venus du Maroc ont su trouver leur place. Lumineuse et
-                agréable cette chambre au charme unique possède sa salle de bain
-                privative.
-              </p>
-              <p>
-                Le linge de toilette est changé chaque jour afin de vous
-                procurer une sensation de bien-être, tout comme les produits
-                d’accueil aux essences naturelles d’ambre que nous vous offrons.
-              </p>
+              <p>{t("hebergement.twin_standard.p1")}</p>
+              <p>{t("hebergement.twin_standard.p2")}</p>
 
-              <p class="italic">
-                De 62€ à 76€ avec ou sans petits déjeuners (hors taxes de séjour
-                de 2€50 par personne et par nuit)
-              </p>
+              <p class="italic">{t("hebergement.twin_standard.p3")}</p>
               <div class="modal-imgs">
                 <img src={Twin1} alt="" />
                 <img src={Twin2} alt="" />
@@ -319,29 +217,15 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <span class="close" onClick={onRequestClose}>
                 &times;
               </span>
-              <h2 class="text-center my-5">Chambres twin supérieures</h2>
+              <h2 class="text-center my-5">
+                {t("hebergement.twin_sup.title")}
+              </h2>
               <p class="intro-experiences text-center">
-                <b>
-                  La Chambre Twin Supérieure au premier étage avec vue sur le
-                  patio, vous offre confort et intimité.
-                </b>
+                <b>{t("hebergement.twin_sup.subtitle")}</b>
               </p>
-              <p>
-                Une véritable invitation au voyage grâce au décor typiquement
-                marocain de cette chambre équipée de deux lits séparées
-                confortables, d’une cheminée, d’une salle d’eau traditionnelle
-                et d’objets locaux plein de charme.
-              </p>{" "}
-              <p>
-                Pour votre bien-être nous changeons chaque jour le linge de
-                toilette et nous vous offrons de délicieux produits d’accueil
-                naturels aux essences d’ambre fabriqués dans la vallée de
-                l’Ouriqua spécialement pour le Riad Malaïka.
-              </p>
-              <p class="italic">
-                de 84€ à 98€ avec ou sans petits déjeuners (hors taxes de séjour
-                de 2€50 par personne et par nuit)
-              </p>
+              <p>{t("hebergement.twin_sup.p1")}</p>{" "}
+              <p>{t("hebergement.twin_sup.p2")}</p>
+              <p class="italic">{t("hebergement.twin_sup.p3")}</p>
               <div class="modal-imgs">
                 <img src={TwinSup1} alt="" />
                 <img src={TwinSup2} alt="" />
