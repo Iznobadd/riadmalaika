@@ -8,6 +8,7 @@ import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import { useEffect, useLayoutEffect } from "react";
 import Mentions from "./pages/Mentions";
+import Construction from "./pages/Construction";
 
 function App() {
   const location = useLocation();
@@ -26,7 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/table" element={<Gastronomie />} />
-        <Route path="/chambres" element={<Hebergement />} />
+        <Route path="/chambres" element={<Construction />} />
         <Route path="/loisirs" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/mentions-legales" element={<Mentions />} />
