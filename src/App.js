@@ -9,6 +9,8 @@ import Contact from "./pages/Contact";
 import { useEffect, useLayoutEffect } from "react";
 import Mentions from "./pages/Mentions";
 import Construction from "./pages/Construction";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const location = useLocation();
@@ -33,6 +35,8 @@ function App() {
         <Route path="/mentions-legales" element={<Mentions />} />
       </Routes>
       <Footer />
+      <Analytics mode={"production"} />
+      <SpeedInsights />
     </div>
   );
 }
