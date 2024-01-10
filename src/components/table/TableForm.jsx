@@ -364,7 +364,7 @@ function TableForm() {
     emailjs
       .send(
         process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_HEBERGEMENT_RIAD_ID,
+        process.env.REACT_APP_TEMPLATE_TABLE_RIAD_ID,
         data,
         process.env.REACT_APP_USER_ID
       )

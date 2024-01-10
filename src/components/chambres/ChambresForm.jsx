@@ -29,8 +29,30 @@ function ChambresForm() {
       });
       toast.error("Veuillez remplir les champs obligatoires");
       return;
+    } else {
+      const formatDateArrivee = new Date(data.arrivee).toLocaleDateString(
+        "fr-FR",
+        {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        }
+      );
+      const formatDateDepart = new Date(data.depart).toLocaleDateString(
+        "fr-FR",
+        {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        }
+      );
+      const allData = {
+        ...data,
+        formatDateArrivee,
+        formatDateDepart,
+      };
+      sendEmail(allData);
     }
-    sendEmail(data);
   };
 
   const sendEmail = (data) => {
