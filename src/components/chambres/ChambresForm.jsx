@@ -5,6 +5,9 @@ import "react-toastify/dist/ReactToastify.min.css";
 import "react-datepicker/dist/react-datepicker.css";
 import emailjs from "emailjs-com";
 import DatePicker from "react-datepicker";
+import { useState } from "react";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
 
 function ChambresForm() {
   const {
@@ -16,6 +19,7 @@ function ChambresForm() {
     reset,
   } = useForm();
 
+  const [tel, setTel] = useState();
   const onSubmit = (data) => {
     const errors = validateData(data);
     if (Object.keys(errors).length) {
@@ -48,9 +52,11 @@ function ChambresForm() {
       );
       const allData = {
         ...data,
+        tel,
         formatDateArrivee,
         formatDateDepart,
       };
+
       sendEmail(allData);
     }
   };
@@ -81,7 +87,6 @@ function ChambresForm() {
     const requiredFields = [
       "nom",
       "email",
-      "tel",
       "chambre",
       "personnes",
       "connuMalaika",
@@ -128,13 +133,11 @@ function ChambresForm() {
           </div>
 
           <div className="tel-input">
-            <input
-              type="text"
+            <PhoneInput
               placeholder="TÉLÉPHONE*"
-              name="tel"
-              id="phone"
-              className={`${errors.tel ? "error_form" : ""}`}
-              {...register("tel")}
+              defaultCountry="FR"
+              value={tel}
+              onChange={setTel}
             />
           </div>
           <div className="arrivee-input">

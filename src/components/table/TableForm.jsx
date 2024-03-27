@@ -21,6 +21,8 @@ import img1Dessert from "../../assets/images/dessert1.jpg";
 import img2Dessert from "../../assets/images/dessert2.jpg";
 import img3Dessert from "../../assets/images/dessert3.jpg";
 import img4Dessert from "../../assets/images/dessert4.jpg";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
 function TableForm() {
   const {
     register,
@@ -30,6 +32,8 @@ function TableForm() {
     setError,
     reset,
   } = useForm();
+
+  const [tel, setTel] = useState();
   const [categories, setCategories] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
   const [selectedSignatureItems, setSelectedSignatureItems] = useState([]);
@@ -242,6 +246,7 @@ function TableForm() {
             });
             const allData = {
               ...data,
+              tel,
               formatDate,
               cartItems: cartSignatureItems(),
             };
@@ -293,6 +298,7 @@ function TableForm() {
           });
           const allData = {
             ...data,
+            tel,
             formatDate,
             cartItems: cartSignatureItems(),
           };
@@ -342,6 +348,7 @@ function TableForm() {
             });
             const allData = {
               ...data,
+              tel,
               formatDate,
               cartItems: cartSignatureItems(),
             };
@@ -383,14 +390,7 @@ function TableForm() {
   const validateData = (data) => {
     const error = {};
 
-    const requiredFields = [
-      "nom",
-      "email",
-      "tel",
-      "date",
-      "heure",
-      "personnes",
-    ];
+    const requiredFields = ["nom", "email", "date", "heure", "personnes"];
 
     requiredFields.forEach((field) => {
       if (!data[field]) {
@@ -400,10 +400,6 @@ function TableForm() {
 
     if (data.email && !/\S+@\S+\.\S+/.test(data.email)) {
       error.email = "Veuillez entrer une adresse email valide";
-    }
-
-    if (data.tel && !/^[0-9]{10}$/.test(data.tel)) {
-      error.tel = "Veuillez entrer un numéro de téléphone valide";
     }
     return error;
   };
@@ -439,13 +435,11 @@ function TableForm() {
               />
             </div>
             <div className="tel-input">
-              <input
-                type="text"
+              <PhoneInput
                 placeholder="TÉLÉPHONE*"
-                name="tel"
-                id="phone"
-                className={`${errors.tel ? "error_form" : ""}`}
-                {...register("tel")}
+                defaultCountry="FR"
+                value={tel}
+                onChange={setTel}
               />
             </div>
 
