@@ -141,7 +141,11 @@ function Footer() {
           <Link to="/mentions-legales">{t("footer.mentions")}</Link>
         </p>
         <div className="copyright">
-          <p>{t("footer.copyright")}</p>
+          <p>
+            © 2024 Copyright |{" "}
+            <Link to="https://www.brandon-cebi.com">Brandon CEBI</Link>{" "}
+            {t("footer.copyright")}
+          </p>
         </div>
       </footer>
       {showScrollButton && (

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Mentions() {
   return (
@@ -9,8 +10,8 @@ function Mentions() {
       <div className="container">
         <div className="legales">
           <p>
-            Editeur du site : VB Digital Nomad - 16 RUE DU COIN ROND -
-            07.50.42.19.91 - brandon.cebi.pro@gmail.com
+            Editeur du site : <Link to="Brandon CEBI">Brandon CEBI</Link> - 16
+            RUE DU COIN ROND - 07.50.42.19.91 - brandon.cebi.pro@gmail.com
           </p>
 
           <p>Directeur de la publication : Halim et Sylvie</p>
