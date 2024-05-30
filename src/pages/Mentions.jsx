@@ -10,8 +10,11 @@ function Mentions() {
       <div className="container">
         <div className="legales">
           <p>
-            Editeur du site : <Link to="Brandon CEBI">Brandon CEBI</Link> - 16
-            RUE DU COIN ROND - 07.50.42.19.91 - brandon.cebi.pro@gmail.com
+            Editeur du site :{" "}
+            <Link to="https://www.brandon-cebi.com" target="_blank">
+              Brandon CEBI
+            </Link>{" "}
+            - 16 RUE DU COIN ROND - 07.50.42.19.91 - brandon.cebi.pro@gmail.com
           </p>
 
           <p>Directeur de la publication : Halim et Sylvie</p>

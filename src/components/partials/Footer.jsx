@@ -143,7 +143,9 @@ function Footer() {
         <div className="copyright">
           <p>
             © 2024 Copyright |{" "}
-            <Link to="https://www.brandon-cebi.com">Brandon CEBI</Link>{" "}
+            <Link to="https://www.brandon-cebi.com" target="_blank">
+              Brandon CEBI
+            </Link>{" "}
             {t("footer.copyright")}
           </p>
         </div>
