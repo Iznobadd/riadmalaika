@@ -463,6 +463,12 @@ footer {
   position: absolute;
   right: 0;
   top: 2%;
+  opacity: 5%;
+}
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .custom-modal {
   background-color: rgba(0, 0, 0, 0.9);
@@ -526,14 +532,14 @@ footer .content::after {
   flex-wrap: wrap;
   font-family: "Roboto";
 }
-.footer-contact {
+/* .footer-contact {
   display: flex;
   align-items: center;
 }
 .footer-contact img {
   max-width: 100%;
   z-index: 50;
-}
+} */
 .footer-section {
   width: 300px;
   color: white;

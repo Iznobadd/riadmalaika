@@ -11,6 +11,9 @@ import scrollImg from "../../assets/images/top-arrow.png";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import FooterLogo from "../../assets/images/footerLogo.png";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+import { FaPhone } from "react-icons/fa6";
 
 function Footer() {
   const { t } = useTranslation();
@@ -44,7 +47,7 @@ function Footer() {
   return (
     <>
       <footer>
-        <img src={FooterBg} alt="" className="logo-footer" />
+        <img src={FooterLogo} alt="" className="logo-footer" />
         <img src={LabelTrip} alt="" className="trip-footer" />
         <img src={Booking} alt="" className="booking-footer" />
         <div className="reseaux-hr">
@@ -122,19 +125,19 @@ function Footer() {
               </p>
             </div>
             <div className="footer-contact footer-section">
-              {/* <h3>CONTACT</h3>
+              <h3>CONTACT</h3>
               <p>
-                Riad Malaïka <br />
-                Derb Zayan n°17 <br />
-                44100 ESSAOUIRA <br />
-                {t("footer.contact_pays")}
+                <FaMapMarkerAlt color="#f1bb6e" size={20} />{" "}
+                <span>17 Rue Zayan, Essaouira, Maroc</span>
               </p>
               <p>
-                +212 (0)524 784 908 Malaïka Fixe <br />
-                +212 (0)600 055 696 Malaïka WhatsApp <br />
-                +212 (0)608 900 000 Sylvie WhatsApp
-              </p> */}
-              <img src={FooterLogo} />
+                <IoMail color="#f1bb6e" size={20} />{" "}
+                <span>malaikadream@gmail.com</span>
+              </p>
+              <p>
+                <FaPhone color="#f1bb6e" size={20} />{" "}
+                <span>+212.608.90.0000</span>
+              </p>
             </div>
           </div>
         </div>

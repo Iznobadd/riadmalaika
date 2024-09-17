@@ -402,6 +402,14 @@
   .equipe-contact {
     flex-wrap: wrap;
   }
+  .logo-footer {
+    right: 50%;
+    top: 37%;
+    transform: translateX(50%);
+  }
+  .footer-contact p {
+    justify-content: center;
+  }
   .equipe-contact img {
     width: 100%;
     max-width: 100%;
