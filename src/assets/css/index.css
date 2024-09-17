@@ -532,6 +532,7 @@ footer .content::after {
 }
 .footer-contact img {
   max-width: 100%;
+  z-index: 50;
 }
 .footer-section {
   width: 300px;
