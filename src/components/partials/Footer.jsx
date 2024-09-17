@@ -136,7 +136,11 @@ function Footer() {
               </p>
               <p>
                 <FaPhone color="#f1bb6e" size={20} />{" "}
-                <span>+212.608.90.0000</span>
+                <span>
+                  <b>Jannick MURA / Hervé FLORET</b>
+                  <br />
+                  +212.608.90.0000
+                </span>
               </p>
             </div>
           </div>
