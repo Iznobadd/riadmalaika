@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import scrollImg from "../../assets/images/top-arrow.png";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import FooterLogo from "../../assets/images/footerLogo.png";
 
 function Footer() {
   const { t } = useTranslation();
@@ -121,7 +122,7 @@ function Footer() {
               </p>
             </div>
             <div className="footer-contact footer-section">
-              <h3>CONTACT</h3>
+              {/* <h3>CONTACT</h3>
               <p>
                 Riad Malaïka <br />
                 Derb Zayan n°17 <br />
@@ -132,7 +133,8 @@ function Footer() {
                 +212 (0)524 784 908 Malaïka Fixe <br />
                 +212 (0)600 055 696 Malaïka WhatsApp <br />
                 +212 (0)608 900 000 Sylvie WhatsApp
-              </p>
+              </p> */}
+              <img src={FooterLogo} />
             </div>
           </div>
         </div>
@@ -144,7 +146,7 @@ function Footer() {
           <p>
             © 2024 Copyright |{" "}
             <Link to="https://www.brandon-cebi.com" target="_blank">
-              Brandon CEBI
+              VB Digital Nomad
             </Link>{" "}
             {t("footer.copyright")}
           </p>

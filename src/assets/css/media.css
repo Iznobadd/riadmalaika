@@ -228,6 +228,9 @@
 }
 
 @media (max-width: 500px) {
+  .gif {
+    width: 300px;
+  }
   .riad-imgs img {
     width: 80%;
     height: auto;

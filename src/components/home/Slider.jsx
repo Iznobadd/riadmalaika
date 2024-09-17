@@ -4,11 +4,11 @@ import React from "react";
 import Slider1 from "../../assets/images/slider1.jpg";
 import Reception from "../../assets/images/reception.jpg";
 import Slider3 from "../../assets/images/slider3.jpg";
-import PostIt from "../../assets/images/postit2.gif";
+import Logo from "../../assets/images/logo.png";
 function Slider() {
   return (
     <div>
-      <img src={PostIt} alt="Logo du Riad Malaïka animé" className="gif" />
+      <img src={Logo} alt="Logo du Riad Malaïka animé" className="gif" />
       <Splide
         options={{
           type: "loop",

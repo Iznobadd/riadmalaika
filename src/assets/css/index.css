@@ -258,7 +258,7 @@ nav li a {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 300px;
+  width: 500px;
   z-index: 20;
   transform: translate(-50%, -50%);
 }
@@ -526,7 +526,13 @@ footer .content::after {
   flex-wrap: wrap;
   font-family: "Roboto";
 }
-
+.footer-contact {
+  display: flex;
+  align-items: center;
+}
+.footer-contact img {
+  max-width: 100%;
+}
 .footer-section {
   width: 300px;
   color: white;
