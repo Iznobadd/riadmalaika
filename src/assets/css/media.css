@@ -16,6 +16,9 @@
   .booking-footer {
     display: none;
   }
+  nav ul {
+    column-gap: 30px;
+  }
 }
 @media screen and (max-width: 992px) {
   /* ------------------ MENU ------------------ */
