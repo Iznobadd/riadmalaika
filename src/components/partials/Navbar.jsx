@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/footerLogo.png";
 import Booking from "../../assets/images/bookingcom.png";
 import { HiHome } from "react-icons/hi";
 import { FaBars } from "react-icons/fa";
@@ -47,7 +47,7 @@ function Navbar() {
         </label>
         <input type="checkbox" id="toggle" />
         <ul className="menu_resp">
-          <li className="logo_img">
+          <li className={`logo_img ${scrolled ? "logo_display" : ""}`}>
             <Link to="/" title="Riad Malaika">
               <img src={Logo} alt="Logo du Riad Malaïka" />
             </Link>

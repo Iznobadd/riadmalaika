@@ -75,16 +75,21 @@ nav ul {
   padding: 5px 0;
 }
 .logo_img img {
-  width: 200px;
+  width: 100px;
+}
+.logo_display {
+  display: none;
+  transition: all 5s ease;
 }
 .booking_img img {
   width: 100px;
 }
 .logo_img {
   position: absolute;
+  transition: all 5s ease;
 }
 .logo_img {
-  left: 50px;
+  left: 125px;
 }
 
 nav a {
