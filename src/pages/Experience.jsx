@@ -24,118 +24,118 @@ function Experience() {
         </p>
         <div className="res-riad">
           <div className="loisirs-imgs">
-            <Slide direction="left" duration={1500}>
-              <img
-                src={Equitation}
-                alt="Loisir équitation Riad Malaïka"
-                className="relative-img"
-              />
-            </Slide>
+            {/* <Slide direction="left" duration={1500}> */}
+            <img
+              src={Equitation}
+              alt="Loisir équitation Riad Malaïka"
+              className="relative-img"
+            />
+            {/* </Slide> */}
           </div>
 
           <div className="loisirs-description">
-            <Slide direction="right" duration={1500}>
-              <h1>{t("exp.equitation.title")}</h1>
-              <p>{t("exp.equitation.p1")}</p>
-              <p>{t("exp.equitation.p2")}</p>
-              <p>{t("exp.equitation.p3")}</p>
-              <p className="link_contact">
-                <Link
-                  to="/contact#contact"
-                  onClick={() => contactRef.current.scrollIntoView()}
-                >
-                  {t("exp.infos")}
-                </Link>
-              </p>
-            </Slide>
+            {/* <Slide direction="right" duration={1500}> */}
+            <h1>{t("exp.equitation.title")}</h1>
+            <p>{t("exp.equitation.p1")}</p>
+            <p>{t("exp.equitation.p2")}</p>
+            <p>{t("exp.equitation.p3")}</p>
+            <p className="link_contact">
+              <Link
+                to="/contact#contact"
+                onClick={() => contactRef.current.scrollIntoView()}
+              >
+                {t("exp.infos")}
+              </Link>
+            </p>
+            {/* </Slide> */}
           </div>
         </div>
 
         <div className="res-riad reverse">
           <div className="loisirs-description">
-            <Slide direction="left" duration={1500}>
-              <h1>{t("exp.rando.title")}</h1>
-              <p>{t("exp.rando.p1")}</p>
-              <p>{t("exp.rando.p2")}</p>
-              <p className="link_contact">
-                <Link
-                  to="/contact#contact"
-                  onClick={() => contactRef.current.scrollIntoView()}
-                >
-                  {t("exp.infos")}
-                </Link>
-              </p>
-            </Slide>
+            {/* <Slide direction="left" duration={1500}> */}
+            <h1>{t("exp.rando.title")}</h1>
+            <p>{t("exp.rando.p1")}</p>
+            <p>{t("exp.rando.p2")}</p>
+            <p className="link_contact">
+              <Link
+                to="/contact#contact"
+                onClick={() => contactRef.current.scrollIntoView()}
+              >
+                {t("exp.infos")}
+              </Link>
+            </p>
+            {/* </Slide> */}
           </div>
 
           <div className="loisirs-imgs">
-            <Slide direction="right" duration={1500}>
-              <img
-                src={Dromadaire}
-                alt="Experience dromadaires Riad Malaïka"
-                className="relative-img"
-              />
-            </Slide>
+            {/* <Slide direction="right" duration={1500}> */}
+            <img
+              src={Dromadaire}
+              alt="Experience dromadaires Riad Malaïka"
+              className="relative-img"
+            />
+            {/* </Slide> */}
           </div>
         </div>
 
         <div className="res-riad">
           <div className="loisirs-imgs">
-            <Slide direction="left" duration={1500}>
-              <img
-                src={KiteSurf}
-                alt="Experience KiteSurf Riad Malaïka"
-                className="relative-img"
-              />
-            </Slide>
+            {/* <Slide direction="left" duration={1500}> */}
+            <img
+              src={KiteSurf}
+              alt="Experience KiteSurf Riad Malaïka"
+              className="relative-img"
+            />
+            {/* </Slide> */}
           </div>
 
           <div className="loisirs-description">
-            <Slide direction="right" duration={1500}>
-              <h1>{t("exp.surf.title")}</h1>
-              <p>
-                {t("exp.surf.p1")}
-                <br />
-                {t("exp.surf.p2")}
-              </p>
-              <p className="link_contact">
-                <Link
-                  to="/contact#contact"
-                  onClick={() => contactRef.current.scrollIntoView()}
-                >
-                  {t("exp.infos")}
-                </Link>
-              </p>
-            </Slide>
+            {/* <Slide direction="right" duration={1500}> */}
+            <h1>{t("exp.surf.title")}</h1>
+            <p>
+              {t("exp.surf.p1")}
+              <br />
+              {t("exp.surf.p2")}
+            </p>
+            <p className="link_contact">
+              <Link
+                to="/contact#contact"
+                onClick={() => contactRef.current.scrollIntoView()}
+              >
+                {t("exp.infos")}
+              </Link>
+            </p>
+            {/* </Slide> */}
           </div>
         </div>
 
         <div className="res-riad reverse">
           <div className="loisirs-description">
-            <Slide direction="left" duration={1500}>
-              <h1>{t("exp.quad.title")}</h1>
-              <p>{t("exp.quad.p1")}</p>
-              <p>{t("exp.quad.p2")}</p>
-              <p>{t("exp.quad.p3")}</p>
-              <p className="link_contact">
-                <Link
-                  to="/contact#contact"
-                  onClick={() => contactRef.current.scrollIntoView()}
-                >
-                  {t("exp.infos")}
-                </Link>
-              </p>
-            </Slide>
+            {/* <Slide direction="left" duration={1500}> */}
+            <h1>{t("exp.quad.title")}</h1>
+            <p>{t("exp.quad.p1")}</p>
+            <p>{t("exp.quad.p2")}</p>
+            <p>{t("exp.quad.p3")}</p>
+            <p className="link_contact">
+              <Link
+                to="/contact#contact"
+                onClick={() => contactRef.current.scrollIntoView()}
+              >
+                {t("exp.infos")}
+              </Link>
+            </p>
+            {/* </Slide> */}
           </div>
 
           <div className="loisirs-imgs">
-            <Slide direction="right" duration={1500}>
-              <img
-                src={Quad}
-                alt="Experience Quad Riad Malaïka"
-                className="relative-img"
-              />
-            </Slide>
+            {/* <Slide direction="right" duration={1500}> */}
+            <img
+              src={Quad}
+              alt="Experience Quad Riad Malaïka"
+              className="relative-img"
+            />
+            {/* </Slide> */}
           </div>
         </div>
       </div>
