@@ -17,7 +17,7 @@ function Contact() {
       </div>
       <PostIt />
 
-      <Equipe />
+      {/* <Equipe /> */}
       <Weather />
       <ContactForm />
     </>
