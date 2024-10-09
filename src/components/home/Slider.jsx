@@ -4,7 +4,7 @@ import React from "react";
 import Slider1 from "../../assets/images/slider1.jpg";
 import Reception from "../../assets/images/reception.jpg";
 import Slider3 from "../../assets/images/slider3.jpg";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/logo-anime.gif";
 function Slider() {
   return (
     <div>
