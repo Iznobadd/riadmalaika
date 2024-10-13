@@ -66,7 +66,10 @@ function App() {
   if (initialLoading) {
     return (
       <div className={`preloader ${fadeOut ? "fade-out" : ""}`}>
-        <img src={Logo} alt="Loading..." className="preloader-gif" />
+        <div className="preloader-principal">
+          <img src={Logo} alt="Loading..." className="preloader-gif" />
+          <h2 className="preloader-title">ESSAOUIRA MOGADOR</h2>
+        </div>
 
         {!showDirectText ? (
           <div
