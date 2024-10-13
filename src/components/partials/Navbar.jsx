@@ -6,6 +6,7 @@ import { FaBars } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import i18n from "i18next";
 import { useTranslation } from "react-i18next";
+import { IoCloseOutline } from "react-icons/io5";
 
 function Navbar() {
   const languages = [
@@ -50,7 +51,7 @@ function Navbar() {
       <nav id="menu" className={`${scrolled ? "sticky" : ""}`}>
         <label htmlFor="toggle">
           <span id="btn_menu" onClick={handleMenuToggle}>
-            <FaBars />
+            {menuOpen ? <IoCloseOutline /> : <FaBars />}
           </span>
         </label>
         <input type="checkbox" id="toggle" checked={menuOpen} readOnly />

@@ -68,7 +68,7 @@ function App() {
       <div className={`preloader ${fadeOut ? "fade-out" : ""}`}>
         <div className="preloader-principal">
           <img src={Logo} alt="Loading..." className="preloader-gif" />
-          <h2 className="preloader-title">ESSAOUIRA MOGADOR</h2>
+          {/* <h2 className="preloader-title">ESSAOUIRA MOGADOR</h2> */}
         </div>
 
         {!showDirectText ? (

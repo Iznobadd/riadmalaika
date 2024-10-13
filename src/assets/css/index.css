@@ -1517,7 +1517,7 @@ footer i {
   margin: 0;
   text-align: center;
   font-family: "Gilda Display";
-  font-size: 25px;
+  font-size: 10px;
   letter-spacing: 10px;
 }
 
@@ -1541,7 +1541,7 @@ footer i {
 }
 
 .preloader-gif {
-  width: 350px;
+  width: 450px;
 }
 .preloader-text {
   position: absolute;
@@ -1558,8 +1558,7 @@ footer i {
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  font-size: 30px;
-  font-family: "Roboto";
+  font-size: 45px;
 }
 .hidden {
   display: none;
