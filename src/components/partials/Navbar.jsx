@@ -40,7 +40,7 @@ function Navbar() {
   }, []);
 
   const handleMenuToggle = () => {
-    setMenuOpen(true);
+    setMenuOpen(!menuOpen);
     setTimeout(() => {
       setMenuOpen(false);
     }, 5000);

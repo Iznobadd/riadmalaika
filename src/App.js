@@ -70,23 +70,24 @@ function App() {
           <img src={Logo} alt="Loading..." className="preloader-gif" />
           {/* <h2 className="preloader-title">ESSAOUIRA MOGADOR</h2> */}
         </div>
-
-        {!showDirectText ? (
-          <div
-            className={`text-container ${fadeOutText ? "fade-out-text" : ""}`}
-          >
-            <Typewriter
-              options={{
-                strings: ["عالم منفصل عن العالم"],
-                autoStart: true,
-                loop: false,
-                delay: 75,
-              }}
-            />
-          </div>
-        ) : (
-          <h2 className="preloader-text-fr">Un monde à part...</h2>
-        )}
+        <div>
+          {!showDirectText ? (
+            <div
+              className={`text-container ${fadeOutText ? "fade-out-text" : ""}`}
+            >
+              <Typewriter
+                options={{
+                  strings: ["عالم منفصل عن العالم"],
+                  autoStart: true,
+                  loop: false,
+                  delay: 75,
+                }}
+              />
+            </div>
+          ) : (
+            <h2 className="preloader-text-fr">Un monde à part...</h2>
+          )}
+        </div>
       </div>
     );
   }

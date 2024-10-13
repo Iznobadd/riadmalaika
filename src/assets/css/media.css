@@ -25,6 +25,9 @@
   .reverse {
     flex-direction: column-reverse;
   }
+  .preloader-gif {
+    width: 250px;
+  }
   nav {
     height: 53px;
     margin-top: 0;
@@ -417,7 +420,9 @@
     width: 100%;
     max-width: 100%;
   }
-  .preloader-text-fr,
+  .preloader-text-fr {
+    font-size: 35px;
+  }
   .preloader-text {
     font-size: 22px;
   }
