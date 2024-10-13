@@ -417,4 +417,8 @@
     width: 100%;
     max-width: 100%;
   }
+  .preloader-text-fr,
+  .preloader-text {
+    font-size: 22px;
+  }
 }

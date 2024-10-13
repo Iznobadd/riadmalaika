@@ -6,25 +6,100 @@ import Gastronomie from "./pages/Gastronomie";
 import Hebergement from "./pages/Hebergement";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
-import { useEffect, useLayoutEffect } from "react";
+import { useEffect, useState } from "react";
 import Mentions from "./pages/Mentions";
-import Construction from "./pages/Construction";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
+import Logo from "./assets/images/logo-anime.gif";
+import Logo2 from "./assets/images/page-logo.gif";
+import Typewriter from "./components/loader/Typewriter";
 
 function App() {
+  const [initialLoading, setInitialLoading] = useState(true);
+  const [pageLoading, setPageLoading] = useState(false);
+  const [fadeOut, setFadeOut] = useState(false);
+  const [fadeOutText, setFadeOutText] = useState(false);
+  const [fadeOutPage, setFadeOutPage] = useState(false);
+  const [showDirectText, setShowDirectText] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const timer = setTimeout(() => {
+      setFadeOutText(true);
+      setTimeout(() => {
+        setShowDirectText(true);
+      }, 1000);
+    }, 3000);
+
+    const initialTimer = setTimeout(() => {
+      setFadeOut(true);
+    }, 5000);
+
+    const hidePreloader = setTimeout(() => {
+      setInitialLoading(false);
+    }, 5500);
+
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(initialTimer);
+      clearTimeout(hidePreloader);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!initialLoading) {
+      setPageLoading(true);
+      setFadeOutPage(false);
+
+      const fadeOutTimer = setTimeout(() => {
+        setFadeOutPage(true);
+      }, 1800);
+
+      const timer = setTimeout(() => {
+        setPageLoading(false);
+      }, 2000);
+      return () => {
+        clearTimeout(timer);
+        clearTimeout(fadeOutTimer);
+      };
+    }
   }, [location]);
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
+  if (initialLoading) {
+    return (
+      <div className={`preloader ${fadeOut ? "fade-out" : ""}`}>
+        <img src={Logo} alt="Loading..." className="preloader-gif" />
 
+        {!showDirectText ? (
+          <div
+            className={`text-container ${fadeOutText ? "fade-out-text" : ""}`}
+          >
+            <Typewriter
+              options={{
+                strings: ["عالم منفصل عن العالم"],
+                autoStart: true,
+                loop: false,
+                delay: 75,
+              }}
+            />
+          </div>
+        ) : (
+          <h2 className="preloader-text-fr">Un monde à part...</h2>
+        )}
+      </div>
+    );
+  }
+
+  // Si une page est en cours de chargement (avec fade out)
+  if (pageLoading) {
+    return (
+      <div className={`page-loader ${fadeOutPage ? "fade-out" : ""}`}>
+        <img src={Logo2} alt="Loading..." className="preloader-gif" />
+      </div>
+    );
+  }
+
+  // Si tout est chargé, afficher le contenu de l'application
   return (
-    <div>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -35,9 +110,7 @@ function App() {
         <Route path="/mentions-legales" element={<Mentions />} />
       </Routes>
       <Footer />
-      <Analytics mode={"production"} />
-      <SpeedInsights />
-    </div>
+    </>
   );
 }
 

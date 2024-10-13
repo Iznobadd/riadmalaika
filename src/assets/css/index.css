@@ -1490,3 +1490,70 @@ footer i {
 .error_form {
   border: 2px solid red !important;
 }
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  z-index: 9999;
+  transition: opacity 1s ease-out;
+  opacity: 1;
+}
+
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  z-index: 9999;
+  transition: opacity 1s ease-out;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.preloader-gif {
+  width: 350px;
+}
+.preloader-text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 30px;
+}
+
+.preloader-text-fr {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 30px;
+  font-family: "Roboto";
+}
+.hidden {
+  display: none;
+}
+
+.text-container {
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-out-text {
+  opacity: 0;
+}

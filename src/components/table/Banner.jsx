@@ -1,5 +1,5 @@
 import React from "react";
-import CarteTable from "../../assets/images/carte-table.png";
+import CarteTable from "../../assets/images/carte-table.jpg";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
 function Banner() {

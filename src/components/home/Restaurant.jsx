@@ -52,7 +52,7 @@ function Restaurant() {
             <SplideSlide>
               <img src={Table4} alt="" data-splide-lazy={Table4} />
             </SplideSlide>
-            <SplideSlide>
+            {/* <SplideSlide>
               <img src={Table5} alt="" data-splide-lazy={Table5} />
             </SplideSlide>
             <SplideSlide>
@@ -60,7 +60,7 @@ function Restaurant() {
             </SplideSlide>
             <SplideSlide>
               <img src={Table7} alt="" data-splide-lazy={Table7} />
-            </SplideSlide>
+            </SplideSlide> */}
             <SplideSlide>
               <img src={Table8} alt="" data-splide-lazy={Table8} />
             </SplideSlide>

@@ -1,8 +1,8 @@
 import React from "react";
 import { Flip, Zoom } from "react-awesome-reveal";
-import PostIt1 from "../../assets/images/postit1.png";
+import PostIt1 from "../../assets/images/postit1.jpg";
 import PostIt2 from "../../assets/images/logo-anime.gif";
-import PostIt3 from "../../assets/images/postit3.png";
+import PostIt3 from "../../assets/images/postit3.jpg";
 import { useTranslation } from "react-i18next";
 
 function PostIt() {

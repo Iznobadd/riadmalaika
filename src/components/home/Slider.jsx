@@ -8,7 +8,7 @@ import Logo from "../../assets/images/logo-anime.gif";
 function Slider() {
   return (
     <div>
-      <img src={Logo} alt="Logo du Riad Malaïka animé" className="gif" />
+      {/* <img src={Logo} alt="Logo du Riad Malaïka animé" className="gif" /> */}
       <Splide
         options={{
           type: "loop",
