@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../../assets/images/footerLogo.png";
 import Booking from "../../assets/images/bookingcom.png";
 import { HiHome } from "react-icons/hi";
@@ -22,11 +22,12 @@ function Navbar() {
   ];
   const { t } = useTranslation();
   const { pathname } = useLocation();
-  const [scrolled, setScrolled] = React.useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 0;
-
       setScrolled(isScrolled);
     };
 
@@ -37,16 +38,23 @@ function Navbar() {
     };
   }, []);
 
+  const handleMenuToggle = () => {
+    setMenuOpen(true);
+    setTimeout(() => {
+      setMenuOpen(false);
+    }, 5000);
+  };
+
   return (
     <header>
       <nav id="menu" className={`${scrolled ? "sticky" : ""}`}>
         <label htmlFor="toggle">
-          <span id="btn_menu">
+          <span id="btn_menu" onClick={handleMenuToggle}>
             <FaBars />
           </span>
         </label>
-        <input type="checkbox" id="toggle" />
-        <ul className="menu_resp">
+        <input type="checkbox" id="toggle" checked={menuOpen} readOnly />
+        <ul className={`menu_resp ${menuOpen ? "menu_open" : ""}`}>
           <li className={`logo_img ${scrolled ? "logo_display" : ""}`}>
             <Link to="/" title="Riad Malaika">
               <img src={Logo} alt="Logo du Riad Malaïka" />
