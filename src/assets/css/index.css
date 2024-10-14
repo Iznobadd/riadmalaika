@@ -1177,6 +1177,8 @@ input[type="submit"] {
 .half-table {
   width: 50%;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 .half-table label {
   color: black;

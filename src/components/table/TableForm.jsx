@@ -609,24 +609,36 @@ function TableForm() {
             <div className={`form-${category.name}`}>
               {category.options.map((option) => (
                 <>
-                  {option.id !== "couscous-imperial" && (
-                    <>
-                      {option.id === "couscous-agneau" && <p>Couscous</p>}
-                      {option.id === "tajine-poulet-oignons" && <p>Tajines</p>}
-                      <div className="half-table" key={option.id}>
-                        <input
-                          type="number"
-                          name={option.id}
-                          min="0"
-                          defaultValue={0}
-                          onChange={(e) =>
-                            handleQuantityChange(e, option, category.name)
-                          }
-                        />
-                        <label htmlFor={option.id}>{option.label}</label>
-                      </div>
-                    </>
-                  )}
+                  {option.id !== "couscous-imperial" &&
+                    option.id !== "terre-mer-gambas" &&
+                    option.id !== "boeuf-tataki" &&
+                    option.id !== "lotte-bardee" && (
+                      <>
+                        {option.id === "ravioles-araignee" && (
+                          <p>Nos plats de la mer</p>
+                        )}
+                        {option.id === "boeuf-tataki-simple" && (
+                          <p>Nos viandes & Ravioles</p>
+                        )}
+                        {option.id === "couscous-imperial-simple" && (
+                          <p>Nos plats marocains</p>
+                        )}
+                        {option.id === "menu-enfant" && <p>Menu enfant</p>}
+
+                        <div className="half-table" key={option.id}>
+                          <input
+                            type="number"
+                            name={option.id}
+                            min="0"
+                            defaultValue={0}
+                            onChange={(e) =>
+                              handleQuantityChange(e, option, category.name)
+                            }
+                          />
+                          <label htmlFor={option.id}>{option.label}</label>
+                        </div>
+                      </>
+                    )}
                 </>
               ))}
               <div className="demande-speciale">

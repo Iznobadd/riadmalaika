@@ -15,7 +15,7 @@
         },
         {
           "id": "zaalouk",
-          "label": "ZAALOUK D’AUBERGINES & TOMATES CONFITES",
+          "label": "ZAALOUK D’AUBERGINES & TOMATES CONFITES HUILE D'OLIVE",
           "signature": false
         },
         {
@@ -25,7 +25,7 @@
         },
         {
           "id": "millefeuille",
-          "label": "FEUILLES À FEUILLES DE POIVRONS & D'AUBERGINES",
+          "label": "FEUILLES À FEUILLES DE POIVRONS & AUBERGINES",
           "signature": false
         },
         {
@@ -45,7 +45,7 @@
         },
         {
           "id": "soupe-poissons",
-          "label": "SOUPE DE POISSONS DE L'ATLANTIQUE",
+          "label": "SOUPE DE POISSONS DE L'ATLANTIQUE FAÇON MALAÏKA",
           "signature": true
         },
         {
@@ -57,6 +57,11 @@
           "id": "tartare-saumon",
           "label": "TARTARE DE SAUMON FUMÉ & AVOCAT EN MILLEFEUILLE",
           "signature": false
+        },
+        {
+          "id": "araignee-pois",
+          "label": "ARAIGNÉE DE MER EMBALLÉE SUR CRÈME DE PETITS POIS",
+          "signature": false
         }
       ]
     },
@@ -65,37 +70,42 @@
       "options": [
         {
           "id": "couscous-imperial",
-          "label": "COUSCOUS IMPÉRIAL",
+          "label": "COUSCOUS IMPÉRIAL AUX 4 VIANDES",
           "signature": true
         },
         {
+          "id": "ravioles-araignee",
+          "label": "RAVIOLES A L'ARAIGNÉE DE MER SAUCE GAMBAS",
+          "signature": false
+        },
+        {
+          "id": "pastilla-mer",
+          "label": "PASTILLA AUX FRUITS DE MER EN DAMIER",
+          "signature": false
+        },
+        {
+          "id": "lotte-tajine",
+          "label": "LOTTE EN FILET FACON TAJINE ET LÉGUMES DU MARCHÉ",
+          "signature": false
+        },
+        {
+          "id": "lotte-romarin",
+          "label": "LOTTE BRAISÉE (cuisson douce) AU ROMARIN & CITRON FRAIS",
+          "signature": false
+        },
+        {
+          "id": "lotte-bardee-simple",
+          "label": "LOTTE EN RÔTI BARDÉE AU JAMBON CRU AFFINÉE",
+          "signature": false
+        },
+        {
+          "id": "terre-mer-gambas-simple",
+          "label": "TERRE-MER DE GAMBAS & FOIE GRAS SUR LIT DE LÉGUMES ÉPICÉS",
+          "signature": false
+        },
+        {
           "id": "pastilla-marche",
-          "label": "PASTILLA AUX LÉGUMES DU MARCHÉ",
-          "signature": false
-        },
-        {
-          "id": "parmentier",
-          "label": "PARMENTIER DE LÉGUMES DE SAISON",
-          "signature": false
-        },
-        {
-          "id": "raviole-ricotta",
-          "label": "RAVIOLE RICOTTA - ÉPINARD PISTALS DE SAFRAN",
-          "signature": false
-        },
-        {
-          "id": "seffa",
-          "label": "SEFFA MEDFOUNA",
-          "signature": false
-        },
-        {
-          "id": "agneau-epices",
-          "label": "AGNEAU RÔTI AUX ÉPICES",
-          "signature": false
-        },
-        {
-          "id": "wok-boeuf",
-          "label": "WOK DE FILET DE BŒUF ÉMINCÉ & LÉGUMES SAUTÉS",
+          "label": "CABILLAUD FILET, CRUMBLE DE CHORIZO, SAUCE A L'ORANGE ET PATATES DOUCES",
           "signature": false
         },
         {
@@ -104,28 +114,8 @@
           "signature": true
         },
         {
-          "id": "pastilla-mer",
-          "label": "PASTILLA EN DAMIER AUX FRUITS DE MER",
-          "signature": false
-        },
-        {
-          "id": "raviole-araignee",
-          "label": "RAVIOLE A L’ARAIGNÉE DE MER",
-          "signature": false
-        },
-        {
-          "id": "lotte-tajine",
-          "label": "FILET DE LOTTE FAÇON TAJINE",
-          "signature": false
-        },
-        {
-          "id": "lotte-romarin",
-          "label": "LOTTE BRAISÉE AU ROMARIN",
-          "signature": false
-        },
-        {
           "id": "lotte-bardee",
-          "label": "RÔTI DE LOTTE BARDÉE",
+          "label": "RÔTI DE LOTTE BARDÉE (NON HALAL)",
           "signature": true
         },
         {
@@ -134,13 +124,28 @@
           "signature": true
         },
         {
-          "id": "wok-legumes",
-          "label": "WOK DE LÉGUMES",
+          "id": "boeuf-tataki-simple",
+          "label": "FILET DE BOEUF A L'ASIATIQUE FACON TATAKI & CRUDITÉS",
           "signature": false
         },
         {
-          "id": "tournedos",
-          "label": "FILET DE BOEUF EN TOURNEDOS & FIGUE AU FOIE GRAS MI-CUIT",
+          "id": "boeuf-tournedos",
+          "label": "FILET DE BOEUF EN TOURNEDOS, FIGUES FOURRÉE AU FOIE GRAS MI-CUIT & PURÉE DE POMME DE TERRE SAUCE FOIE GRAS",
+          "signature": false
+        },
+        {
+          "id": "agneau-epices",
+          "label": "AGNEAU ROTI AUX ÉPICES (pièce désossée de 300grs) CUISSON DOUCE 3H (sur commande) & LÉGUMES DU MARCHÉ",
+          "signature": false
+        },
+        {
+          "id": "ravioles-ricotta",
+          "label": "RAVIOLES RICOTTA ÉPINARDS & PISTILS DE SAFRAN",
+          "signature": false
+        },
+        {
+          "id": "couscous-imperial-simple",
+          "label": "COUSCOUS IMPÉRIAL AUX 4 VIANDES",
           "signature": false
         },
         {
@@ -150,47 +155,48 @@
         },
         {
           "id": "couscous-poulet",
-          "label": "COUSCOUS AU POULET",
-          "signature": false
-        },
-        {
-          "id": "couscous-lotte",
-          "label": "COUSCOUS A LA LOTTE",
+          "label": "COUSCOUS POULET",
           "signature": false
         },
         {
           "id": "couscous-legumes",
-          "label": "COUSCOUS AUX LÉGUMES",
+          "label": "COUSCOUS LÉGUMES",
           "signature": false
         },
         {
           "id": "tajine-poulet-oignons",
-          "label": "TAJINE POULET, OIGNONS CONFITS & RAISINS SECS",
+          "label": "TAJINE DE POULET, OIGNONS CONFITS & RAISINS SECS",
+          "signature": false
+        },
+
+        {
+          "id": "tajine-agneau-amandes",
+          "label": "TAJINE DE POULET, POMMES DE TERRE, OLIVES & CITRON CONFIT",
           "signature": false
         },
         {
           "id": "tajine-agneau-oignons",
-          "label": "TAJINE AGNEAU, OIGNONS CONFITS & RAISINS SECS",
+          "label": "TAJINE D'AGNEAU, OIGNONS CONFITS & RAISINS SECS",
           "signature": false
         },
         {
-          "id": "tajine-agneau-amandes",
-          "label": "TAJINE POULET, POMMES DE TERRE, OLIVES & CITRON CONFIT",
-          "signature": false
-        },
-        {
-          "id": "tajine-legumes",
-          "label": "TAJINE AUX LÉGUMES",
-          "signature": false
-        },
-        {
-          "id": "tajine-sardine",
-          "label": "TAJINE SARDINES CHARMOULA",
+          "id": "tajine-agneau-pruneaux",
+          "label": "TAJINE D'AGNEAU, AMANDES & PRUNEAUX",
           "signature": false
         },
         {
           "id": "tajine-mer",
-          "label": "TAJINE FRUITS DE MER",
+          "label": "TAJINE DE FRUITS DE MER",
+          "signature": false
+        },
+        {
+          "id": "seffa-medfouna",
+          "label": "SEFFA MEDFOUNA (vermicelles, poulet, amandes, raisins secs, sucre glace, cannelle)",
+          "signature": false
+        },
+        {
+          "id": "pastilla-legumes",
+          "label": "PASTILLA AUX LÉGUMES DU MARCHÉ",
           "signature": false
         }
       ]
@@ -199,43 +205,29 @@
       "name": "desserts",
       "options": [
         {
-          "id": "duo-carotte",
-          "label": "DUO DE CAROTTES ORANGES À LA FLEUR D'ORANGER",
-          "signature": false
-        },
-        {
-          "id": "soupe-agrume",
-          "label": "SOUPE D'AGRUMES",
-          "signature": false
-        },
-        {
-          "id": "cannelle",
-          "label": "TRILOGIE CANNELL'ORANGE",
-          "signature": true
-        },
-        {
-          "id": "fruits-marche",
-          "label": "DÉCLINAISON DE FRUITS DU MARCHÉ & CHANTILLY FRUITÉE",
+          "id": "pyramide-fruits",
+          "label": "PYRAMIDE DE FRUITS FRAIS & CREME CHANTILLY FRUITÉE",
           "signature": false
         },
         {
           "id": "sfoglia",
-          "label": "SFOGLIA & POMMES D'AMOUR",
+          "label": "SFOGLIA & MINIS POMMES D'AMOUR, ROULÉS CROUSTILLANTS POMME-CANNELLE",
           "signature": false
         },
         {
-          "id": "patisserie",
-          "label": "PATISSERIES MAROCAINES AU COULIS DU JOUR",
+          "id": "patisserie-orientale",
+          "label": "PATISSERIE ORIENTALE & COULIS DE FRUITS",
           "signature": false
         },
+
         {
-          "id": "pastilla-amande",
-          "label": "PASTILLA CROQUANTE AU PUR LAIT D'AMANDE",
+          "id": "patisserie-croquante",
+          "label": "PATISSERIES CROQUANTE AU PUR LAIT D'AMANDES",
           "signature": false
         },
         {
           "id": "malahbia",
-          "label": "MALAHBIA SOUS CLOCHE",
+          "label": "MALAHBIA SOUS CLOCHE (crème, pistaches, sirop de miel, fleur d'oranger)",
           "signature": true
         },
         {
@@ -249,19 +241,19 @@
           "signature": false
         },
         {
+          "id": "tarte-citron",
+          "label": "COMME UNE TARTE AU CITRON",
+          "signature": false
+        },
+        {
           "id": "sphere-chocolat",
           "label": "SPHÈRE AU CHOCOLAT EN CHAUD & FROID",
           "signature": true
         },
         {
-          "id": "moka",
-          "label": "MOKA MILLEFEUILLE",
-          "signature": false
-        },
-        {
-          "id": "tarte-citron",
-          "label": "COMME UNE TARTE AU CITRON",
-          "signature": false
+          "id": "cannelle",
+          "label": "TRILOGIE CANNELL'ORANGE",
+          "signature": true
         }
       ]
     }

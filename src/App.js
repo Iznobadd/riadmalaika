@@ -9,8 +9,14 @@ import Contact from "./pages/Contact";
 import { useEffect, useState } from "react";
 import Mentions from "./pages/Mentions";
 import Logo from "./assets/images/logo-anime.gif";
-import Logo2 from "./assets/images/page-logo.gif";
+import Logo2 from "./assets/images/page-logo2.gif";
 import Typewriter from "./components/loader/Typewriter";
+
+const Loader = ({ fadeOutPage }) => (
+  <div className={`page-loader ${fadeOutPage ? "fade-out" : ""}`}>
+    <img src={Logo2} alt="Loading..." className="preloader-gif" />
+  </div>
+);
 
 function App() {
   const [initialLoading, setInitialLoading] = useState(true);
@@ -51,7 +57,7 @@ function App() {
 
       const fadeOutTimer = setTimeout(() => {
         setFadeOutPage(true);
-      }, 1800);
+      }, 1500);
 
       const timer = setTimeout(() => {
         setPageLoading(false);
@@ -93,17 +99,7 @@ function App() {
   }
 
   // Si une page est en cours de chargement (avec fade out)
-  if (pageLoading) {
-    return (
-      <div className={`page-loader ${fadeOutPage ? "fade-out" : ""}`}>
-        <img
-          src={`${Logo2}?t=${Date.now()}`}
-          alt="Loading..."
-          className="preloader-gif"
-        />
-      </div>
-    );
-  }
+  if (pageLoading) return <Loader fadeOutPage={fadeOutPage} />;
 
   // Si tout est chargé, afficher le contenu de l'application
   return (
