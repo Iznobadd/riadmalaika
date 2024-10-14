@@ -54,9 +54,12 @@ function Navbar() {
             {menuOpen ? <IoCloseOutline /> : <FaBars />}
           </span>
         </label>
+        <Link to="/" title="Riad Malaika" className="logo-resp">
+          <img src={Logo} alt="Logo du Riad Malaïka" />
+        </Link>
         <input type="checkbox" id="toggle" checked={menuOpen} readOnly />
         <ul className={`menu_resp ${menuOpen ? "menu_open" : ""}`}>
-          <li className={`logo_img ${scrolled ? "logo_display" : ""}`}>
+          <li className={`logo_img`}>
             <Link to="/" title="Riad Malaika">
               <img src={Logo} alt="Logo du Riad Malaïka" />
             </Link>

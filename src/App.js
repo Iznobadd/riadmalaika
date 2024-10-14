@@ -31,11 +31,11 @@ function App() {
 
     const initialTimer = setTimeout(() => {
       setFadeOut(true);
-    }, 5000);
+    }, 7000);
 
     const hidePreloader = setTimeout(() => {
       setInitialLoading(false);
-    }, 5500);
+    }, 7500);
 
     return () => {
       clearTimeout(timer);
@@ -96,7 +96,11 @@ function App() {
   if (pageLoading) {
     return (
       <div className={`page-loader ${fadeOutPage ? "fade-out" : ""}`}>
-        <img src={Logo2} alt="Loading..." className="preloader-gif" />
+        <img
+          src={`${Logo2}?t=${Date.now()}`}
+          alt="Loading..."
+          className="preloader-gif"
+        />
       </div>
     );
   }

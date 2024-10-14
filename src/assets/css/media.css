@@ -426,4 +426,17 @@
   .preloader-text {
     font-size: 22px;
   }
+  .preloader-text,
+  .preloader-text-fr {
+    bottom: 20%;
+  }
+  .logo-resp {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+  .logo-resp img {
+    width: 57px;
+  }
 }
