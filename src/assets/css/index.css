@@ -902,9 +902,13 @@ select option {
   display: flex;
   justify-content: space-around;
   gap: 20px;
+  flex-wrap: wrap;
+}
+#menu-gallery > a {
+  width: 30%;
 }
 #menu-gallery img {
-  width: 100%;
+  width: 80%;
   margin-bottom: 50px;
   transition: 0.7s;
 }

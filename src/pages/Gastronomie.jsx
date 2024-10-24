@@ -10,7 +10,7 @@ function Gastronomie() {
   return (
     <div>
       <Banner />
-      {/* <Menu /> */}
+      <Menu />
       <TableForm />
     </div>
   );
