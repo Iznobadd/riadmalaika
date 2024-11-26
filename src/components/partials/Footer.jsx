@@ -3,8 +3,9 @@ import FooterBg from "../../assets/images/footer-bg.png";
 import LabelTrip from "../../assets/images/labeltripadvisor.png";
 import TripAdvisor from "../../assets/images/tripadvisor.png";
 import TripAdvisor2 from "../../assets/images/tripadvisor2.png";
-import Booking from "../../assets/images/booking.jpg";
-import BookingCom from "../../assets/images/bookingcom.png";
+// import Booking from "../../assets/images/booking.jpg";
+// import BookingCom from "../../assets/images/bookingcom.png";
+import Eviivo from "../../assets/images/eviivo.png";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import scrollImg from "../../assets/images/top-arrow.png";
@@ -49,7 +50,7 @@ function Footer() {
       <footer>
         <img src={FooterLogo} alt="" className="logo-footer" />
         <img src={LabelTrip} alt="" className="trip-footer" />
-        <img src={Booking} alt="" className="booking-footer" />
+        {/* <img src={Booking} alt="" className="booking-footer" /> */}
         <div className="reseaux-hr">
           <div className="reseaux">
             <div className="facebook">
@@ -88,13 +89,22 @@ function Footer() {
                 <img src={TripAdvisor2} alt="Trip Advisor" />
               </a>
             </div>
-            <div className="booking">
+            {/* <div className="booking">
               <a
                 href="https://www.booking.com/hotel/ma/malaika.fr.html"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img src={BookingCom} alt="Booking" />
+              </a>
+            </div> */}
+            <div className="booking">
+              <a
+                href="https://via.eviivo.com/RiadMALAIKA44000"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={Eviivo} alt="Eviivo" />
               </a>
             </div>
           </div>

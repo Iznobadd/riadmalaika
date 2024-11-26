@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../../assets/images/footerLogo.png";
-import Booking from "../../assets/images/bookingcom.png";
+// import Booking from "../../assets/images/bookingcom.png";
+import Eviivo from "../../assets/images/eviivo.png";
 import { HiHome } from "react-icons/hi";
 import { FaBars } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
@@ -109,13 +110,22 @@ function Navbar() {
               {t("navbar.contact")}
             </Link>
           </li>
-          <li className="booking_img">
+          {/* <li className="booking_img">
             <a
               href="https://www.booking.com/hotel/ma/malaika.fr.html"
               target="_blank"
               rel="noreferrer"
             >
               <img src={Booking} alt="Lien Booking du Riad Malaïka" />
+            </a>
+          </li> */}
+          <li className="booking_img">
+            <a
+              href="https://via.eviivo.com/RiadMALAIKA44000"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Eviivo} alt="Lien Eviivo du Riad Malaïka" />
             </a>
           </li>
         </ul>
