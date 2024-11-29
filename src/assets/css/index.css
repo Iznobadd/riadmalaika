@@ -485,9 +485,9 @@ footer {
 }
 .trip-footer {
   position: absolute;
-  width: 130px;
+  width: 160px;
   left: 50px;
-  top: 30%;
+  top: 20%;
 }
 .booking-footer {
   position: absolute;
@@ -1371,7 +1371,10 @@ input[type="submit"] {
 .booking img {
   height: 44px;
   position: inherit;
-  margin-right: 15px;
+}
+.booking p {
+  margin-top: 0;
+  color: white;
 }
 .tripadvisor img {
   height: 70px;

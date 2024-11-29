@@ -1,6 +1,6 @@
 import React from "react";
 import FooterBg from "../../assets/images/footer-bg.png";
-import LabelTrip from "../../assets/images/labeltripadvisor.png";
+import LabelGuru from "../../assets/images/restaurantGuru.png";
 import TripAdvisor from "../../assets/images/tripadvisor.png";
 import TripAdvisor2 from "../../assets/images/tripadvisor2.png";
 // import Booking from "../../assets/images/booking.jpg";
@@ -49,7 +49,7 @@ function Footer() {
     <>
       <footer>
         <img src={FooterLogo} alt="" className="logo-footer" />
-        <img src={LabelTrip} alt="" className="trip-footer" />
+        <img src={LabelGuru} alt="" className="trip-footer" />
         {/* <img src={Booking} alt="" className="booking-footer" /> */}
         <div className="reseaux-hr">
           <div className="reseaux">
@@ -105,6 +105,7 @@ function Footer() {
                 rel="noreferrer"
               >
                 <img src={Eviivo} alt="Eviivo" />
+                <p>Réservation Malaika</p>
               </a>
             </div>
           </div>
@@ -149,7 +150,7 @@ function Footer() {
                 <span>
                   <b>Jannick MURA / Hervé FLORET</b>
                   <br />
-                  +212.608.90.0000
+                  +212 600 055 696
                 </span>
               </p>
             </div>
