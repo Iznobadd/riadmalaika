@@ -1372,9 +1372,13 @@ input[type="submit"] {
   height: 44px;
   position: inherit;
 }
+.best img {
+  height: 75px;
+  position: inherit;
+}
 .booking p {
-  margin-top: 0;
   color: white;
+  font-size: 20px !important;
 }
 .tripadvisor img {
   height: 70px;

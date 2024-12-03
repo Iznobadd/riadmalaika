@@ -4,7 +4,7 @@ import LabelGuru from "../../assets/images/restaurantGuru.png";
 import TripAdvisor from "../../assets/images/tripadvisor.png";
 import TripAdvisor2 from "../../assets/images/tripadvisor2.png";
 // import Booking from "../../assets/images/booking.jpg";
-// import BookingCom from "../../assets/images/bookingcom.png";
+import Best from "../../assets/images/best.png";
 import Eviivo from "../../assets/images/eviivo.png";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -89,23 +89,25 @@ function Footer() {
                 <img src={TripAdvisor2} alt="Trip Advisor" />
               </a>
             </div>
-            {/* <div className="booking">
+            <div className="best">
               <a
-                href="https://www.booking.com/hotel/ma/malaika.fr.html"
+                href="https://www.bestrestaurantsmaroc.com/fr/restaurant-maroc/riad-malaika-essaouira-maroc.html"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={BookingCom} alt="Booking" />
+                <img src={Best} alt="Best Restaurants MAROC" />
               </a>
-            </div> */}
+            </div>
             <div className="booking">
               <a
                 href="https://via.eviivo.com/RiadMALAIKA44000"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Eviivo} alt="Eviivo" />
-                <p>Réservation Malaika</p>
+                <p>
+                  Réserver
+                  <br /> directement
+                </p>
               </a>
             </div>
           </div>
