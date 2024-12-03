@@ -1372,13 +1372,20 @@ input[type="submit"] {
   height: 44px;
   position: inherit;
 }
+.booking a {
+  background-color: #c1a253;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
 .best img {
   height: 75px;
   position: inherit;
 }
 .booking p {
-  color: white;
+  color: black;
   font-size: 20px !important;
+  margin: 0;
 }
 .tripadvisor img {
   height: 70px;
