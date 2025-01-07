@@ -75,7 +75,6 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <p>{t("hebergement.standard.p1")}</p>
               <p>{t("hebergement.standard.p2")}</p>
               <p>{t("hebergement.standard.p3")}</p>
-              <p className="italic">{t("hebergement.standard.p4")}</p>
               <div className="modal-imgs">
                 <img src={Standard1} alt="" />
                 <img src={Standard2} alt="" />
@@ -104,7 +103,6 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <p>{t("hebergement.confort.p2")}</p>
               <p>{t("hebergement.confort.p3")}</p>
 
-              <p class="italic">{t("hebergement.confort.p4")}</p>
               <div class="modal-imgs">
                 <img src={Confort1} alt="" />
                 <img src={Confort2} alt="" />
@@ -135,7 +133,6 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <p>{t("hebergement.superieure.p2")}</p>
               <p>{t("hebergement.superieure.p3")}</p>
 
-              <p class="italic">{t("hebergement.superieure.p4")}</p>
               <div class="modal-imgs">
                 <img src={Superieur1} alt="" />
                 <img src={Superieur2} alt="" />
@@ -165,8 +162,6 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <p>{t("hebergement.junior.p3")}</p>
 
               <p>{t("hebergement.junior.p4")}</p>
-              <p class="italic">{t("hebergement.junior.p5")}</p>
-              <p class="italic">{t("hebergement.junior.p6")}</p>
               <div class="modal-imgs">
                 <img src={Junior1} alt="" />
                 <img src={Junior2} alt="" />
@@ -196,7 +191,6 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <p>{t("hebergement.twin_standard.p1")}</p>
               <p>{t("hebergement.twin_standard.p2")}</p>
 
-              <p class="italic">{t("hebergement.twin_standard.p3")}</p>
               <div class="modal-imgs">
                 <img src={Twin1} alt="" />
                 <img src={Twin2} alt="" />
@@ -225,7 +219,6 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               </p>
               <p>{t("hebergement.twin_sup.p1")}</p>{" "}
               <p>{t("hebergement.twin_sup.p2")}</p>
-              <p class="italic">{t("hebergement.twin_sup.p3")}</p>
               <div class="modal-imgs">
                 <img src={TwinSup1} alt="" />
                 <img src={TwinSup2} alt="" />

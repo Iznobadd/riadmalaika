@@ -119,14 +119,14 @@ function Navbar() {
               <img src={Booking} alt="Lien Booking du Riad Malaïka" />
             </a>
           </li> */}
-          <li className="booking_img">
-            <a
-              href="https://via.eviivo.com/RiadMALAIKA44000"
+          <li>
+            <Link
+              to="https://via.eviivo.com/RiadMALAIKA44000"
               target="_blank"
-              rel="noreferrer"
+              title="Riad Malaika"
             >
-              <img src={Eviivo} alt="Lien Eviivo du Riad Malaïka" />
-            </a>
+              Réserver maintenant
+            </Link>
           </li>
         </ul>
         <div className="language">
