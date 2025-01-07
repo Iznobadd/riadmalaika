@@ -13,7 +13,7 @@ function Hebergement() {
         <h2>Hébergement</h2>
       </div>
       <ListChambres />
-      <div className="reservation-chambres" id="reservation">
+      {/* <div className="reservation-chambres" id="reservation">
         <div className="container">
           <Zoom duration={1500}>
             <h1>Réserver un hébergement</h1>
@@ -23,7 +23,7 @@ function Hebergement() {
           </p>
           <ChambresForm />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
