@@ -142,9 +142,14 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
                 <img src={Superieur6} alt="" />
               </div>
               <div class="text-center">
-                <a href="#reservation" className="modal_reservation">
+                <Link
+                  to="https://via.eviivo.com/RiadMALAIKA44000"
+                  target="_blank"
+                  title="Riad Malaika"
+                  className="modal_reservation"
+                >
                   Réserver
-                </a>
+                </Link>
               </div>
             </div>
           )}
@@ -171,9 +176,14 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
                 <img src={Junior6} alt="" />
               </div>
               <div class="text-center">
-                <a href="#reservation" className="modal_reservation">
+                <Link
+                  to="https://via.eviivo.com/RiadMALAIKA44000"
+                  target="_blank"
+                  title="Riad Malaika"
+                  className="modal_reservation"
+                >
                   Réserver
-                </a>
+                </Link>
               </div>
             </div>
           )}
@@ -200,9 +210,14 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
                 <img src={Twin6} alt="" />
               </div>
               <div class="text-center">
-                <a href="#reservation" className="modal_reservation">
+                <Link
+                  to="https://via.eviivo.com/RiadMALAIKA44000"
+                  target="_blank"
+                  title="Riad Malaika"
+                  className="modal_reservation"
+                >
                   Réserver
-                </a>
+                </Link>
               </div>
             </div>
           )}
@@ -227,9 +242,14 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
                 <img src={TwinSup5} alt="" />
               </div>
               <div class="text-center">
-                <a href="#reservation" className="modal_reservation">
+                <Link
+                  to="https://via.eviivo.com/RiadMALAIKA44000"
+                  target="_blank"
+                  title="Riad Malaika"
+                  className="modal_reservation"
+                >
                   Réserver
-                </a>
+                </Link>
               </div>
             </div>
           )}
