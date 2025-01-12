@@ -36,6 +36,8 @@ import TwinSup3 from "../../assets/images/twin-sup3.jpg";
 import TwinSup4 from "../../assets/images/twin-sup4.jpg";
 import TwinSup5 from "../../assets/images/twin-sup5.jpg";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+
 function ModalComponent({ isOpen, onRequestClose, buttonId }) {
   const { t } = useTranslation();
   return (

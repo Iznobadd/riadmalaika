@@ -49,7 +49,15 @@ function Footer() {
     <>
       <footer>
         <img src={FooterLogo} alt="" className="logo-footer" />
-        <img src={LabelGuru} alt="" className="trip-footer" />
+        <a
+          id="b-circle27"
+          target="_blank"
+          href="https://restaurantguru.com/Riad-Malaika-Essaouira"
+          className="trip-footer"
+        >
+          {" "}
+          <span class="b-circledLeaves27__name ">Riad Malaika</span>
+        </a>
         {/* <img src={Booking} alt="" className="booking-footer" /> */}
         <div className="reseaux-hr">
           <div className="reseaux">
