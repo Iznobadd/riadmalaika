@@ -4,8 +4,8 @@
       "name": "entree",
       "options": [
         {
-          "id": "eminces-maroc",
-          "label": "ÉMINCÉS TOMATES, OIGNONS, POIVRONS FAÇON MAROCAINE",
+          "id": "salade-saint-jacques",
+          "label": "SALADE DE NOIX DE ST JACQUES, CREVETTES, AGRUMES, NOISETTE ET HUILE D’ARGAN",
           "signature": false
         },
         {
@@ -24,18 +24,8 @@
           "signature": false
         },
         {
-          "id": "millefeuille",
-          "label": "FEUILLES À FEUILLES DE POIVRONS & AUBERGINES",
-          "signature": false
-        },
-        {
-          "id": "tartare-tomate",
-          "label": "TARTARE DE TOMATES & DUO DE TAPENADES",
-          "signature": false
-        },
-        {
-          "id": "mer-souiris",
-          "label": "FRUITS DE MER SOUIRIS EN SALADE",
+          "id": "salade-gesiers",
+          "label": "SALADE DE GÉSIERS DE VOLAILLE, AGRUMES, NOISETTE ET HUILE D’ARGAN",
           "signature": false
         },
         {
@@ -109,9 +99,19 @@
           "signature": false
         },
         {
+          "id": "gratin-saint-jacques",
+          "label": "GRATIN DE NOIX DE ST JACQUES, FONDUE DE POIREAUX ET DE CHAMPIGNONS",
+          "signature": true
+        },
+        {
+          "id": "mosaique-gambas",
+          "label": "MOSAÏQUE DE GAMBAS ET SON FUMÉE DE CRUSTACÉS, BOULES DE RIZ FRITS",
+          "signature": false
+        },
+        {
           "id": "boeuf-tataki",
           "label": "FILET DE BŒUF À L'ASIATIQUE FAÇON TATAKI",
-          "signature": true
+          "signature": false
         },
         {
           "id": "lotte-bardee",
@@ -246,6 +246,16 @@
           "signature": false
         },
         {
+          "id": "ananas",
+          "label": "DOUCEUR À L’ANANAS FRAIS",
+          "signature": false
+        },
+        {
+          "id": "tajine-fruit",
+          "label": "TAJINE DE FRUITS FRAIS POÊLÉS AU BEURRE SALÉ",
+          "signature": true
+        },
+        {
           "id": "sphere-chocolat",
           "label": "SPHÈRE AU CHOCOLAT EN CHAUD & FROID",
           "signature": true
@@ -253,7 +263,7 @@
         {
           "id": "cannelle",
           "label": "TRILOGIE CANNELL'ORANGE",
-          "signature": true
+          "signature": false
         }
       ]
     }
