@@ -9,6 +9,7 @@ import DatePicker from "react-datepicker";
 import img1Signature from "../../assets/images/signature1.jpg";
 import img2Signature from "../../assets/images/signature2.jpg";
 import img3Signature from "../../assets/images/signature3.jpg";
+import img4Signature from "../../assets/images/signature4.jpg";
 import img1Entree from "../../assets/images/entree1.jpg";
 import img2Entree from "../../assets/images/entree2.jpg";
 import img3Entree from "../../assets/images/entree3.jpg";
@@ -575,10 +576,10 @@ function TableForm() {
               </div>
             </div>
             <div className="imgs-signatures">
-              <img src={img1Entree} alt="signature" />
-              <img src={img2Entree} alt="signature" />
-              <img src={img1Plat} alt="signature" />
-              <img src={img1Dessert} alt="signature" />
+              <img src={img1Signature} alt="signature" />
+              <img src={img2Signature} alt="signature" />
+              <img src={img3Signature} alt="signature" />
+              <img src={img4Signature} alt="signature" />
             </div>
           </div>
         </div>

@@ -5,9 +5,6 @@ import Table2 from "../../assets/images/table2.jpg";
 import Table3 from "../../assets/images/table3.jpg";
 import Table4 from "../../assets/images/table4.jpg";
 import Table5 from "../../assets/images/table5.jpg";
-import Table6 from "../../assets/images/table6.jpg";
-import Table7 from "../../assets/images/table7.jpg";
-import Table8 from "../../assets/images/table8.jpg";
 import { Zoom } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
 function Restaurant() {
@@ -52,17 +49,8 @@ function Restaurant() {
             <SplideSlide>
               <img src={Table4} alt="" data-splide-lazy={Table4} />
             </SplideSlide>
-            {/* <SplideSlide>
+            <SplideSlide>
               <img src={Table5} alt="" data-splide-lazy={Table5} />
-            </SplideSlide>
-            <SplideSlide>
-              <img src={Table6} alt="" data-splide-lazy={Table6} />
-            </SplideSlide>
-            <SplideSlide>
-              <img src={Table7} alt="" data-splide-lazy={Table7} />
-            </SplideSlide> */}
-            <SplideSlide>
-              <img src={Table8} alt="" data-splide-lazy={Table8} />
             </SplideSlide>
           </Splide>
         </section>

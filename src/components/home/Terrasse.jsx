@@ -2,10 +2,6 @@ import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Terrasse1 from "../../assets/images/terrasse1.jpg";
 import Terrasse2 from "../../assets/images/terrasse2.jpg";
-import Terrasse3 from "../../assets/images/terrasse3.jpg";
-import Terrasse4 from "../../assets/images/terrasse4.jpg";
-import Terrasse5 from "../../assets/images/terrasse5.jpg";
-import Terrasse6 from "../../assets/images/terrasse6.jpg";
 import { Zoom } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
 function Terrasse() {
@@ -43,18 +39,6 @@ function Terrasse() {
             </SplideSlide>
             <SplideSlide>
               <img src={Terrasse2} alt="" data-splide-lazy={Terrasse2} />
-            </SplideSlide>
-            <SplideSlide>
-              <img src={Terrasse3} alt="" data-splide-lazy={Terrasse3} />
-            </SplideSlide>
-            <SplideSlide>
-              <img src={Terrasse4} alt="" data-splide-lazy={Terrasse4} />
-            </SplideSlide>
-            <SplideSlide>
-              <img src={Terrasse5} alt="" data-splide-lazy={Terrasse5} />
-            </SplideSlide>
-            <SplideSlide>
-              <img src={Terrasse6} alt="" data-splide-lazy={Terrasse6} />
             </SplideSlide>
           </Splide>
         </section>

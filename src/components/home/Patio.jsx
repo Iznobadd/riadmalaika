@@ -53,9 +53,6 @@ function Patio() {
             <SplideSlide>
               <img src={Patio5} alt="" data-splide-lazy={Patio5} />
             </SplideSlide>
-            <SplideSlide>
-              <img src={Patio6} alt="" data-splide-lazy={Patio6} />
-            </SplideSlide>
           </Splide>
         </section>
         <h2>{t("home.patio.alt")}</h2>

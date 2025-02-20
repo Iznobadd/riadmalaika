@@ -109,9 +109,6 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
                 <img src={Confort1} alt="" />
                 <img src={Confort2} alt="" />
                 <img src={Confort3} alt="" />
-                <img src={Confort4} alt="" />
-                <img src={Confort5} alt="" />
-                <img src={Confort6} alt="" />
               </div>
               <div class="text-center">
                 <a href="#reservation" className="modal_reservation">
