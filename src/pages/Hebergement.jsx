@@ -16,39 +16,44 @@ function Hebergement() {
       <div className="container">
         <div className="intro-chambres text-center">
           <h2>Liste de nos petites attentions en chambre</h2>
-          <p>
-            Bouteille de champagne{" "}
+          <div class="flex_attentions">
+            <p>Bouteille de champagne </p>
             <span className="price_attentions">750 dhs</span>
-          </p>
+          </div>
+
           <div className="separator-chambres"></div>
-          <p>
-            Assortiment de Patisseries orientales{" "}
+          <div class="flex_attentions">
+            <p>Assortiment de Patisseries orientales </p>
             <span className="price_attentions">100 dhs</span>
-          </p>
+          </div>
           <div className="separator-chambres"></div>
-          <p>
-            Corbeille de fruits <span className="price_attentions">65 dhs</span>
-          </p>
+          <div class="flex_attentions">
+            <p>Corbeille de fruits </p>
+            <span className="price_attentions">65 dhs</span>
+          </div>
           <div className="separator-chambres"></div>
-          <p>
-            Pétales de roses sur le lit{" "}
+          <div class="flex_attentions">
+            <p>Pétales de roses sur le lit </p>
             <span className="price_attentions">60 dhs</span>
-          </p>
+          </div>
           <div className="separator-chambres"></div>
-          <p>
-            Flacon Huile massante à l’huile d’argan{" "}
+          <div class="flex_attentions">
+            <p>Flacon Huile massante à l’huile d’argan </p>
             <span className="price_attentions">250 dhs</span>
-          </p>
+          </div>
           <div className="separator-chambres"></div>
-          <p>
-            Bouquet de 20 roses{" "}
+          <div class="flex_attentions">
+            <p>Bouquet de 20 roses </p>
             <span className="price_attentions">290 dhs</span>
-          </p>
+          </div>
           <div className="separator-chambres"></div>
-          <p>
-            Formule romance : Bouteille de champagne, Bouquet de 20 roses et
-            Pétales de roses <span className="price_attentions">990 dhs</span>
-          </p>
+          <div class="flex_attentions">
+            <p>
+              Formule romance : Bouteille de champagne, Bouquet de 20 roses et
+              Pétales de roses
+            </p>
+            <span className="price_attentions">990 dhs</span>
+          </div>
 
           <div className="contact_mail">
             <Link to="/contact">
