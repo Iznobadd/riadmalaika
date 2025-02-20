@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import ListChambres from "../components/chambres/ListChambres";
 import ChambresForm from "../components/chambres/ChambresForm";
 import { Zoom } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 function Hebergement() {
   useEffect(() => {
     document.title = "Hébergement | Riad Malaika";
@@ -15,22 +16,45 @@ function Hebergement() {
       <div className="container">
         <div className="intro-chambres text-center">
           <h2>Liste de nos petites attentions en chambre</h2>
-          <p>Bouteille de champagne</p>
+          <p>
+            Bouteille de champagne{" "}
+            <span className="price_attentions">750 dhs</span>
+          </p>
           <div className="separator-chambres"></div>
-          <p>Assortiments de Patisserie orientales</p>
+          <p>
+            Assortiment de Patisseries orientales{" "}
+            <span className="price_attentions">100 dhs</span>
+          </p>
           <div className="separator-chambres"></div>
-          <p>Corbeille de fruits</p>
+          <p>
+            Corbeille de fruits <span className="price_attentions">65 dhs</span>
+          </p>
           <div className="separator-chambres"></div>
-          <p>Pétales de roses sur le lit</p>
+          <p>
+            Pétales de roses sur le lit{" "}
+            <span className="price_attentions">60 dhs</span>
+          </p>
           <div className="separator-chambres"></div>
-          <p>Flacon Huile massante à l’huile d’argan</p>
+          <p>
+            Flacon Huile massante à l’huile d’argan{" "}
+            <span className="price_attentions">250 dhs</span>
+          </p>
           <div className="separator-chambres"></div>
-          <p>Bouquet de 20 roses</p>
+          <p>
+            Bouquet de 20 roses{" "}
+            <span className="price_attentions">290 dhs</span>
+          </p>
           <div className="separator-chambres"></div>
           <p>
             Formule romance : Bouteille de champagne, Bouquet de 20 roses et
-            Pétales de roses
+            Pétales de roses <span className="price_attentions">990 dhs</span>
           </p>
+
+          <div className="contact_mail">
+            <Link to="/contact">
+              <p>Nous contacter</p>
+            </Link>
+          </div>
         </div>
       </div>
 

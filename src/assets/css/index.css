@@ -17,6 +17,12 @@ a {
   text-decoration: none;
   color: black;
 }
+.price_attentions {
+  color: #c1a253;
+
+  font-size: 13px;
+  padding-left: 30px;
+}
 .modal_reservation {
   background-color: #c1a253;
   cursor: pointer;
@@ -1403,7 +1409,14 @@ input[type="submit"] {
   display: inline-block;
   padding: 10px 20px;
 }
-
+.contact_mail {
+  margin-top: 40px;
+}
+.contact_mail a {
+  background-color: #c1a253;
+  display: inline-block;
+  padding: 0px 20px;
+}
 .best img {
   height: 75px;
   position: inherit;
