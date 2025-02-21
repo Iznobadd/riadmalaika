@@ -45,6 +45,7 @@ a {
     url("../images/bg-attention.jpg") fixed no-repeat;
   max-width: 800px;
   margin: auto;
+  background-size: cover;
 }
 .flex_attentions {
   display: flex;
