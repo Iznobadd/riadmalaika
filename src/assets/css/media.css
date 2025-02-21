@@ -22,6 +22,11 @@
 }
 @media screen and (max-width: 992px) {
   /* ------------------ MENU ------------------ */
+  .intro-chambres {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+      url("../images/bg-attention.jpg") fixed no-repeat;
+    background-position-x: 80%;
+  }
   .flex_attentions {
     justify-content: space-between;
   }
