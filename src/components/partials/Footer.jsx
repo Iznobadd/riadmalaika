@@ -172,10 +172,8 @@ function Footer() {
         </p>
         <div className="copyright">
           <p>
-            © 2024 Copyright |{" "}
-            <Link to="https://www.brandon-cebi.com" target="_blank">
-              VB Digital Nomad
-            </Link>{" "}
+            © {new Date().getFullYear()} Copyright |{" "}
+            <Link to="mailto:contact@nomaado.com">NOMAADŌ</Link>{" "}
             {t("footer.copyright")}
           </p>
         </div>
