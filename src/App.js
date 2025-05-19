@@ -11,6 +11,7 @@ import Mentions from "./pages/Mentions";
 import Logo from "./assets/images/logo-anime.gif";
 import Logo2 from "./assets/images/page-logo2.gif";
 import Typewriter from "./components/loader/Typewriter";
+import Popup from "./pages/Popup";
 
 const Loader = ({ fadeOutPage }) => (
   <div className={`page-loader ${fadeOutPage ? "fade-out" : ""}`}>
@@ -105,6 +106,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Popup />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/table" element={<Gastronomie />} />
