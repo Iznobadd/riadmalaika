@@ -11,8 +11,9 @@ function Table() {
       <div className="riad-description">
         <Fade direction="top" duration={1500}>
           <h1>{t("home.table.table_h1")}</h1>
-          <p>{t("home.table.table_p1")}</p>
-          <p>{t("home.table.table_p2")}</p>
+          {t("home.table.table_p1").split('\n\n').map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
 
           <Link to="/table">{t("home.table.table_button")}</Link>
         </Fade>

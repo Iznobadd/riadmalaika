@@ -56,14 +56,7 @@ function Patio() {
           </Splide>
         </section>
         <h2>{t("home.patio.alt")}</h2>
-
         <p>{t("home.patio.p1")}</p>
-        <p>{t("home.patio.p2")}</p>
-        <p>{t("home.patio.p3")}</p>
-        <p>{t("home.patio.p4")}</p>
-        <p>
-          <i>{t("home.patio.p5")}</i>
-        </p>
       </div>
     </div>
   );

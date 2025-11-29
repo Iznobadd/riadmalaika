@@ -21,9 +21,8 @@
       "riad_button": "RESERVE A ROOM"
     },
     "table": {
-      "table_h1": "Malaïka The Table",
-      "table_p1": "The HOST TABLE elegantly sets up for you every evening in the lounges of the MALAÏKA Essaouira to let you discover the marriage of traditional Moroccan home cooking with the inventiveness of a passionate chef.",
-      "table_p2": "Don't hesitate to make a reservation and come discover our oriental flavors and those of an international cuisine that will make your taste buds travel.",
+      "table_h1": "Malaïka the Lounges",
+      "table_p1": "Among the most beautiful in the kingdom, Malaïka's Table shines with elegance and soul. In a gentle atmosphere, cradled by the glow of a fireplace, time seems suspended. Whispers become discreet and the warmth of the fire adds to the charm of a rare moment.\n\nIt is a place of refinement and tenderness, where each dish tells a story, where every detail invites reverie. Romantic without artifice, Malaïka's Table is an emotion to savor as a couple, with family or among friends.",
       "table_button": "RESERVE A TABLE"
     },
     "parallax": {
@@ -31,26 +30,16 @@
       "title2": "for your Souiri stay"
     },
     "pres": {
-      "pres1": "Open the door of riad Malaika and discover a unique and welcoming guest house.",
-      "pres2": "The oriental ambience of each room, bright and airy, enriched with antique furniture, carpets and Moroccan antiques, invites you to enjoy a change of scenery. Enjoy the sunshine from the terrace, the warmth of a roaring fire, the murmur of the fountains or the song of the birds.",
-      "pres3": "Discover a space where the omnipresent wifi will enable you to stay in touch with your loved ones and share your \"Moroccan\" impressions. You'll also discover a staff at the service of its guests.",
-      "pres4": "Everything is done to make your stay a unique experience, but also to help you discover Morocco in a different way: Berber massages with argan oil, traditional hammams, scrubs with black soap or even walks in the surrounding area accompanied by an excursion guide. Once back at the riad, enjoy a moment of relaxation over traditional mint tea served in one of the lounges or on the terrace, as well as the \"Beldi\" breakfast, different every day."
+      "pres1": "The rooms and suites of Riad Malaika embody refined luxury, where every detail is designed for absolute well-being. Noble materials, delicately crafted wood, and accents of Moroccan tradition blend with a contemporary aesthetic imbued with elegance."
     },
     "restaurant": {
-      "h1": "The Restaurant",
-      "alt": "Gastronomy is an art that transcends the language barrier",
-      "p1": "The MALAÏKA Riad & Host Table team invites you to discover authentic traditional Moroccan cuisine, handed down from mother to daughter, as well as international and inventive land-sea cuisine, under the leadership of passionate chef Mina.",
-      "p2": "Elegant and refined, The Table is set up in our lounges each evening for a limited number of guests who have the opportunity to discover original flavors accompanied by selected Moroccan wines, where fine tableware, silverware, flowers and candelabras come together for their greatest olfactory, gustatory and visual pleasure.",
-      "p3": "While the culinary arts are particularly well developed in Moroccan tradition, few aspects of them can be discovered in Moroccan tourist restaurants. That's why Riad Malaïka offers you the chance to discover the true flavors and aromas of Moroccan cuisine, which is authentic and family-style, as well as the fusion of several international culinary cultures that will surprise you with its presentation on your plate."
+      "h1": "Malaïka La Table",
+      "alt": "Malaika's cuisine, created by chef Khadija Bihmane, celebrates the encounter between the deep flavors of Morocco and the refinement of French gastronomy. Each plate is an inspired creation, blending tradition, boldness and careful presentation for a unique culinary experience."
     },
     "patio": {
       "h1": "The Patio",
       "alt": "The patio is the heart and soul of a Riad",
-      "p1": "The patio is certainly the most characteristic feature of a traditional Moroccan riad, an open-air courtyard around which the rooms of the house are arranged.",
-      "p2": "At Riad Malaika, the patio is not only the center of the building, but also its heart. Much more than a skylight, it's a veritable living space in and around which everything is organized.",
-      "p3": "The central fountain, surrounded by four traditional stone pillars, flows continuously*, creating a soothing atmosphere that attracts thirsty and curious birds at certain times of the day.",
-      "p4": "It's a place where people like to drop in and out of, depending on their mood, to one of the three lounges.",
-      "p5": "* in a closed circuit, to avoid wasting water, a vital resource."
+      "p1": "At the heart of Riad Malaika, the patio embodies the essence of Moroccan luxury. A true living heart, it captivates with its perfect harmony between light, stone and water. The central fountain, surrounded by its four stone pillars, diffuses a soothing murmur, creating a rare atmosphere, filled with serenity."
     },
     "salon": {
       "h1": "Lounges",
@@ -64,10 +53,7 @@
     "terrasse": {
       "h1": "The Terrace",
       "alt": "Between heaven and earth, in the shade or in the sun, but above all out of sight.",
-      "p1": "At Riad Malaika, there's a place apart, a space where everyone can enjoy a unique moment, cut off from the world: the roof terrace.",
-      "p2": "Here you can escape the hustle and bustle of the medina to read, surf the web, daydream or sunbathe on a deckchair, and for those who prefer, part of the terrace is sheltered from the sun and wind...",
-      "p3": "In the morning, having breakfast under a blue sky caressed by the rising sun, admiring the incessant ballet of gulls, is a real pleasure, while in the moonlight, surrounded by lights, you can enjoy the murmur of the waves mixed with that of the tadelakt fountain.",
-      "p4": "The ubiquitous wifi lets you stay in touch with friends and family and share your \"Moroccan\" impressions..."
+      "p1": "Under the bright blue sky of Essaouira, the Rooftop of Riad Malaika invites relaxation and reverie. Amidst olive trees, bougainvillea and colorful flowers, the murmur of the fountain and the song of birds compose a gentle melody. It's the perfect place for peaceful reading, a moment of absolute calm."
     },
     "offres": {
       "h1": "Our special offers",
@@ -85,67 +71,67 @@
   },
   "table": {
     "banner": {
-      "title": "Gastronomy",
-      "p1": "MALAÏKA Riad & Host Table invites you to discover the true flavors and aromas of authentic Moroccan cuisine, a fusion of international culinary cultures that will surprise you with its presentation on your plate.",
-      "p2": "The MALAÏKA Riad & Host Table team invites you to discover authentic traditional Moroccan cuisine, handed down from mother to daughter, as well as inventive international land-sea cuisine, under the leadership of chef Mina, who never ceases to innovate.",
-      "p3": "Elegant and refined, The Table is set up in our lounges each evening for a limited number of guests who have the opportunity to discover original flavors accompanied by selected Moroccan wines, where fine tableware, silverware, flowers and candelabras come together for their greatest olfactory, gustatory and visual pleasure.",
-      "p4": "While the culinary arts are particularly well developed in the Moroccan tradition, very few aspects of them can be discovered in Moroccan tourist restaurants."
+      "title": "The Cuisine",
+      "p1": "We invite you to choose your dishes in advance to allow us to select the finest fresh products, to achieve slow and delicate cooking, and to treat each plate with the elegance and precision required by an exceptional table."
+    },
+    "menu_selector": {
+      "classic": "Classic Menu",
+      "signature": "Signature Menu",
+      "reveillon": "New Year's Menu"
+    },
+    "reveillon": {
+      "title": "4-Course Menu « New Year's Eve 24 & 31/12/2025 »",
+      "subtitle": "(set menu)",
+      "price": "590 MAD",
+      "amuse_bouche": "Amuse Bouche: Discovery of Moroccan Flavors",
+      "or": "or",
+      "first": {
+        "title": "First Course:",
+        "option1": "Foie Gras Pastilla",
+        "option2": "Fresh Lobster with Avocado & Spices"
+      },
+      "second": {
+        "title": "Second Course:",
+        "option1": "Lobster and Saffron in Fine Ravioli",
+        "option2": "Prawn Mosaic, Crustacean Smoke & Fried Rice Balls"
+      },
+      "third": {
+        "title": "Third Course:",
+        "option1": "Beef Fillet in Crust Stuffed with Spinach & Mushrooms",
+        "option2": "Orange Cod with Chorizo Crumble, Orange Sauce and Sweet Potatoes"
+      },
+      "fourth": {
+        "title": "Fourth Course:",
+        "option1": "Red & Pistachio Log Cake",
+        "option2": "Mandarin & Chocolate Log Cake « Christmas Spirit »"
+      },
+      "finale": "Coffee or Tea and Oriental Pastries"
     }
   },
   "hebergement": {
     "standard": {
-      "title": "The Standard bedrooms",
-      "description": "Our \"Standard\" double or twin rooms overlook the medina, and their typically Moroccan decor will immediately immerse you in a sober and exotic atmosphere...",
-      "subtitle": "The Standard bedrooms offer each and every one a unique decoration.",
-      "p1": "Our “Standard”, double or twin bedrooms enjoy a view on the Medina, while their typical Moroccan setting instantly plunges you into a sober and exotic atmosphere. Cast iron, thuya wood, copper and multicoloured carpets compose the décor and are a part of the furnishings created on site by the Souiris craftsmen..",
-      "p2": "Each one of the “Standard” bedrooms places at your disposition the comfort of a private bathroom complete with walls finished with traditional Tadelakt waxed coating in natural desert colours. They are equipped with a window, a shower and toilettes. For your comfort, we change the bath towels daily.",
-      "p3": "Our welcoming products : soap, shower gel, and shampoo composed of all natural ingredients are  prepared in Marrakech especially for us by Nectarome.",
-      "p4": "Reserve your room at Malaïka Riad now at the best price without charge via our secure reservation system by clicking here."
+      "title": "Standard: 13 m²",
+      "p1": "Our rooms offer discreet refinement: Queen size bed, private bathroom, embroidered linen and natural products created especially for Riad Malaika near the Ourika valley."
     },
     "confort": {
-      "title": "The Comfort bedrooms",
-      "description": "Located on the 1st or 2nd floor of the riad, our Comfort rooms feature a queen-size double bed and bright decor. Quietly overlooking the patio, they invite you to relax...",
-      "subtitle": "The bedrooms Comfort beckon you to a change of scenery.",
-      "p1": "Situated on the 1st or 2nd floor or the riad, our Comfort bedrooms are equipped with a double queen-size bed and a sunny decor. Calm, they face the patio and are highly conducive to relaxation.",
-      "p2": "“Haiks” on the windows, lamps in copper and Iraqi multicoloured glass, bring back the Moroccan charm which was found in the old bourgeois homes of another time.",
-      "p3": "The traditional bathrooms in coloured zelliges transport you back in time all the while bringing you a level of comfort at the standards found in today’s hotels. For your well-being, we change the bathroom linen every morning. and we provide you with delicious natural complimentary products with ambergris essences produced in the Ouriqua valley especially for the Malaïka Riad.",
-      "p4": "Reserve your room at Malaïka Riad now at the best price without charge via our secure reservation system by clicking here."
+      "title": "Comfort: 16 m²",
+      "p1": "Our rooms offer discreet refinement: Queen size bed, private bathroom, embroidered linen and natural products created especially for Riad Malaika near the Ourika valley."
     },
     "superieure": {
-      "title": "The bedrooms Superior",
-      "description": "Surrounded by objects found in the souks of the region, you'll find a comfort that's conducive to daydreaming. The sleeping area features a comfortable queen-size double bed, and the lounge area offers a pleasant place to unwind...",
-      "subtitle": "The bedrooms Superior are all decorated with different themes.",
-      "p1": "Surrounded by objects discovered in the souks and bazaars of the region, you will find a sort of comfort conducive to daydreaming. The sleeping  area equipped with a comfortable double queen-size bed, and the living room corner offers a pleasant place to decompress.",
-      "p2": "The furniture in thuya mosaic, in fragrant cedar or in cast iron has been acquired in the antiques markets between Essaouira and Marrakech. Our Superior bedrooms in double or twin formats, are situated on the 1st and 2nd floors, their windows looking down on either the Medina or on the patio of the riad.",
-      "p3": "Their oriental bathrooms combining “tadelakt” and “zelliges” finish will enable you to discover the traditional materials which were used in the original Moroccan hammams of old. Each private bathroom offers shower and toilettes. In order to provide you a quality stay, we change the bathroom linen every morning, and we have our complimentary welcoming products featuring essential oils prepared by Nectarome Marrakech in the Ouriqua valley.",
-      "p4": "Reserve your room at Malaïka Riad now at the best price without charge via our secure reservation system by clicking here."
+      "title": "Superior: 21 m²",
+      "p1": "Our rooms offer discreet refinement: Queen size bed, private bathroom, embroidered linen and natural products created especially for Riad Malaika near the Ourika valley."
     },
     "junior": {
-      "title": "Junior Suite",
-      "description": "Spending time isolated from the world, having breakfast, a drink or reading in the sun is a highlight of this Terrace Suite...",
-      "subtitle": "The Terrace Junior Suite for a very unique stay.",
-      "p1": "Pass some time isolated from the world, have your breakfast, sip a drink, or just read in the sun – this is the trump card for this Suite on the terrace.",
-      "p2": "At your disposition, a double bedroom equipped with a double queen-size bed, a luminous and spacious living room with a cozy fireplace, a mini-bar sans alcohol and a Nespresso machine.  Paintings, furniture and various objects tell part of the story of this continent…",
-      "p3": "The bathrooms, in traditional Tadelakt, offers you a bathtub along with the traditional accessories used in the hammams of the old days.",
-      "p4": "In order to optimise your well-being, the bathroom linen is changed every day, and the toilettes are independent of the bathroom. The complimentary “Malaïka” welcoming products with oriental fragrances that we have produced in the Ouriqua valley are at your disposal throughout your stay.",
-      "p5": "",
-      "p6": ""
+      "title": "Junior Suite: 35 m²",
+      "p1": "Our rooms offer discreet refinement: Queen size bed, private bathroom, embroidered linen and natural products created especially for Riad Malaika near the Ourika valley."
     },
     "twin_standard": {
-      "title": "The Standard Twin room",
-      "description": "Like all the rooms at Riad Malaïka, the Twin Standard room is soberly decorated with Moroccan furniture and objects. Bright and pleasant, this uniquely charming room has its own private bathroom...",
-      "subtitle": "The Twin Standard room is situated on the second floor overlooking the Medina.",
-      "p1": "Like all the rooms at the Malaïka Riad, the Twin Standard room is characterized by sober decoration where furniture and other objects coming from Morocco have found their place.",
-      "p2": "Luminous and pleasant, this room of singular charm possesses its own private bathroom.",
-      "p3": "The bathroom linen is changed daily in order to assure you a sense of well-being, along with all of our welcoming products with natural ambergris essence which we offer you."
+      "title": "Twin Standard: 13 m²",
+      "p1": "Our rooms offer discreet refinement: Queen size bed, private bathroom, embroidered linen and natural products created especially for Riad Malaika near the Ourika valley."
     },
     "twin_sup": {
-      "title": "The Superior Twin room",
-      "description": "A real invitation to travel, thanks to the typically Moroccan decor of this room with two comfortable separate beds, a fireplace, a traditional bathroom and charming local objects...",
-      "subtitle": "The Superior Twin room on the first floor with a view on the patio, offers you comfort and intimacy.",
-      "p1": "A veritable invitation to voyage thanks to the typical Moroccan décor, this room is equipped with two separate and comfortable beds, a fireplace, a traditional bathroom and local objects full of charm.",
-      "p2": "For your well-being, we change the bathroom linen daily and we provide you with delicious natural welcoming products with ambergris essences produced in the Ouriqua valley especially for the Malaïka Riad.",
-      "p3": ""
+      "title": "Twin Superior: 21 m²",
+      "p1": "Our rooms offer discreet refinement: Queen size bed, private bathroom, embroidered linen and natural products created especially for Riad Malaika near the Ourika valley."
     }
   },
   "exp": {

@@ -71,12 +71,7 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <h2 className="text-center my-5">
                 {t("hebergement.standard.title")}
               </h2>
-              <p className="intro-experiences text-center">
-                <b>{t("hebergement.standard.subtitle")}</b>
-              </p>
               <p>{t("hebergement.standard.p1")}</p>
-              <p>{t("hebergement.standard.p2")}</p>
-              <p>{t("hebergement.standard.p3")}</p>
               <div className="modal-imgs">
                 <img src={Standard1} alt="" />
                 <img src={Standard2} alt="" />
@@ -98,12 +93,7 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
                 &times;
               </span>
               <h2 class="text-center my-5">{t("hebergement.confort.title")}</h2>
-              <p class="intro-experiences text-center">
-                <b>{t("hebergement.confort.subtitle")}</b>
-              </p>
               <p>{t("hebergement.confort.p1")}</p>
-              <p>{t("hebergement.confort.p2")}</p>
-              <p>{t("hebergement.confort.p3")}</p>
 
               <div class="modal-imgs">
                 <img src={Confort1} alt="" />
@@ -125,12 +115,7 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <h2 class="text-center my-5">
                 {t("hebergement.superieure.title")}
               </h2>
-              <p class="intro-experiences text-center">
-                <b>{t("hebergement.superieure.subtitle")}</b>
-              </p>
               <p>{t("hebergement.superieure.p1")}</p>
-              <p>{t("hebergement.superieure.p2")}</p>
-              <p>{t("hebergement.superieure.p3")}</p>
 
               <div class="modal-imgs">
                 <img src={Superieur1} alt="" />
@@ -158,14 +143,8 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
                 &times;
               </span>
               <h2 class="text-center my-5">{t("hebergement.junior.title")}</h2>
-              <p class="intro-experiences text-center">
-                <b>{t("hebergement.junior.subtitle")}</b>
-              </p>
               <p>{t("hebergement.junior.p1")}</p>
-              <p>{t("hebergement.junior.p2")}</p>
-              <p>{t("hebergement.junior.p3")}</p>
 
-              <p>{t("hebergement.junior.p4")}</p>
               <div class="modal-imgs">
                 <img src={Junior1} alt="" />
                 <img src={Junior2} alt="" />
@@ -194,11 +173,7 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <h2 class="text-center my-5">
                 {t("hebergement.twin_standard.title")}
               </h2>
-              <p class="intro-experiences text-center">
-                <b>{t("hebergement.twin_standard.subtitle")}</b>
-              </p>
               <p>{t("hebergement.twin_standard.p1")}</p>
-              <p>{t("hebergement.twin_standard.p2")}</p>
 
               <div class="modal-imgs">
                 <img src={Twin1} alt="" />
@@ -228,11 +203,7 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
               <h2 class="text-center my-5">
                 {t("hebergement.twin_sup.title")}
               </h2>
-              <p class="intro-experiences text-center">
-                <b>{t("hebergement.twin_sup.subtitle")}</b>
-              </p>
-              <p>{t("hebergement.twin_sup.p1")}</p>{" "}
-              <p>{t("hebergement.twin_sup.p2")}</p>
+              <p>{t("hebergement.twin_sup.p1")}</p>
               <div class="modal-imgs">
                 <img src={TwinSup1} alt="" />
                 <img src={TwinSup2} alt="" />

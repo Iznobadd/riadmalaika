@@ -19,17 +19,7 @@ function Banner() {
 
           <div className="table_description">
             <Fade direction="top" duration={1500}>
-              <p>
-                <strong>{t("table.banner.p1")}</strong>
-              </p>
-              <p>
-                {t("table.banner.p2")}
-                <br />
-                {t("table.banner.p3")}
-              </p>
-              <p>
-                <span>{t("table.banner.p4")}</span>
-              </p>
+              <p>{t("table.banner.p1")}</p>
             </Fade>
           </div>
         </div>

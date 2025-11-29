@@ -92,7 +92,7 @@ function ListChambres() {
         <div className="description-chambres">
           <div>
             <h2>{t("hebergement.standard.title")}</h2>
-            <p>{t("hebergement.standard.description")}</p>
+            <p>{t("hebergement.standard.p1")}</p>
             <span>
               <a
                 href="./"
@@ -109,7 +109,7 @@ function ListChambres() {
       <div className="l-chambres reverse-chambres">
         <div className="description-chambres desc-white">
           <h2>{t("hebergement.confort.title")}</h2>
-          <p>{t("hebergement.confort.description")}</p>
+          <p>{t("hebergement.confort.p1")}</p>
           <span>
             <a
               href="./"
@@ -212,7 +212,7 @@ function ListChambres() {
         </section>
         <div className="description-chambres">
           <h2>{t("hebergement.superieure.title")}</h2>
-          <p>{t("hebergement.superieure.description")}</p>
+          <p>{t("hebergement.superieure.p1")}</p>
           <span>
             <a
               href="./"
@@ -228,7 +228,7 @@ function ListChambres() {
       <div className="l-chambres reverse-chambres">
         <div className="description-chambres desc-white">
           <h2>{t("hebergement.junior.title")}</h2>
-          <p>{t("hebergement.junior.description")}</p>
+          <p>{t("hebergement.junior.p1")}</p>
           <span>
             <a
               href="./"
@@ -331,7 +331,7 @@ function ListChambres() {
         </section>
         <div className="description-chambres">
           <h2>{t("hebergement.twin_standard.title")}</h2>
-          <p>{t("hebergement.twin_standard.description")}</p>
+          <p>{t("hebergement.twin_standard.p1")}</p>
           <span>
             <a
               href="./"
@@ -347,7 +347,7 @@ function ListChambres() {
       <div className="l-chambres reverse-chambres">
         <div className="description-chambres desc-white">
           <h2>{t("hebergement.twin_sup.title")}</h2>
-          <p>{t("hebergement.twin_sup.description")}</p>
+          <p>{t("hebergement.twin_sup.p1")}</p>
           <span>
             <a
               href="./"

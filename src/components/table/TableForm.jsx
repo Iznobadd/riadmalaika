@@ -39,6 +39,22 @@ function TableForm() {
   const [selectedItems, setSelectedItems] = useState([]);
   const [selectedSignatureItems, setSelectedSignatureItems] = useState([]);
   const [nbrSignatureMenus, setNbrSignatureMenus] = useState(0);
+  const [nbrReveillonMenus, setNbrReveillonMenus] = useState(0);
+  const [reveillonSelections, setReveillonSelections] = useState([]);
+
+  useEffect(() => {
+    // Initialize reveillon selections array when number changes
+    const newSelections = Array.from({ length: nbrReveillonMenus }, (_, index) => {
+      return reveillonSelections[index] || {
+        first: "",
+        second: "",
+        third: "",
+        fourth: "",
+      };
+    });
+    setReveillonSelections(newSelections);
+  }, [nbrReveillonMenus]);
+
   useEffect(() => {
     const fetchCategories = async () => {
       try {
@@ -111,6 +127,41 @@ function TableForm() {
     }
   };
 
+  const handleReveillonSelection = (menuIndex, course, value) => {
+    const newSelections = [...reveillonSelections];
+    newSelections[menuIndex] = {
+      ...newSelections[menuIndex],
+      [course]: value,
+    };
+    setReveillonSelections(newSelections);
+  };
+
+  const generateReveillonHTML = (data) => {
+    if (nbrReveillonMenus === 0) {
+      return "<h2>Menu Réveillon : Aucun</h2>";
+    }
+
+    let str = `<h2>Menu Réveillon (24 & 31/12/2025) :</h2>`;
+    str += `<p><strong>Nombre de menus réveillon :</strong> ${nbrReveillonMenus}</p>`;
+    str += `<p><strong>Prix :</strong> 590 MAD par personne</p>`;
+
+    // Afficher les choix de chaque personne
+    reveillonSelections.forEach((selection, index) => {
+      const { first, second, third, fourth } = selection;
+      str += `<h3>Menu ${index + 1} :</h3>`;
+      str += `<p><em>Amuse Bouche : Découverte Des Saveurs du Maroc</em></p>`;
+      str += `<p><strong>Premier Temps :</strong> ${first}</p>`;
+      str += `<p><strong>Deuxième Temps :</strong> ${second}</p>`;
+      str += `<p><strong>Troisième Temps :</strong> ${third}</p>`;
+      str += `<p><strong>Quatrième Temps :</strong> ${fourth}</p>`;
+      str += `<p><em>Finalité : Café ou Thé et Pâtisseries Orientales</em></p>`;
+    });
+
+    const demandeSpeciale = data["demande-reveillon"] || "";
+    str += `<p><strong>Demande spéciale :</strong> ${demandeSpeciale}</p>`;
+    return str;
+  };
+
   const onSubmit = (data) => {
     const selectedDate = data.date;
     if (selectedDate.getDay() === 0) {
@@ -129,6 +180,19 @@ function TableForm() {
       toast.error("Veuillez remplir les champs obligatoires");
       return;
     } else {
+      // Validation menu Réveillon
+      if (nbrReveillonMenus > 0) {
+        for (let i = 0; i < nbrReveillonMenus; i++) {
+          const selection = reveillonSelections[i];
+          if (!selection || !selection.first || !selection.second || !selection.third || !selection.fourth) {
+            toast.error(
+              `Veuillez sélectionner un choix pour chaque temps du menu Réveillon ${i + 1}`
+            );
+            return;
+          }
+        }
+      }
+
       const entreesSignature = selectedSignatureItems.filter(
         (item) => item.category === "entree"
       );
@@ -216,7 +280,8 @@ function TableForm() {
               });
 
               // Générer la chaîne de caractères triée par catégorie avec du HTML
-              let str =
+              let str = generateReveillonHTML(data);
+              str +=
                 "<h2>Menus Signatures :</h2> <p>Nombre de menus signature : " +
                 nbrSignatureMenus +
                 "</p><ul>";
@@ -275,7 +340,8 @@ function TableForm() {
             });
 
             // Générer la chaîne de caractères triée par catégorie avec du HTML
-            let str =
+            let str = generateReveillonHTML(data);
+            str +=
               "<h2>Menus Signatures :</h2> <p>Nombre de menus signature : " +
               nbrSignatureMenus +
               "</p>";
@@ -327,7 +393,8 @@ function TableForm() {
               });
 
               // Générer la chaîne de caractères triée par catégorie avec du HTML
-              let str =
+              let str = generateReveillonHTML(data);
+              str +=
                 "<h2>Menus Signatures : Aucun</h2> <h2>Menus Classiques : </h2>";
               for (const category in itemsByCategory) {
                 category.toUpperCase();
@@ -361,8 +428,31 @@ function TableForm() {
             return;
           }
         } else {
-          toast.error("Veuillez choisir au moins un menu pour une réservation");
-          return;
+          // Vérifier si un menu Réveillon a été sélectionné
+          if (nbrReveillonMenus > 0) {
+            // MENU REVEILLON SEUL
+            const cartItems = () => {
+              let str = generateReveillonHTML(data);
+              str += "<h2>Menus Signatures : Aucun</h2>";
+              str += "<h2>Menus Classiques : Aucun</h2>";
+              return str;
+            };
+            const formatDate = new Date(data.date).toLocaleDateString("fr-FR", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            });
+            const allData = {
+              ...data,
+              tel,
+              formatDate,
+              cartItems: cartItems(),
+            };
+            sendEmail(allData);
+          } else {
+            toast.error("Veuillez choisir au moins un menu pour une réservation");
+            return;
+          }
         }
       }
     }
@@ -508,6 +598,204 @@ function TableForm() {
                 {...register("message")}
               ></textarea>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="reservation-reveillon">
+        <div className="container">
+          <h1>Menu Réveillon 24 & 31/12/2025</h1>
+          <p className="reveillon-intro">
+            <strong>Menu unique en 4 temps - 590 MAD</strong>
+          </p>
+          <div className="container-reveillon">
+            <div className="nbr-reveillon">
+              <label htmlFor="nbr-reveillon">Nombre de menus réveillon</label>
+              <br />
+              <br />
+              <input
+                type="number"
+                name="nbr-reveillon"
+                min="0"
+                value={nbrReveillonMenus}
+                onChange={(e) => {
+                  setNbrReveillonMenus(Number(e.target.value));
+                }}
+              />
+            </div>
+
+            {Array.from({ length: nbrReveillonMenus }, (_, menuIndex) => (
+              <div key={menuIndex} className="reveillon-menu-individual">
+                <h2 className="reveillon-menu-title">Menu {menuIndex + 1}</h2>
+
+                <div className="reveillon-amuse">
+                  <h3>Amuse Bouche</h3>
+                  <p>Découverte Des Saveurs du Maroc</p>
+                </div>
+
+                <div className="reveillon-course-selection">
+                  <h3>Premier Temps</h3>
+                  <div className="reveillon-options">
+                    <label>
+                      <input
+                        type="radio"
+                        name={`first-course-${menuIndex}`}
+                        value="Pastilla Foie Gras"
+                        onChange={(e) =>
+                          handleReveillonSelection(menuIndex, "first", e.target.value)
+                        }
+                        checked={
+                          reveillonSelections[menuIndex]?.first === "Pastilla Foie Gras"
+                        }
+                      />
+                      Pastilla Foie Gras
+                    </label>
+                    <label>
+                      <input
+                        type="radio"
+                        name={`first-course-${menuIndex}`}
+                        value="Fraicheur de Homard à l'Avocat & Epices"
+                        onChange={(e) =>
+                          handleReveillonSelection(menuIndex, "first", e.target.value)
+                        }
+                        checked={
+                          reveillonSelections[menuIndex]?.first ===
+                          "Fraicheur de Homard à l'Avocat & Epices"
+                        }
+                      />
+                      Fraicheur de Homard à l'Avocat & Epices
+                    </label>
+                  </div>
+                </div>
+
+                <div className="reveillon-course-selection">
+                  <h3>Deuxième Temps</h3>
+                  <div className="reveillon-options">
+                    <label>
+                      <input
+                        type="radio"
+                        name={`second-course-${menuIndex}`}
+                        value="Homard et Safran en Fines Ravioles"
+                        onChange={(e) =>
+                          handleReveillonSelection(menuIndex, "second", e.target.value)
+                        }
+                        checked={
+                          reveillonSelections[menuIndex]?.second ===
+                          "Homard et Safran en Fines Ravioles"
+                        }
+                      />
+                      Homard et Safran en Fines Ravioles
+                    </label>
+                    <label>
+                      <input
+                        type="radio"
+                        name={`second-course-${menuIndex}`}
+                        value="Mosaïque de Gambas, Fumée de Crustacés & Boules de Riz Frit"
+                        onChange={(e) =>
+                          handleReveillonSelection(menuIndex, "second", e.target.value)
+                        }
+                        checked={
+                          reveillonSelections[menuIndex]?.second ===
+                          "Mosaïque de Gambas, Fumée de Crustacés & Boules de Riz Frit"
+                        }
+                      />
+                      Mosaïque de Gambas, Fumée de Crustacés & Boules de Riz Frit
+                    </label>
+                  </div>
+                </div>
+
+                <div className="reveillon-course-selection">
+                  <h3>Troisième Temps</h3>
+                  <div className="reveillon-options">
+                    <label>
+                      <input
+                        type="radio"
+                        name={`third-course-${menuIndex}`}
+                        value="Filet de Boeuf en Croute Farcie Epinards & Champignons"
+                        onChange={(e) =>
+                          handleReveillonSelection(menuIndex, "third", e.target.value)
+                        }
+                        checked={
+                          reveillonSelections[menuIndex]?.third ===
+                          "Filet de Boeuf en Croute Farcie Epinards & Champignons"
+                        }
+                      />
+                      Filet de Boeuf en Croute Farcie Epinards & Champignons
+                    </label>
+                    <label>
+                      <input
+                        type="radio"
+                        name={`third-course-${menuIndex}`}
+                        value="Cabillaud à l'Orange Crumble de Chorizo, Sauce à l'Orange et Patates Douces"
+                        onChange={(e) =>
+                          handleReveillonSelection(menuIndex, "third", e.target.value)
+                        }
+                        checked={
+                          reveillonSelections[menuIndex]?.third ===
+                          "Cabillaud à l'Orange Crumble de Chorizo, Sauce à l'Orange et Patates Douces"
+                        }
+                      />
+                      Cabillaud à l'Orange Crumble de Chorizo, Sauce à l'Orange et Patates Douces
+                    </label>
+                  </div>
+                </div>
+
+                <div className="reveillon-course-selection">
+                  <h3>Quatrième Temps</h3>
+                  <div className="reveillon-options">
+                    <label>
+                      <input
+                        type="radio"
+                        name={`fourth-course-${menuIndex}`}
+                        value="Buchette Rouge & Pistache"
+                        onChange={(e) =>
+                          handleReveillonSelection(menuIndex, "fourth", e.target.value)
+                        }
+                        checked={
+                          reveillonSelections[menuIndex]?.fourth ===
+                          "Buchette Rouge & Pistache"
+                        }
+                      />
+                      Buchette Rouge & Pistache
+                    </label>
+                    <label>
+                      <input
+                        type="radio"
+                        name={`fourth-course-${menuIndex}`}
+                        value="Buchette Douceur Mandarine & Chocolat « Esprit de Noel »"
+                        onChange={(e) =>
+                          handleReveillonSelection(menuIndex, "fourth", e.target.value)
+                        }
+                        checked={
+                          reveillonSelections[menuIndex]?.fourth ===
+                          "Buchette Douceur Mandarine & Chocolat « Esprit de Noel »"
+                        }
+                      />
+                      Buchette Douceur Mandarine & Chocolat « Esprit de Noel »
+                    </label>
+                  </div>
+                </div>
+
+                <div className="reveillon-finale">
+                  <h3>Finalité</h3>
+                  <p>Café ou Thé et Pâtisseries Orientales</p>
+                </div>
+              </div>
+            ))}
+
+            {nbrReveillonMenus > 0 && (
+              <div className="form-reveillon">
+                <div className="demande-speciale">
+                  <label htmlFor="demande-reveillon">DEMANDE SPÉCIALE</label>
+                  <textarea
+                    name="demande-reveillon"
+                    id="demande-reveillon"
+                    cols="10"
+                    rows="3"
+                    {...register("demande-reveillon")}
+                  ></textarea>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

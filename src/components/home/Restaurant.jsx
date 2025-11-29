@@ -54,10 +54,7 @@ function Restaurant() {
             </SplideSlide>
           </Splide>
         </section>
-        <h2>{t("home.restaurant.alt")}</h2>
-        <p>{t("home.restaurant.p1")}</p>
-        <p>{t("home.restaurant.p2")}</p>
-        <p>{t("home.restaurant.p3")}</p>
+        <p>{t("home.restaurant.alt")}</p>
       </div>
     </div>
   );

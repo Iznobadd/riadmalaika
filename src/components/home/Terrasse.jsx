@@ -44,9 +44,6 @@ function Terrasse() {
         </section>
         <h2>{t("home.terrasse.alt")}</h2>
         <p>{t("home.terrasse.p1")}</p>
-        <p>{t("home.terrasse.p2")}</p>
-        <p>{t("home.terrasse.p3")}</p>
-        <p>{t("home.terrasse.p4")}</p>
       </div>
     </div>
   );

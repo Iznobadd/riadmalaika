@@ -22,9 +22,8 @@
       "riad_button": "RÉSERVER UNE CHAMBRE"
     },
     "table": {
-      "table_h1": "Malaïka La Table",
-      "table_p1": "La TABLE D’HÔTES s’installe élégamment pour vous chaque soir dans les salons du MALAÏKA Essaouira pour vous faire découvrir le mariage de la traditionnelle cuisine familiale marocaine associée à l’inventivité d’une cheffe passionnée.",
-      "table_p2": "N’hésitez pas de réserver et de venir découvrir nos saveurs d’orient et de celles d'une cuisine internationale qui saura faire voyager vos papilles.",
+      "table_h1": "Malaïka les Salons",
+      "table_p1": "Parmi les plus belles du royaume, la Table du Malaïka brille par son élégance et son âme. Dans une atmosphère douce, bercée par la lueur d'une cheminée, le temps semble suspendu. Les murmures se font discrets et la chaleur du feu ajoute au charme d'un moment rare.\n\nC'est un lieu de raffinement et de tendresse, où chaque mets raconte une histoire, où chaque détail invite à la rêverie. Romantique sans artifice, la Table du Malaïka c'est une émotion à savourer à deux, en famille ou entre amis.",
       "table_button": "RÉSERVER UNE TABLE"
     },
     "parallax": {
@@ -32,26 +31,16 @@
       "title2": "pour votre séjour Souiri"
     },
     "pres": {
-      "pres1": "Poussez la porte du riad Malaika et découvrez une maison d’hôtes singulière et accueillante.",
-      "pres2": "L’ambiance orientale de chaque chambre, claire, aérée, enrichie de meubles anciens, de tapis et d’objets chinés au Maroc, invite au dépaysement. Ainsi, vous pourrez profitez du soleil de la terrasse, de la douceur d’un feu de cheminée en vous laissant bercer par le murmure des fontaines ou par le chant des oiseaux.",
-      "pres3": "Découvrez un espace où le wifi omniprésent vous permettra de rester en contact avec vos proches et de partager ainsi vos impressions «marocaines». Découvrez également un personnel au service de ses invités.",
-      "pres4": "Tout est fait pour vous faire vivre un moment unique mais aussi pour vous faire découvrir le maroc autrement : massages berbères à l’huile d’argan, hammams traditionnels , gommages au savon noir ou encore balades dans les environs accompagnés d’un guide d’excursions. Une fois de retour au riad profitez d’un moment de détente autour du traditionnel thé à la menthe servi dans l’un des salons ou sur la terrasse, tout comme le petit-déjeuner “Beldi” différent chaque jour."
+      "pres1": "Les chambres et suites du Riad Malaika incarnent un luxe raffiné, chaque détail est pensé pour le bien-être absolu. Les matériaux nobles, le bois délicatement travaillé et les accents de la tradition marocaine se marient à une esthétique contemporaine empreinte d'élégance."
     },
     "restaurant": {
-      "h1": "La Cuisine",
-      "alt": "La gastronomie est un art qui dépasse la barrière du langage",
-      "p1": "L’équipe du MALAÏKA Riad & Table d’Hôtes vous invite à découvrir la véritable cuisine traditionnelle marocaine, celle qui se transmet de mère en fille, mais également une cuisine Terre-Mer internationale & inventive, sous la houlette de sa cheffe Mina, passionnée et qui n’a de cesse de se renouveler.",
-      "p2": "Élégante et raffinée, La Table est dressée dans nos salons chaque soir pour un nombre limité de convives qui a l’occasion de découvrir des saveurs originales accompagnées de vins marocains sélectionnés, où, vaisselle fine, argenterie, fleurs et chandeliers se côtoient pour leur plus grand plaisir olfactif, gustatif et visuel.",
-      "p3": "Si les Arts Culinaires sont particulièrement développés dans la tradition marocaine on ne peut en découvrir que bien peu d’aspects dans les restaurants marocains touristiques, pour cela, le Riad Malaïka vous propose de découvrir les véritables saveurs et parfums de la cuisine marocaine qui se veut authentique et familiale, ainsi que la fusion de plusieurs cultures culinaires internationales qui vous surprendra de par sa présentation mise en scène dans votre assiette."
+      "h1": "Malaïka La Table",
+      "alt": "La cuisine du Malaika, signée par la cheffe Khadija Bihmane, célèbre la rencontre entre les saveurs profondes du Maroc et le raffinement de la gastronomie française. Chaque assiette est une création inspirée, mêlant tradition, audace et dressage soigné pour une expérience gustative unique."
     },
     "patio": {
       "h1": "Le Patio",
-      "alt": "Le patio est le cœur d’un Riad mais aussi son âme",
-      "p1": "Le patio est certainement l’élément le plus caractéristique d’un riad traditionnel marocain, il s’agit d’une cour intérieure à ciel ouvert autour de laquelle sont réparties les pièces de la maison.",
-      "p2": "Au riad Malaika, le patio est non seulement le centre de la bâtisse mais aussi son cœur, bien plus qu’un puits de lumière c’est un vériPatio espace de vie dans et autour duquel tout s’organise.",
-      "p3": "Au centre de celui-ci, la fontaine centrale entourée des quatre piliers en pierres comme la tradition le requiert, coule en permanence* et crée une ambiance très apaisante qui attire à certaines heures de la journée des oiseaux assoiffés et curieux.",
-      "p4": "C’est un lieu où l’on aime passer et repasser pour aller selon son humeur dans l’un des trois salons.",
-      "p5": "* en circuit fermé, afin d’éviter le gaspillage de l’eau qui est une ressource vitale essentielle."
+      "alt": "Le patio est le cœur d'un Riad mais aussi son âme",
+      "p1": "Au cœur du Riad Malaika, le patio incarne l'essence du luxe marocain. Véritable cœur de vie, il séduit par son harmonie parfaite entre lumière, pierre et eau. La fontaine centrale, entourée de ses quatre piliers de pierre, diffuse un murmure apaisant, créant une atmosphère rare, empreinte de sérénité."
     },
     "salon": {
       "h1": "Les Salons du Malaïka",
@@ -64,11 +53,8 @@
     },
     "terrasse": {
       "h1": "La Terrasse",
-      "alt": "Entre ciel et terre, à l’ombre ou au soleil, mais surtout à l’abri des regards.",
-      "p1": "Il existe au Riad Malaika un endroit à part, un espace où coupé du monde chacun pourra profiter d’un moment unique : le toit terrasse.",
-      "p2": "Sur celle-ci il est possible de s’isoler de l’agitation de la médina pour lire, surfer sur internet, rêver ou bronzer allongés sur un transat, et pour ceux qui préfèrent, une partie de la terrasse est abritée du soleil et du vent…",
-      "p3": "Le matin, prendre son petit déjeuner sous le ciel bleu caressé par le soleil levant, en admirant l'incessant ballet des goélands est un réel plaisir, tandis qu’au clair de lune, entouré de lumières, vous pourrez apprécier le murmure des vagues mêlé à celui de la fontaine en tadelakt.",
-      "p4": "Le wifi omniprésent vous permettra de rester en contacts avec vos proches et partager ainsi vos impressions «marocaines»…"
+      "alt": "Entre ciel et terre, à l'ombre ou au soleil, mais surtout à l'abri des regards.",
+      "p1": "Sous le ciel bleu éclatant d'Essaouira, le Rooftop du Riad Malaika invite à la détente et à la rêverie. Entre oliviers, bougainvilliers et fleurs colorées, le murmure de la fontaine et le chant des oiseaux composent une douce mélodie. C'est l'endroit idéal pour une lecture paisible, un instant de calme absolu."
     },
     "offres": {
       "h1": "Nos offres spéciales",
@@ -86,67 +72,67 @@
   },
   "table": {
     "banner": {
-      "title": "Gastronomie",
-      "p1": "Le MALAÏKA Riad & Table d’Hôtes vous propose de découvrir les véritables saveurs et parfums de la cuisine marocaine qui se veut authentique et familiale, ainsi que la fusion de plusieurs cultures culinaires internationales qui vous surprendra de par sa présentation mise en scène dans votre assiette.",
-      "p2": "L’équipe du MALAÏKA Riad & Table d’Hôtes vous invite à découvrir la véritable cuisine traditionnelle marocaine, celle qui se transmet de mère en fille, mais également une cuisine Terre-Mer internationale & inventive, sous la houlette de sa cheffe Mina qui n’a de cesse de se renouveler.",
-      "p3": "Élégante et raffinée, La Table est dressée dans nos salons chaque soir pour un nombre limité de convives qui a l’occasion de découvrir des saveurs originales accompagnées de vins marocains sélectionnés, où, vaisselle fine, argenterie, fleurs et chandeliers se côtoient pour leur plus grand plaisir olfactif, gustatif et visuel.",
-      "p4": "Si les Arts Culinaires sont particulièrement développés dans la tradition marocaine on ne peut en découvrir que bien peu d’aspects dans les restaurants marocains touristiques."
+      "title": "La Cuisine",
+      "p1": "Nous vous invitons à choisir vos mets à l'avance afin de nous permettre de sélectionner des produits frais de 1er choix, de réaliser des cuissons lentes et délicates et de soigner chaque assiette avec l'élégance et la précision qu'exige une table d'exception."
+    },
+    "menu_selector": {
+      "classic": "Menu Classique",
+      "signature": "Menu Signature",
+      "reveillon": "Menu Réveillon"
+    },
+    "reveillon": {
+      "title": "Menu en 4 temps « Réveillons 24 et 31/12/2025 »",
+      "subtitle": "(menu unique)",
+      "price": "590 MAD",
+      "amuse_bouche": "Amuse Bouche : Découverte Des Saveurs du Maroc",
+      "or": "ou",
+      "first": {
+        "title": "Premier Temps :",
+        "option1": "Pastilla Foie Gras",
+        "option2": "Fraicheur de Homard à l'Avocat & Epices"
+      },
+      "second": {
+        "title": "Deuxième Temps :",
+        "option1": "Homard et Safran en Fines Ravioles",
+        "option2": "Mosaïque de Gambas, Fumée de Crustacés & Boules de Riz Frit"
+      },
+      "third": {
+        "title": "Troisième Temps :",
+        "option1": "Filet de Boeuf en Croute Farcie Epinards & Champignons",
+        "option2": "Cabillaud à l'Orange Crumble de Chorizo, Sauce à l'Orange et Patates Douces"
+      },
+      "fourth": {
+        "title": "Quatrième Temps :",
+        "option1": "Buchette Rouge & Pistache",
+        "option2": "Buchette Douceur Mandarine & Chocolat « Esprit de Noel »"
+      },
+      "finale": "Café ou Thé et Pâtisseries Orientales"
     }
   },
   "hebergement": {
     "standard": {
-      "title": "Chambre Double Standard",
-      "description": "Nos chambres « Standard », double ou twin ont une vue sur la médina, leur décor typiquement marocain, vous plongera aussitôt dans une atmosphère sobre et dépaysante...",
-      "subtitle": "Les chambres Standard proposent une décoration inédite pour chacune.",
-      "p1": "Nos chambres « Standard », double ou twin ont une vue sur la médina, leur décor typiquement marocain, vous plongera aussitôt dans une atmosphère sobre et dépaysante. Fer forgé, bois de thuya, cuivre et tapis multicolores composent le décor et font partie du mobilier fabriqué sur place par les artisans Souiris.",
-      "p2": "Chacune des chambres « Standard » offre le confort d’une salle de bains privative aux murs de Tadelakt, enduit ciré traditionnel aux couleurs naturelles. Elles sont équipées d’une fenêtre, d’une douche et de toilettes. Pour votre confort nous changeons les serviettes de bain chaque jour.",
-      "p3": "Nos produits d’accueil : savon, gel douche et shampoing composés à base de produits naturels sont élaborés à Marrakech spécialement pour nous par Nectarome.",
-      "p4": "De 62€ à 76€ avec ou sans petits déjeuners (hors taxes de séjour de 2€50 par personne et par nuit)"
+      "title": "Standard : 13 m²",
+      "p1": "Nos chambres offrent un raffinement discret : Lit Queen size, Salle de bain privative, linge brodé et produits naturels crées spécialement pour le Riad Malaika proche de la vallée de l'Ourika."
     },
     "confort": {
-      "title": "Chambres Double Confort",
-      "description": "Au 1er ou au 2eme étage du riad, nos chambres Confort sont équipées d’un lit double queen-size et d’un décor lumineux. Au calme, elles donnent sur le patio et vous invitent à la détente...",
-      "subtitle": "Les chambres Confort vous invitent au dépaysement",
-      "p1": "Au 1er ou au 2eme étage du riad, nos chambres Confort sont équipées d’un lit double queen-size et d’un décor lumineux. Au calme, elles donnent sur le patio et vous invitent à la détente.",
-      "p2": "«Haiks» aux fenêtres, lustres en cuivre et verre Iraki multicolore ravivent le charme Marocain qu’on trouvait dans les maisons bourgeoises autrefois.",
-      "p3": "Les salles d’eau traditionnelles en zelliges colorées vous font voyager dans le temps tout en vous apportant le niveau de confort des standards de l’hotellerie d’aujourd’hui. Pour votre bien-être le linge de toilette est changé chaque matin. Nos savons, gel douche et shampoing à base d’huiles essentielles sont élaborés à Marrakech pour le Malaïka.",
-      "p4": "De 73€ à 87€ avec ou sans petits déjeuners (hors taxes de séjour de 2€50 par personne et par nuit)"
+      "title": "Confort : 16 m²",
+      "p1": "Nos chambres offrent un raffinement discret : Lit Queen size, Salle de bain privative, linge brodé et produits naturels crées spécialement pour le Riad Malaika proche de la vallée de l'Ourika."
     },
     "superieure": {
-      "title": "Chambres Double supérieures",
-      "description": "Entourés d’objets chinés dans les souks de la région vous y trouverez un confort propice à la rêverie. L’espace sommeil équipé d’un lit double queen-size confortable et le coin salon vous offrent un espace agréable pour décompresser...",
-      "subtitle": "Les chambres Supérieures sont toutes décorées sur des thématiques différentes.",
-      "p1": "Entourés d’objets chinés dans les souks de la région vous y trouverez un confort propice à la rêverie. L’espace sommeil équipé d’un lit double queen-size confortable et le coin salon vous offrent un espace agréable pour décompresser.",
-      "p2": "Le mobilier en marqueterie de thuya, en cèdre parfumé ou en fer forgé a été chiné ça et là entre Essaouira et Marrakech. Nos chambres Supérieures en format chambre double ou chambre twin, se situent au 1er et au 2éme étage, leurs fenêtres donnent sur la médina ou sur le patio du riad.",
-      "p3": "Les salles d’eau orientales mêlant le tadelakt et les zelliges vous ferons découvrir les matières traditionnelles utilisées dans les hamams marocains depuis la nuit des temps. Chaque salle de bain privée offre douche et toilettes. Afin de vous offrir un séjour de qualité, nous changeons les serviettes de toilettes chaque matin et nous faisons fabriquer nos produits d’accueil à base d’huile essentielle par Nectarome Marrakech dans la vallée de l’Ourika.",
-      "p4": "De 84€ à 98€ avec ou sans petits déjeuners (hors taxes de séjour de 2€50 par personne et par nuit)"
+      "title": "Supérieure : 21 m²",
+      "p1": "Nos chambres offrent un raffinement discret : Lit Queen size, Salle de bain privative, linge brodé et produits naturels crées spécialement pour le Riad Malaika proche de la vallée de l'Ourika."
     },
     "junior": {
-      "title": "Junior Suite",
-      "description": "Passer du temps isolé du monde, prendre son petit-déjeuner, boire un verre ou lire au soleil est un atout de cette Suite sur la terrasse...",
-      "subtitle": "La Junior Suite Terrasse pour un séjour unique",
-      "p1": "Passer du temps isolé du monde, prendre son petit-déjeuner, boire un verre ou lire au soleil est un atout de cette Suite sur la terrasse.",
-      "p2": "A votre disposition, une chambre double équipée d’un lit double queen-size, un salon lumineux et spacieux avec cheminée où il fait bon cocooner, un mini-bar sans alcool et une machine Nespresso. Tableaux, meubles et objets, y racontent une partie de l’histoire de ce continent…",
-      "p3": "La salle de bains, en Tadelakt traditionnel, vous offre une baignoire et les accessoires traditionnels utilisés autrefois dans les hamams. Pour optimiser votre bien-être, les serviettes de toilettes sont changées chaque jour, et les toilettes sont indépendantes de la salle d’eau. Les produits d’accueil aux fragrances orientales «Malaïka» que nous faisons fabriquer dans la vallée de l’Ourika sont à disposition tout au long de votre séjour.",
-      "p4": "Le Salon étant équipé d'un lit simple, cette Junior-Suite permet d'accueillir jusqu'à 3 personnes.",
-      "p5": "Double de 106€ à 120€ avec ou sans petits déjeuners (hors taxes de séjour de 2€50 par personne et par nuit)",
-      "p6": "Triple de 130€ à 150€ avec ou sans petits déjeuners (hors taxes de séjour de 2€50 par personne et par nuit)"
+      "title": "Junior Suite : 35 m²",
+      "p1": "Nos chambres offrent un raffinement discret : Lit Queen size, Salle de bain privative, linge brodé et produits naturels crées spécialement pour le Riad Malaika proche de la vallée de l'Ourika."
     },
     "twin_standard": {
-      "title": "Chambre Twin Standard",
-      "description": "Comme toutes les chambres du Riad Malaïka, la chambre Twin Standard bénéficie d’une décoration sobre où les meubles et objets venus du Maroc ont su trouver leur place. Lumineuse et agréable cette chambre au charme unique possède sa salle de bain privative...",
-      "subtitle": "La Chambre Twin Standard se situe au deuxième étage avec une vue sur la médina.",
-      "p1": "Comme toutes les chambres du Riad Malaïka, la chambre Twin Standard bénéficie d’une décoration sobre où les meubles et objets venus du Maroc ont su trouver leur place. Lumineuse et agréable cette chambre au charme unique possède sa salle de bain privative.",
-      "p2": "Le linge de toilette est changé chaque jour afin de vous procurer une sensation de bien-être, tout comme les produits d’accueil aux essences naturelles d’ambre que nous vous offrons.",
-      "p3": "De 62€ à 76€ avec ou sans petits déjeuners (hors taxes de séjour de 2€50 par personne et par nuit)"
+      "title": "Twin Standard : 13 m²",
+      "p1": "Nos chambres offrent un raffinement discret : Lit Queen size, Salle de bain privative, linge brodé et produits naturels crées spécialement pour le Riad Malaika proche de la vallée de l'Ourika."
     },
     "twin_sup": {
-      "title": "Chambre Twin Supérieure",
-      "description": "Une véritable invitation au voyage grâce au décor typiquement marocain de cette chambre équipée de deux lits séparées confortables, d’une cheminée, d’une salle d’eau traditionnelle et d’objets locaux plein de charme...",
-      "subtitle": "La Chambre Twin Supérieure au premier étage avec vue sur le patio, vous offre confort et intimité.",
-      "p1": "Une véritable invitation au voyage grâce au décor typiquement marocain de cette chambre équipée de deux lits séparées confortables, d’une cheminée, d’une salle d’eau traditionnelle et d’objets locaux plein de charme.",
-      "p2": "Pour votre bien-être nous changeons chaque jour le linge de toilette et nous vous offrons de délicieux produits d’accueil naturels aux essences d’ambre fabriqués dans la vallée de l’Ouriqua spécialement pour le Riad Malaïka.",
-      "p3": "de 84€ à 98€ avec ou sans petits déjeuners (hors taxes de séjour de 2€50 par personne et par nuit)"
+      "title": "Twin Supérieure : 21 m²",
+      "p1": "Nos chambres offrent un raffinement discret : Lit Queen size, Salle de bain privative, linge brodé et produits naturels crées spécialement pour le Riad Malaika proche de la vallée de l'Ourika."
     }
   },
   "exp": {

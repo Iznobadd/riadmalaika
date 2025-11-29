@@ -20,15 +20,12 @@ function Home() {
     <div>
       <Slider />
       <div className="container">
-        <Riad />
+        {/* <Riad /> */}
         <Table />
       </div>
       <ParallaxTitle />
       <div className="container p-index">
         <p>{t("home.pres.pres1")}</p>
-        <p>{t("home.pres.pres2")}</p>
-        <p>{t("home.pres.pres3")}</p>
-        <p>{t("home.pres.pres4")}</p>
       </div>
       <Restaurant />
       <Patio />
