@@ -1,4 +1,5 @@
 import React from "react";
+import FinAnnee from "../../assets/images/carte_fin_annee.jpg";
 import Signature from "../../assets/images/carte_signature.jpg";
 import Entree from "../../assets/images/carte_entree.jpg";
 import Viande from "../../assets/images/carte_viande.jpg";
@@ -14,6 +15,12 @@ function Menu() {
         <Lightbox
           galleryID="menu-gallery"
           images={[
+            {
+              largeURL: FinAnnee,
+              thumbnailURL: FinAnnee,
+              width: 1080,
+              height: 1920,
+            },
             {
               largeURL: Entree,
               thumbnailURL: Entree,

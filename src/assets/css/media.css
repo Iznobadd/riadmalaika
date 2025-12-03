@@ -206,6 +206,9 @@
   .all_cartes a {
     width: calc(50% - 20px);
   }
+  #menu-gallery > a {
+    width: 45%;
+  }
   /* ------------------ FORMS ------------------ */
   .name-input,
   .email-input,
@@ -409,6 +412,9 @@
   }
   #menu-gallery {
     flex-wrap: wrap;
+  }
+  #menu-gallery > a {
+    width: 100%;
   }
   .imgs-signatures {
     flex-wrap: wrap;
