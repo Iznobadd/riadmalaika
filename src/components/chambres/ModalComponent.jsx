@@ -12,18 +12,17 @@ import Confort3 from "../../assets/images/confort3.jpg";
 import Confort4 from "../../assets/images/confort4.jpg";
 import Confort5 from "../../assets/images/confort5.jpg";
 import Confort6 from "../../assets/images/confort6.jpg";
-import Superieur1 from "../../assets/images/superieur1.jpg";
+import Superieur1 from "../../assets/images/superieur1-new.jpg";
 import Superieur2 from "../../assets/images/superieur2.jpg";
-import Superieur3 from "../../assets/images/superieur3.jpg";
+import Superieur3 from "../../assets/images/superieur3-new.jpg";
 import Superieur4 from "../../assets/images/superieur4.jpg";
 import Superieur5 from "../../assets/images/superieur5.jpg";
 import Superieur6 from "../../assets/images/superieur6.jpg";
-import Junior1 from "../../assets/images/junior1.jpg";
-import Junior2 from "../../assets/images/junior2.jpg";
-import Junior3 from "../../assets/images/junior3.jpg";
-import Junior4 from "../../assets/images/junior4.jpg";
-import Junior5 from "../../assets/images/junior5.jpg";
-import Junior6 from "../../assets/images/junior6.jpg";
+import Junior1 from "../../assets/images/suite1-new.jpg";
+import Junior2 from "../../assets/images/suite2-new.jpg";
+import Junior3 from "../../assets/images/suite3-new.jpg";
+import Junior4 from "../../assets/images/suite4-new.jpg";
+import Junior5 from "../../assets/images/suite5-new.jpg";
 import Twin1 from "../../assets/images/twin-standard1.jpg";
 import Twin2 from "../../assets/images/twin-standard2.jpg";
 import Twin3 from "../../assets/images/twin-standard3.jpg";
@@ -151,7 +150,6 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
                 <img src={Junior3} alt="" />
                 <img src={Junior4} alt="" />
                 <img src={Junior5} alt="" />
-                <img src={Junior6} alt="" />
               </div>
               <div class="text-center">
                 <Link
