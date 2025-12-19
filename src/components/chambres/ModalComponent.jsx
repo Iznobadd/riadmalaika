@@ -34,6 +34,7 @@ import TwinSup2 from "../../assets/images/twin-sup2.jpg";
 import TwinSup3 from "../../assets/images/twin-sup3.jpg";
 import TwinSup4 from "../../assets/images/twin-sup4.jpg";
 import TwinSup5 from "../../assets/images/twin-sup5.jpg";
+import TwinSup6 from "../../assets/images/twin-sup6.jpg";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -208,6 +209,7 @@ function ModalComponent({ isOpen, onRequestClose, buttonId }) {
                 <img src={TwinSup3} alt="" />
                 <img src={TwinSup4} alt="" />
                 <img src={TwinSup5} alt="" />
+                <img src={TwinSup6} alt="" />
               </div>
               <div class="text-center">
                 <Link

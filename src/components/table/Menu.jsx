@@ -4,6 +4,7 @@ import Signature from "../../assets/images/carte_signature.jpg";
 import Entree from "../../assets/images/carte_entree.jpg";
 import Viande from "../../assets/images/carte_viande.jpg";
 import Maroc from "../../assets/images/carte_maroc.jpg";
+import Trip from "../../assets/images/tripadvisor-qr.png";
 import Mer from "../../assets/images/carte_mer.jpg";
 import Dessert from "../../assets/images/carte_dessert.jpg";
 import Lightbox from "../partials/Lightbox";
@@ -56,6 +57,12 @@ function Menu() {
             {
               largeURL: Dessert,
               thumbnailURL: Dessert,
+              width: 1080,
+              height: 1920,
+            },
+            {
+              largeURL: Trip,
+              thumbnailURL: Trip,
               width: 1080,
               height: 1920,
             },
