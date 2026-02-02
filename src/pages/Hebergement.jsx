@@ -1,8 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
 import ListChambres from "../components/chambres/ListChambres";
-import ChambresForm from "../components/chambres/ChambresForm";
-import { Zoom } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 function Hebergement() {
   useEffect(() => {

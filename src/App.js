@@ -67,7 +67,7 @@ function App() {
         clearTimeout(fadeOutTimer);
       };
     }
-  }, [location]);
+  }, [location, initialLoading]);
 
   if (initialLoading) {
     return (

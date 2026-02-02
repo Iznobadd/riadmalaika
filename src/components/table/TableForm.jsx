@@ -39,7 +39,7 @@ function TableForm() {
   const [selectedItems, setSelectedItems] = useState([]);
   const [selectedSignatureItems, setSelectedSignatureItems] = useState([]);
   const [nbrSignatureMenus, setNbrSignatureMenus] = useState(0);
-  const [nbrReveillonMenus, setNbrReveillonMenus] = useState(0);
+  const [nbrReveillonMenus] = useState(0);
   const [reveillonSelections, setReveillonSelections] = useState([]);
 
   useEffect(() => {
@@ -58,6 +58,7 @@ function TableForm() {
       },
     );
     setReveillonSelections(newSelections);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [nbrReveillonMenus]);
 
   useEffect(() => {
@@ -130,15 +131,6 @@ function TableForm() {
       );
       setSelectedSignatureItems(updatedItems);
     }
-  };
-
-  const handleReveillonSelection = (menuIndex, course, value) => {
-    const newSelections = [...reveillonSelections];
-    newSelections[menuIndex] = {
-      ...newSelections[menuIndex],
-      [course]: value,
-    };
-    setReveillonSelections(newSelections);
   };
 
   const generateReveillonHTML = (data) => {
@@ -299,17 +291,17 @@ function TableForm() {
               for (const category in itemsByCategory) {
                 category.toUpperCase();
                 str += `<li><strong>${category}:</strong></li>`;
-                itemsByCategory[category].forEach((item) => {
+                for (const item of itemsByCategory[category]) {
                   str += `<li>${item.label} x ${item.quantity}</li>`;
-                });
+                }
               }
               str += ` </ul><p><strong>Demande spéciale :</strong> ${data["demande-signature"]}</p><h2>Menus Classiques : : </h2>`;
               for (const category in classicItemsByCategory) {
                 category.toUpperCase();
                 str += `<h4><strong>${category}:</strong></h4><ul>`;
-                classicItemsByCategory[category].forEach((item) => {
+                for (const item of classicItemsByCategory[category]) {
                   str += `<li>${item.label} x ${item.quantity}</li>`;
-                });
+                }
                 const demandeSpeciale = data[`demande-${category}`] || "";
                 str += `</ul> <p>Demande spéciale : ${demandeSpeciale}</p>`;
               }
@@ -359,9 +351,9 @@ function TableForm() {
             for (const category in itemsByCategory) {
               category.toUpperCase();
               str += `<h4><strong>${category}:</strong></h4><ul>`;
-              itemsByCategory[category].forEach((item) => {
+              for (const item of itemsByCategory[category]) {
                 str += `<li>${item.label} x ${item.quantity}</li>`;
-              });
+              }
               str += `</ul>`;
             }
 
@@ -410,9 +402,9 @@ function TableForm() {
               for (const category in itemsByCategory) {
                 category.toUpperCase();
                 str += `<h4><strong>${category}:</strong></h4><ul>`;
-                itemsByCategory[category].forEach((item) => {
+                for (const item of itemsByCategory[category]) {
                   str += `<li>${item.label} x ${item.quantity}</li>`;
-                });
+                }
                 const demandeSpeciale = data[`demande-${category}`] || "";
                 str += `</ul> <p>Demande spéciale : ${demandeSpeciale}</p>`;
               }

@@ -4,9 +4,9 @@ function Typewriter() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(100);
-  const phrases = ["عالم منفصل عن العالم", "Un monde à part"];
 
   useEffect(() => {
+    const phrases = ["عالم منفصل عن العالم", "Un monde à part"];
     const handleTyping = () => {
       const currentPhrase = phrases[loopNum % phrases.length];
       const isFullTextTyped = displayText === currentPhrase;
@@ -31,7 +31,7 @@ function Typewriter() {
     const typingTimer = setTimeout(handleTyping, typingSpeed);
 
     return () => clearTimeout(typingTimer);
-  }, [displayText, isDeleting, typingSpeed, loopNum, phrases]);
+  }, [displayText, isDeleting, typingSpeed, loopNum]);
 
   return <h2 className="preloader-text">{displayText}</h2>;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Flip, Zoom } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 import PostIt1 from "../../assets/images/postit1.jpg";
 import PostIt2 from "../../assets/images/logo-anime.gif";
 import PostIt3 from "../../assets/images/postit3.jpg";

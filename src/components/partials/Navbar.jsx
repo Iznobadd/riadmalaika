@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../../assets/images/footerLogo.png";
 // import Booking from "../../assets/images/bookingcom.png";
-import Eviivo from "../../assets/images/eviivo.png";
 import { HiHome } from "react-icons/hi";
 import { FaBars } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";

@@ -5,7 +5,6 @@ import Patio2 from "../../assets/images/patio2.jpg";
 import Patio3 from "../../assets/images/patio3.jpg";
 import Patio4 from "../../assets/images/patio4.jpg";
 import Patio5 from "../../assets/images/patio5.jpg";
-import Patio6 from "../../assets/images/patio6.jpg";
 import { Zoom } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
 function Patio() {

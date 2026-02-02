@@ -1,11 +1,8 @@
 import React from "react";
-import FooterBg from "../../assets/images/footer-bg.png";
-import LabelGuru from "../../assets/images/restaurantGuru.png";
 import TripAdvisor from "../../assets/images/tripadvisor.png";
 import TripAdvisor2 from "../../assets/images/tripadvisor2.png";
 // import Booking from "../../assets/images/booking.jpg";
 import Best from "../../assets/images/best.png";
-import Eviivo from "../../assets/images/eviivo.png";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import scrollImg from "../../assets/images/top-arrow.png";
@@ -52,6 +49,7 @@ function Footer() {
         <a
           id="b-circle27"
           target="_blank"
+          rel="noreferrer"
           href="https://restaurantguru.com/Riad-Malaika-Essaouira"
           className="trip-footer"
         >
@@ -180,7 +178,7 @@ function Footer() {
       </footer>
       {showScrollButton && (
         <div id="scrollUp" onClick={scrollToTop}>
-          <img src={scrollImg} />
+          <img src={scrollImg} alt="Scroll to top" />
         </div>
       )}
     </>

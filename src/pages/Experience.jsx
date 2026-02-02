@@ -1,5 +1,4 @@
 import React from "react";
-import { Slide } from "react-awesome-reveal";
 import Equitation from "../assets/images/equitation.gif";
 import Dromadaire from "../assets/images/dromadaire.gif";
 import KiteSurf from "../assets/images/kitesurf.gif";

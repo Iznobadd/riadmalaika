@@ -3,7 +3,7 @@ import Culture from "../../assets/images/pack-culture.png";
 import BienEtre from "../../assets/images/pack-emotion.png";
 import Decouverte from "../../assets/images/pack-decouverte.png";
 import Gastronomie from "../../assets/images/pack-gastro.png";
-import { Zoom, Flip, Bounce } from "react-awesome-reveal";
+import { Zoom, Bounce } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 function Offres() {

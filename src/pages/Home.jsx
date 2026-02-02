@@ -1,6 +1,5 @@
 import React from "react";
 import Slider from "../components/home/Slider";
-import Riad from "../components/home/Riad";
 import Table from "../components/home/Table";
 import ParallaxTitle from "../components/home/ParallaxTitle";
 import Restaurant from "../components/home/Restaurant";
