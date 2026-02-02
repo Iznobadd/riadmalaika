@@ -17,12 +17,6 @@ function Menu() {
           galleryID="menu-gallery"
           images={[
             {
-              largeURL: FinAnnee,
-              thumbnailURL: FinAnnee,
-              width: 1080,
-              height: 1920,
-            },
-            {
               largeURL: Entree,
               thumbnailURL: Entree,
               width: 1080,

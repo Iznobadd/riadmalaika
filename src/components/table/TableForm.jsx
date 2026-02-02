@@ -44,14 +44,19 @@ function TableForm() {
 
   useEffect(() => {
     // Initialize reveillon selections array when number changes
-    const newSelections = Array.from({ length: nbrReveillonMenus }, (_, index) => {
-      return reveillonSelections[index] || {
-        first: "",
-        second: "",
-        third: "",
-        fourth: "",
-      };
-    });
+    const newSelections = Array.from(
+      { length: nbrReveillonMenus },
+      (_, index) => {
+        return (
+          reveillonSelections[index] || {
+            first: "",
+            second: "",
+            third: "",
+            fourth: "",
+          }
+        );
+      },
+    );
     setReveillonSelections(newSelections);
   }, [nbrReveillonMenus]);
 
@@ -71,7 +76,7 @@ function TableForm() {
     if (quantity > 0) {
       // Vérifie si l'option est déjà dans les éléments sélectionnés
       const existingItem = selectedItems.find(
-        (item) => item.id === option.id && item.category === category
+        (item) => item.id === option.id && item.category === category,
       );
       if (existingItem) {
         // Met à jour la quantité de l'option existante
@@ -89,7 +94,7 @@ function TableForm() {
     } else {
       // Supprime l'option des éléments sélectionnés si la quantité est inférieure ou égale à 1
       const updatedItems = selectedItems.filter(
-        (item) => item.id !== option.id || item.category !== category
+        (item) => item.id !== option.id || item.category !== category,
       );
       setSelectedItems(updatedItems);
     }
@@ -100,7 +105,7 @@ function TableForm() {
     if (quantity > 0) {
       // Vérifie si l'option est déjà dans les éléments sélectionnés du menu "Signature"
       const existingItem = selectedSignatureItems.find(
-        (item) => item.id === option.id && item.category === category
+        (item) => item.id === option.id && item.category === category,
       );
       if (existingItem) {
         // Met à jour la quantité de l'option existante dans le menu "Signature"
@@ -121,7 +126,7 @@ function TableForm() {
     } else {
       // Supprime l'option des éléments sélectionnés du menu "Signature" si la quantité est inférieure ou égale à 0
       const updatedItems = selectedSignatureItems.filter(
-        (item) => item.id !== option.id || item.category !== category
+        (item) => item.id !== option.id || item.category !== category,
       );
       setSelectedSignatureItems(updatedItems);
     }
@@ -184,9 +189,15 @@ function TableForm() {
       if (nbrReveillonMenus > 0) {
         for (let i = 0; i < nbrReveillonMenus; i++) {
           const selection = reveillonSelections[i];
-          if (!selection || !selection.first || !selection.second || !selection.third || !selection.fourth) {
+          if (
+            !selection ||
+            !selection.first ||
+            !selection.second ||
+            !selection.third ||
+            !selection.fourth
+          ) {
             toast.error(
-              `Veuillez sélectionner un choix pour chaque temps du menu Réveillon ${i + 1}`
+              `Veuillez sélectionner un choix pour chaque temps du menu Réveillon ${i + 1}`,
             );
             return;
           }
@@ -194,20 +205,20 @@ function TableForm() {
       }
 
       const entreesSignature = selectedSignatureItems.filter(
-        (item) => item.category === "entree"
+        (item) => item.category === "entree",
       );
       const platsSignature = selectedSignatureItems.filter(
-        (item) => item.category === "plat"
+        (item) => item.category === "plat",
       );
       const dessertsSignature = selectedSignatureItems.filter(
-        (item) => item.category === "desserts"
+        (item) => item.category === "desserts",
       );
       const entrees = selectedItems.filter(
-        (item) => item.category === "entree"
+        (item) => item.category === "entree",
       );
       const plats = selectedItems.filter((item) => item.category === "plat");
       const desserts = selectedItems.filter(
-        (item) => item.category === "desserts"
+        (item) => item.category === "desserts",
       );
       setNbrSignatureMenus(Number(nbrSignatureMenus));
       console.log("nbrSignatureMenus", nbrSignatureMenus);
@@ -215,15 +226,15 @@ function TableForm() {
       if (nbrSignatureMenus > 0) {
         const totalEntreesSignatureQuantity = entreesSignature.reduce(
           (total, item) => total + item.quantity,
-          0
+          0,
         );
         const totalPlatsSignatureQuantity = platsSignature.reduce(
           (total, item) => total + item.quantity,
-          0
+          0,
         );
         const totalDessertsSignatureQuantity = dessertsSignature.reduce(
           (total, item) => total + item.quantity,
-          0
+          0,
         );
         if (
           entreesSignature.length === 0 ||
@@ -235,7 +246,7 @@ function TableForm() {
           console.log("dessertsSignature", dessertsSignature);
 
           toast.error(
-            "Veuillez choisir une entrée, un plat et un dessert pour chaque menu signature"
+            "Veuillez choisir une entrée, un plat et un dessert pour chaque menu signature",
           );
           return;
         }
@@ -245,7 +256,7 @@ function TableForm() {
           totalDessertsSignatureQuantity !== nbrSignatureMenus
         ) {
           toast.error(
-            "Le nombre de menus signature ne correpond pas au nombre d'entrées, de plats ou de desserts choisis"
+            "Le nombre de menus signature ne correpond pas au nombre d'entrées, de plats ou de desserts choisis",
           );
           return;
         }
@@ -319,7 +330,7 @@ function TableForm() {
             sendEmail(allData);
           } else {
             toast.error(
-              "Veuillez choisir une entrée ou un dessert pour chaque menu classique"
+              "Veuillez choisir une entrée ou un dessert pour chaque menu classique",
             );
             return;
           }
@@ -423,7 +434,7 @@ function TableForm() {
             sendEmail(allData);
           } else {
             toast.error(
-              "Veuillez choisir une entrée ou un dessert pour chaque menu classique"
+              "Veuillez choisir une entrée ou un dessert pour chaque menu classique",
             );
             return;
           }
@@ -450,7 +461,9 @@ function TableForm() {
             };
             sendEmail(allData);
           } else {
-            toast.error("Veuillez choisir au moins un menu pour une réservation");
+            toast.error(
+              "Veuillez choisir au moins un menu pour une réservation",
+            );
             return;
           }
         }
@@ -464,11 +477,11 @@ function TableForm() {
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_TABLE_RIAD_ID,
         data,
-        process.env.REACT_APP_USER_ID
+        process.env.REACT_APP_USER_ID,
       )
       .then((result) => {
         toast.success(
-          "Votre demande a bien été prise en compte et vous allez recevoir un e-mail avec tous les détails, tarifs et conditions."
+          "Votre demande a bien été prise en compte et vous allez recevoir un e-mail avec tous les détails, tarifs et conditions.",
         );
         reset();
       })
@@ -601,7 +614,7 @@ function TableForm() {
           </div>
         </div>
       </div>
-      <div className="reservation-reveillon">
+      {/* <div className="reservation-reveillon">
         <div className="container">
           <h1>Menu Réveillon 24 & 31/12/2025</h1>
           <p className="reveillon-intro">
@@ -798,7 +811,7 @@ function TableForm() {
             )}
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="reservation-signature">
         <div className="container">
           <h1>Menu Signature</h1>
@@ -839,7 +852,7 @@ function TableForm() {
                               handleSignatureQuantityChange(
                                 e,
                                 option,
-                                category.name
+                                category.name,
                               )
                             }
                           />
